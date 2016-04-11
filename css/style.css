@@ -1,3 +1,9 @@
+/* DEVICES TO BASE THEME ON
+  -- iPhone max-width: 414px
+  -- iPad max-width: 768px
+  -- iPad (landscape) max-width: 1024px
+*/
+
 /*Default look*/
 html{
 	margin: 0;
@@ -33,11 +39,14 @@ img{
 	max-width: 1000px;
 }
 
+.mainContent{
+	clear: both;
+}
+
 .NicLib-Head{ 
 	text-align: right;
 	font-weight: bold;
 	font-size: 1.333333em;
-	clear: both;
 }
 
 .NicLib-Head img{
