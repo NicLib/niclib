@@ -4,8 +4,8 @@ type: theme
 core: 8.x
 screenshot: logo.png
 libraries:
-  - NicLib/global-css
-  - NicLib/global-js
+  - niclib/global-css
+  - niclib/global-js
   
 regions:
   univhead: 'University Branding'
