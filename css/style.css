@@ -1,13 +1,11 @@
-/* DEVICES TO BASE THEME ON
-  -- iPhone
-  -- iPad
-  -- Galaxy Tab
-*/
-
-/*Main Elements*/
-
+/*Default look*/
 html{
+	margin: 0;
+	padding: 0;
+	background-color: #FFFFFF;
 	font-size: 16pt;
+	font-family: Garamond, sans-serif;
+	color: #000000;
 }
 
 body{
@@ -15,7 +13,6 @@ body{
 	padding: 0;
 	max-width: 100%;
 	background-color: #FFFFFF;
-	font-size: .75em; /*12/16*/
 }
 
 header{
@@ -32,19 +29,14 @@ img{
 /*Classes*/
 
 .container{
-	margin: .416667% /*7/1680*/ auto 0 auto;
-	max-width: 1000px /*59.52381%*/ /*1000/1680*/;
-}
-	
-.mainContent{
-	clear: both;
+	margin: auto;
+	max-width: 1000px;
 }
 
-.NicLib-Head{
-	margin: .7% auto; /*7/1000*/
+.NicLib-Head{ 
 	text-align: right;
-	font-size: 1.333333em;
 	font-weight: bold;
+	font-size: 1.333333em;
 	clear: both;
 }
 
@@ -54,7 +46,7 @@ img{
 }
 
 .univHead{
-	font-size: .6875em; /*11/16*/
+	font-size: .625em; /*10/16*/
 	font-weight: bold;
 	color: #FFFFFF;
 	text-align: right;
@@ -79,35 +71,21 @@ img{
 	display: inline;
 }
 
-
-/*IDs*/
-
-
-/*Media Queries*/
-
-/* iPhone Media Query */
-@media screen and (max-width: 414px){
-	/* Main Elements */
-	
-	/* Classes */
-	
-	.container{
-		width: 100%;
-		padding: 0 2px;
-	}
-	
-	.NicLib-Head img{
-	min-width: 60.386473%; /*250/414*/
-	margin: 0 auto;
-	}
+.univHead a{
+	color: #FFFFFF;
+	text-decoration: none;
+	transition: all .5s
 }
 
-/* iPad Media Query */
-@media screen and (max-width: 768px){
-	
+.univHead a:hover{
+	color: #000000;
 }
 
-/* iPad Landscape? */
-@media screen and (max-width: 1024px){
-	
+.univHead img{
+	max-width: 18.1%; /* 181/1000 */
+}
+
+.univHead nav ul li{
+	margin: auto .5% /*5/1000*/;
+	display: inline;
 }
