@@ -103,6 +103,7 @@ img{
 	
 	.univHead img{
 		margin: auto;
+		text-align: center;
 		max-width: 23.56770833333333%; /* 181/768 */
 	}
 
