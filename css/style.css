@@ -82,3 +82,29 @@ img{
 	margin: auto .5% /*5/1000*/;
 	display: inline;
 }
+
+
+/* Media Queries */
+
+/*iPad*/
+@media screen and (max-width: 768px){
+	header{
+		height: 100%;
+		clear: both;
+	}
+	
+	/* Classes */
+	.container{
+		margin: 0;
+		width: 100%;
+	}
+	
+	.univHead img{
+		margin: auto;
+		max-width: 23.56770833333333%; /* 181/768 */
+	}
+
+	.univHead nav{
+		display: none;
+	}
+}
