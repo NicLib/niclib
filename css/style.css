@@ -10,7 +10,7 @@ html{
 	padding: 0;
 	background-color: #FFFFFF;
 	font-size: 16pt;
-	font-family: Garamond, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #000000;
 }
 
@@ -61,25 +61,7 @@ img{
 	font-weight: bold;
 	color: #FFFFFF;
 	text-align: right;
-}
-
-.univHead a{
-	color: #FFFFFF;
-	text-decoration: none;
-	transition: all .5s
-}
-
-.univHead a:hover{
-	color: #000000;
-}
-
-.univHead img{
-	max-width: 18.1%; /* 181/1000 */
-}
-
-.univHead nav ul li{
-	margin: auto .5% /*5/1000*/;
-	display: inline;
+	height: 100%;
 }
 
 .univHead a{
