@@ -44,6 +44,7 @@ img{
 .container{
 	margin: auto;
 	max-width: 63em; /* 1008/16 */
+	height: 100%;
 }
 
 .mainContent{
@@ -94,7 +95,9 @@ img{
 
 /*iPad*/
 @media screen and (max-width: 768px){
-
+	header{
+		height: 100%;
+	}
 	/* Classes */
 	.container{
 		margin: 0;
@@ -107,7 +110,7 @@ img{
 		max-width: 23.56770833333333%; /* 181/768 */
 	}
 
-	.univHead nav{
+	.univHead nav ul li{
 		display: none;
 	}
 }
