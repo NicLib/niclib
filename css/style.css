@@ -5,6 +5,12 @@
 */
 
 /*Default look*/
+
+/* Column layout (12 Columns)
+	- Column 80px width
+	- Padding 4px
+*/
+
 html{
 	margin: 0;
 	padding: 0;
@@ -37,7 +43,7 @@ img{
 
 .container{
 	margin: auto;
-	max-width: 62.5em; /* 1000/16 */
+	max-width: 63em; /* 1008/16 */
 }
 
 .mainContent{
@@ -52,7 +58,7 @@ img{
 }
 
 .NicLib-Head img{
-	max-width: 30%; /*300px/1000*/
+	max-width: 32.93650793650794%; /*((80*4) + (4*3)) / 1008 */
 	float: left;
 }
 
@@ -75,11 +81,11 @@ img{
 }
 
 .univHead img{
-	max-width: 18.1%; /* 181/1000 */
+	max-width: 16.26984126984127%; /* ((80 * 2) + 4) / 1008 */
 }
 
 .univHead nav ul li{
-	margin: auto .5% /*5/1000*/;
+	margin: auto .49603174603175% /*5/1008*/;
 	display: inline;
 }
 
@@ -88,11 +94,7 @@ img{
 
 /*iPad*/
 @media screen and (max-width: 768px){
-	header{
-		height: 100%;
-		clear: both;
-	}
-	
+
 	/* Classes */
 	.container{
 		margin: 0;
