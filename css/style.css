@@ -47,6 +47,10 @@
  	height: 100%;
  }
  
+ .logo{
+	margin-top: .75em; /* 12/16 */
+ }
+ 
  .mainContent{
  	clear: both;
  }
@@ -67,7 +71,6 @@
  	font-size: .625em; /*10/16*/
  	font-weight: bold;
  	color: #FFFFFF;
- 	text-align: right;
  	height: 100%;
  }
  
@@ -85,9 +88,18 @@
   	max-width: 16.26984126984127%; /* ((80 * 2) + 4) / 1008 */
   }
   
- .univHead nav img{
+.univHead nav{
+	display: inline;
+}
+  
+.univHead nav img{
  	display: none;
- }
+}
+ 
+.univHead nav ul{
+	display: inline;
+	float: right;
+}
  
   .univHead nav ul li{
   	margin: auto .49603174603175% /*5/1008*/;
