@@ -80,9 +80,13 @@ img{
 .univHead a:hover{
 	color: #000000;
 }
-
 .univHead img{
+
 	max-width: 16.26984126984127%; /* ((80 * 2) + 4) / 1008 */
+}
+
+.univHead nav img{
+	display: none;
 }
 
 .univHead nav ul li{
@@ -109,7 +113,12 @@ img{
 		text-align: center;
 		max-width: 23.56770833333333%; /* 181/768 */
 	}
-
+	
+	.univHead nav img{
+		display: block;
+		width: 30px;
+		height: 30px;
+	}
 	.univHead nav ul li{
 		display: none;
 	}
