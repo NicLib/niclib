@@ -1,84 +1,126 @@
 /* DEVICES TO BASE THEME ON
-  -- iPhone max-width: 414px
-  -- iPad max-width: 768px
-  -- iPad (landscape) max-width: 1024px
-*/
-
-/*Default look*/
-html{
-	margin: 0;
-	padding: 0;
-	background-color: #FFFFFF;
-	font-size: 16pt;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #000000;
-}
-
-body{
-	margin: 0;
-	padding: 0;
-	max-width: 100%;
-	background-color: #FFFFFF;
-}
-
-header{
-	border-top: .25em /* 4/16 */ solid #FFB652;
-	background-color: #F57920;
-	margin-top: 0;
-	width: 100%;
-	height: 100%;
-}
-
-img{
-	max-width: 100%;
-}
-
-/*Classes*/
-
-.container{
-	margin: auto;
-	max-width: 62.5em; /* 1000/16 */
-}
-
-.mainContent{
-	clear: both;
-}
-
-.NicLib-Head{ 
-	margin: .25em auto;
-	text-align: right;
-	font-weight: bold;
-	font-size: 1.333333em;
-}
-
-.NicLib-Head img{
-	max-width: 30%; /*300px/1000*/
-	float: left;
-}
-
-.univHead{
-	font-size: .625em; /*10/16*/
-	font-weight: bold;
-	color: #FFFFFF;
-	text-align: right;
-	height: 100%;
-}
-
-.univHead a{
-	color: #FFFFFF;
-	text-decoration: none;
-	transition: all .5s
-}
-
-.univHead a:hover{
-	color: #000000;
-}
-
-.univHead img{
-	max-width: 18.1%; /* 181/1000 */
-}
-
-.univHead nav ul li{
-	margin: auto .5% /*5/1000*/;
-	display: inline;
-}
+   -- iPhone max-width: 414px
+   -- iPad max-width: 768px
+   -- iPad (landscape) max-width: 1024px
+ */
+ 
+ /*Default look*/
+ 
+ /* Column layout (12 Columns)
+ 	- Column 80px width
+ 	- Padding 4px
+ */
+ 
+ html{
+ 	margin: 0;
+ 	padding: 0;
+ 	background-color: #FFFFFF;
+ 	font-size: 16pt;
+ 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ 	color: #000000;
+ }
+ 
+ body{
+ 	margin: 0;
+ 	padding: 0;
+ 	max-width: 100%;
+ 	background-color: #FFFFFF;
+ }
+ 
+ header{
+ 	border-top: .25em /* 4/16 */ solid #FFB652;
+ 	background-color: #F57920;
+ 	margin-top: 0;
+ 	width: 100%;
+ 	height: 100%;
+ }
+ 
+ img{
+ 	max-width: 100%;
+ }
+ 
+ /*Classes*/
+ 
+ .container{
+ 	margin: auto;
+ 	max-width: 63em; /* 1008/16 */
+ 	height: 100%;
+ }
+ 
+ .mainContent{
+ 	clear: both;
+ }
+ 
+ .NicLib-Head{ 
+ 	margin: .25em auto;
+ 	text-align: right;
+ 	font-weight: bold;
+ 	font-size: 1.333333em;
+ }
+ 
+ .NicLib-Head img{
+ 	max-width: 32.93650793650794%; /*((80*4) + (4*3)) / 1008 */
+ 	float: left;
+ }
+ 
+ .univHead{
+ 	font-size: .625em; /*10/16*/
+ 	font-weight: bold;
+ 	color: #FFFFFF;
+ 	text-align: right;
+ 	height: 100%;
+ }
+ 
+ .univHead a{
+ 	color: #FFFFFF;
+ 	text-decoration: none;
+ 	transition: all .5s
+ }
+ 
+  .univHead a:hover{
+  	color: #000000;
+  }
+ 
+ .univHead img{
+  	max-width: 16.26984126984127%; /* ((80 * 2) + 4) / 1008 */
+  }
+  
+ .univHead nav img{
+ 	display: none;
+ }
+ 
+  .univHead nav ul li{
+  	margin: auto .49603174603175% /*5/1008*/;
+  	display: inline;
+ }
+ 
+ 
+ /* Media Queries */
+ 
+ /*iPad*/
+ @media screen and (max-width: 768px){
+ 	header{
+ 		height: 100%;
+ 	}
+ 	/* Classes */
+ 	.container{
+ 		margin: 0;
+ 		width: 100%;
+ 	}
+ 	
+ 	.univHead img{
+ 		margin: auto;
+  		text-align: center;
+  		max-width: 23.56770833333333%; /* 181/768 */
+  	}
+ 
+ 	
+ 	.univHead nav img{
+ 		display: block;
+ 		width: 30px;
+ 		height: 30px;
+ 	}
+  	.univHead nav ul li{
+  		display: none;
+  	}
+ }
