@@ -72,7 +72,6 @@
  	font-size: .625em; /*10/16*/
  	font-weight: bold;
  	color: #FFFFFF;
- 	height: 100%;
  }
  
  .univHead a{
@@ -89,16 +88,21 @@
   	max-width: 16.26984126984127%; /* ((80 * 2) + 4) / 1008 */
   }
   
-.univHead ul {
-	text-align: right;
-	list-style: none;
+.univHead nav{
+	float: right;
 }
- 
-  .univHead nav ul li{
+  
+.univHead nav ul li{
   	margin: auto .49603174603175% /*5/1008*/;
 	list-style: none;
   	display: inline;
  }
+  
+.univHead ul {
+	text-align: right;
+	list-style: none;
+	display: inline;
+}
  
  
  /* Media Queries */
