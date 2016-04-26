@@ -8,7 +8,6 @@ libraries:
   - niclib/global-js
   
 regions:
-  univhead: 'University Branding'
   univlinks: 'University Links'
   header: 'Header'
   sidebar: 'Sidebar'
