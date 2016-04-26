@@ -35,6 +35,11 @@
  	height: 100%;
  }
  
+ iframe{
+	 height: 100%;
+	 width: 100%;
+ }
+ 
  img{
  	max-width: 100%;
  }
@@ -48,7 +53,8 @@
  }
  
  .libSearch{
-	 height: 12.5em; /* 200/16 */
+	width: 100%;
+	height: 12.5em; /* 200/16 */
  }
  
  .logo{
@@ -61,7 +67,7 @@
  }
  
  .NicLib-Head{ 
- 	margin: .25em auto;
+ 	margin: .25em auto; /* 4 / 16 */
  	text-align: right;
  	font-weight: bold;
  	font-size: 1.333333em;
@@ -81,7 +87,7 @@
  .univHead a{
  	color: #FFFFFF;
  	text-decoration: none;
- 	transition: all .5s
+ 	transition: all .5s;
  }
  
   .univHead a:hover{
