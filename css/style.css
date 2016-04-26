@@ -79,6 +79,26 @@
  	float: left;
  }
  
+ .NicLib-Head ul{
+	 margin-top: 15px;
+	 display: inline;
+ }
+ 
+ .NicLib-Head ul a{
+	 color: #000000;
+	 text-decoration: none;
+	 transition: all .5s;
+ }
+ 
+ .NicLib-Head ul a:hover{
+	 color: #F57920;
+ }
+ 
+ .NicLib-Head ul li{
+	 margin: auto 15px;
+	 display: inline;
+ }
+ 
  .univHead{
  	font-size: .625em; /*10/16*/
  	font-weight: bold;
