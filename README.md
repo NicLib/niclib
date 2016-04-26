@@ -8,3 +8,6 @@ Drupal 8 theme
 * Sidebar
 * Main Content
 * Footer
+
+####Extra info
+* "search.html" must be placed in the root folder of the Drupal site
