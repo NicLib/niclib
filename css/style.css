@@ -31,6 +31,7 @@
  	border-top: .25em /* 4/16 */ solid #FFB652;
  	background-color: #F57920;
  	margin-top: 0;
+	padding-top: .25em; /* 4 / 16 */
  	width: 100%;
  	height: 100%;
  }
