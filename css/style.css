@@ -47,6 +47,10 @@
  	height: 100%;
  }
  
+ .libSearch{
+	 height: 12.5em; /* 200/16 */
+ }
+ 
  .logo{
 	margin-top: .75em; /* 12/16 */
 	display: inline;
@@ -89,6 +93,7 @@
   }
   
 .univHead nav{
+	width: 200px;
 	float: right;
 }
   
