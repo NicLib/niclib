@@ -2,6 +2,7 @@ name: NicLib
 description: Theme for the Nicholson Library of Anderson University
 type: theme
 core: 8.x
+base theme: 'bootstrap'
 screenshot: logo.png
 libraries:
   - niclib/global-css
