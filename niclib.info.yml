@@ -7,8 +7,6 @@ screenshot: logo.png
 libraries:
   - niclib/global-css
   - niclib/global-js
-  - niclib/bootstrap.min.css
-  - niclib/boostrap.min.js
   
 regions:
   univHead: 'University Links'
