@@ -122,8 +122,14 @@ img{
 .univHead a:hover{
   	color: #000000;
 }
+
+.univHead img{
+	margin-top: 0;
+	float: left;
+}
   
 .univHead nav{
+	margin-top: .9375em; /* 15/16 */
 	width: 44.64285714285714%; /* 450 / 1008 */
 	float: right;
 }
@@ -135,7 +141,7 @@ img{
 }
   
 .univHead nav ul li{
-  	margin: auto .49603174603175% /*5/1008*/;
+  	margin: auto 1.111111111111111%; /*5/450*/
 	list-style: none;
   	display: inline;
  }
