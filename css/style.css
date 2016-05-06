@@ -32,6 +32,39 @@ img{
 
 /* Classes */
 
+.libButtons{
+	height: 17.1875em;
+}
+
+.libButtons .database-link-1{
+	background-color: #F2D653;
+	border-color: #F8E498;
+}
+
+.libButtons .database-link-2{
+	background-color: #BD4F19;
+	border-color: #FFB652;
+}
+
+.libButtons ul{
+	list-style: none;
+}
+
+.libButtons ul li{
+	list-style: none;
+	text-align: center;
+	margin: .125em auto;
+	padding: 50% auto;
+	border: .625em groove;
+	width: 100%;
+	height: 8.59375em;
+}
+
+.libSearch{
+	border: 1px solid #000000;
+	clear:both;
+}
+
 .mobile-menu{
 	display: none;
 }
@@ -41,6 +74,11 @@ img{
  	text-align: right;
  	font-weight: bold;
  	font-size: 1.333333em;
+	clear: both;
+}
+
+.NicLib-Head form{
+	display: none;
 }
  
 .NicLib-Head img{
@@ -51,6 +89,7 @@ img{
 .NicLib-Head ul{
 	 margin-top: 15px;
 	 display: inline;
+	 float: right;
 }
  
 .NicLib-Head ul a{
