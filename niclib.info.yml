@@ -12,5 +12,4 @@ regions:
   univHead: 'University Links'
   libHead: 'Library Header'
   content: 'Main Content'
-  secondary: 'Secondary Content'
   footer: 'Footer'
