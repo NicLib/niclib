@@ -12,4 +12,5 @@ regions:
   univHead: 'University Links'
   libHead: 'Library Header'
   content: 'Main Content'
+  image_slider: 'Image Slider'
   footer: 'Footer'
