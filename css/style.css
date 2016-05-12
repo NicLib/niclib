@@ -33,41 +33,44 @@ img{
 /* Classes */
 
 
+.button1{
+	background-color: #9B6E51;
+	margin-right: .3125em;
+}
+
+.button2{
+	background-color: #90986B;
+	margin-right: .3125em;
+}
+
+.button3{
+	background-color: #89A8E0;
+	margin-right: .3125em;
+}
+
 .libButtons{
+	/*margin-left: .4273504273504274%; /* 5/1170 */
 	padding: 0;
-	height: 17.1875em;
+	font-size: 1.85em;
+	text-align: center;
+	height: 9.5em;
 	box-sizing: border-box;
 }
 
 .libButtons .database-link-1{
 	background-color: #F2D653;
-	border-color: #F8E498;
+	/*border: .625em groove #F8E498;*/
 	color: #000000;
 }
 
 .libButtons .database-link-2{
 	background-color: #BD4F19;
-	border-color: #FFB652;
+	/*border: .625em groove #FFB652;*/
 	color: #FFFFFF;
 }
 
-.libButtons .link-name{
+.link-name{
 	font-weight: bold;
-}
-
-.libButtons ul{
-	list-style: none;
-}
-
-.libButtons ul li{
-	list-style: none;
-	text-align: center;
-	margin: .125em auto;
-	padding-top: .3125em;
-	font-size: 1.85em;
-	border: .625em groove;
-	width: 100%;
-	height: 4.5em;
 }
 
 .libSearch{
@@ -116,6 +119,16 @@ img{
 .NicLib-Head ul li{
 	 margin: auto 15px;
 	 display: inline;
+}
+
+.secondButtons{
+	margin-top: .3125em;
+	padding: 0;
+	font-size: 1.85em;
+	color: #FFFFFF;
+	height: 10.1875em;
+	text-align: center;
+	box-sizing: border-box;
 }
 
 .univHead{

@@ -19,27 +19,43 @@
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
     <div class="layout-content">
-		<div class="container">
+		<div class="row">
 			<div class="NicLib-Head">
-				{{ page.libHead }}
+				<div class="container">
+					{{ page.libHead }}
+				</div>
 			</div>
 		</div>
-		<div class="container">
+		<div class="row">
 			<div class="mainContent">
-				<div class="libSearch col-lg-8 col-md-8 col-sm-12 col-xs-12">
+				<div class="container">
+					<div class="libSearch col-lg-8 col-md-8 col-sm-12 col-xs-12">
 						<iframe src="/search.html" scrolling="no" frameborder="0"></iframe>
-				</div>
-				<div class="libButtons col-lg-4 col-md-4 col-sm-12 col-xs-12">
-					<ul>
-						<li class="database-link-1 col-sm-6 col-xs-12">Find a<br/><span class="link-name">DATABASE</span></li>
-						<li class="database-link-2 col-sm-6 col-xs-12">Look for a<br/><span class="link-name">RESEARCH GUIDE</span></li>
-					</ul>
+					</div>
+					<table class="libButtons">
+						<tr>
+							<td class="col-lg-4 col-md-4 col-sm-12 col-xs-12 database-link-1">Find a<br/><span class="link-name">DATABASE</span></td>
+						</tr>
+						<tr>
+							<td class="col-lg-4 col-md-4 col-sm-12 col-xs-12 database-link-2">Look for a<br/><span class="link-name">RESEARCH GUIDE</span></td>
+						</tr>
+					</table>
 				</div>
 			</div>
 		</div>
-		<div class="secondaryContent">
-			<div class="container">
+		<div class="row">
+			<div class="secondaryContent">
 				<!-- Additional Buttons -->
+				<div class="container">
+					<table class="secondButtons">
+						<tr>
+							<td class="col-lg-3 col-md-3 col-sm-6 col-xs-12 button1">Ask a <br/><span class="link-name">LIBRARIAN</span><br/><i class="glyphicon glyphicon-question-sign"></i></td>
+							<td class="col-lg-3 col-md-3 col-sm-6 col-xs-12 button2">Look through our<br/><span class="link-name">UNIQUE COLLECTIONS</span><br/><i class="glyphicon glyphicon-book"></i></td>
+							<td class="col-lg-3 col-md-3 col-sm-6 col-xs-12 button3">Help for<br/><span class="link-name">FACULTY</span><br/><i class="glyphicon glyphicon-education"></i></td>
+							<td class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><!-- Image Slider--></td>
+						</tr>
+					</table>
+				</div>
 			</div>
 		</div>
     </div>{# /.layout-content #}
