@@ -32,14 +32,9 @@
 					<div class="libSearch col-lg-8 col-md-8 col-sm-12 col-xs-12">
 						<iframe class="embed-responsive-item" src="/search.html" scrolling="no" frameborder="0"></iframe>
 					</div>
-					<table class="libButtons col-lg-4 col-md-4 col-sm-12 col-xs-12">
-						<tr>
-							<td class="database-link-1">Find a<br/><span class="link-name">DATABASE</span></td>
-						</tr>
-						<tr>
-							<td class="database-link-2">Look for a<br/><span class="link-name">RESEARCH GUIDE</span></td>
-						</tr>
-					</table>
+					<div class="libButtons col-lg-4 col-md-4 col-sm-12 col-xs-12">
+						{{ page.libButtons}}
+					</div>
 				</div>
 			</div>
 		</div>
@@ -47,6 +42,9 @@
 			<div class="secondaryContent">
 				<!-- Additional Buttons -->
 				<div class="container">
+					<div class="secondButtons col-lg-12">
+						{{ page.secondButtons}}
+					</div>
 					<table class="secondButtons">
 						<tr>
 							<td class="col-lg-3 col-md-3 col-sm-6 col-xs-12 button1">Ask a <br/><span class="link-name">LIBRARIAN</span><br/><i class="glyphicon glyphicon-question-sign"></i></td>

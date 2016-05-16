@@ -12,5 +12,7 @@ regions:
   univHead: 'University Links'
   libHead: 'Library Header'
   content: 'Main Content'
+  libButtons: 'Buttons Next to Catalog'
+  secondButtons: 'Buttons Under Catalog'
   image_slider: 'Image Slider'
   footer: 'Footer'
