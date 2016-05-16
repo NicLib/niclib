@@ -53,24 +53,31 @@ img{
 	padding: 0;
 	font-size: 1.85em;
 	text-align: center;
-	height: 9.5em;
 	box-sizing: border-box;
 }
 
-.libButtons .database-link-1{
+.libButtons ul{
+	list-style: none;
+	height: 9.5em;
+}
+
+.libButtons ul li{
+	list-style: none;
+	height: 4.5em;
+	vertical-align: middle;
+}
+
+.libButtons ul li:first-child{
 	background-color: #F2D653;
 	/*border: .625em groove #F8E498;*/
 	color: #000000;
+	margin-bottom: .5em;
 }
 
-.libButtons .database-link-2{
+.libButtons ul li:nth-child(2){
 	background-color: #BD4F19;
 	/*border: .625em groove #FFB652;*/
 	color: #FFFFFF;
-}
-
-.link-name{
-	font-weight: bold;
 }
 
 .libSearch{
