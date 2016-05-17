@@ -14,5 +14,5 @@ regions:
   content: 'Main Content'
   libButtons: 'Buttons Next to Catalog'
   secondButtons: 'Buttons Under Catalog'
-  image_slider: 'Image Slider'
+  media: 'Media placement'
   footer: 'Footer'
