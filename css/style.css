@@ -129,13 +129,41 @@ img{
 }
 
 .secondButtons{
-	margin-top: .3125em;
+	/*margin-top: .3125em;*/
 	padding: 0;
 	font-size: 1.85em;
 	color: #FFFFFF;
-	height: 10.1875em;
 	text-align: center;
 	box-sizing: border-box;
+}
+
+.secondButtons ul{
+	margin: 0;
+	list-style: none;
+	display: inline;
+}
+
+.secondButtons ul li{
+	margin: 0;
+	list-style: none;
+	display: inline-block;
+	height: 10.1875em;
+	width: 30%
+}
+
+.secondButtons ul li:first-child{
+	background-color: #9B6E51;
+	margin-right: .3125em;
+}
+
+.secondButtons ul li:nth-child(2){
+	background-color: #90986B;
+	margin-right: .3125em;
+}
+
+.secondButtons ul li:nth-child(3){
+	background-color: #89A8E0;
+	margin-right: .3125em;
 }
 
 .univHead{
