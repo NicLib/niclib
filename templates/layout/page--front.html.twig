@@ -45,7 +45,7 @@
 					<div class="secondButtons col-lg-9">
 						{{ page.secondButtons}}
 					</div>
-					<div class="secondButtons col-lg-3">
+					<div class="secondButtons image-block col-lg-3">
 						{{ page.media }}
 					</div>
 				</div>
@@ -56,8 +56,11 @@
   </main>
 
   {% if page.footer %}
+  <hr/>
     <footer role="contentinfo">
-      {{ page.footer }}
+		<div class="container">
+			{{ page.footer }}
+		</div>
     </footer>
   {% endif %}
 

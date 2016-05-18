@@ -20,6 +20,10 @@ header{
 	margin-top: 0;
  	width: 100%;
 }
+
+footer{
+	background-color: #F4F5F5;
+}
  
 iframe{
 	 height: 17.1875em; /* 275/16 */
@@ -32,22 +36,11 @@ img{
 
 /* Classes */
 
-
-.button1{
-	background-color: #9B6E51;
-	margin-right: .3125em;
+.image-block{
+	background-color: #000000;
+	height: 10.1875em;
+	margin-left: -.5625em;
 }
-
-.button2{
-	background-color: #90986B;
-	margin-right: .3125em;
-}
-
-.button3{
-	background-color: #89A8E0;
-	margin-right: .3125em;
-}
-
 .libButtons{
 	/*margin-left: .4273504273504274%; /* 5/1170 */
 	padding: 0;
