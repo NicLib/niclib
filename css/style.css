@@ -24,7 +24,11 @@ header{
 footer{
 	background-color: #F4F5F5;
 }
- 
+
+hr{
+	margin-bottom: 0;
+}
+
 iframe{
 	 height: 17.1875em; /* 275/16 */
 	 width: 100%;
