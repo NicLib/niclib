@@ -43,7 +43,7 @@ img{
 .image-block{
 	background-color: #000000;
 	height: 10.1875em;
-	margin-left: -.5625em;
+	/*margin-left: -.5625em;*/
 }
 .libButtons{
 	/*margin-left: .4273504273504274%; /* 5/1170 */
@@ -130,28 +130,30 @@ img{
 	font-size: 1.85em;
 	color: #FFFFFF;
 	text-align: center;
+	display: inline-table;
 	box-sizing: border-box;
 }
 
 .secondButtons p{
-	display: inline-table;
-	width: 30%;
+	display: table-cell;
+	vertical-align: middle;
+	width: 25%;
 	height: 10.1875em;
 }
 
 .secondButtons p:first-child{
 	background-color: #9B6E51;
-	margin-right: .3125em;
+	/*margin-right: .3125em;*/
 }
 
 .secondButtons p:nth-child(2){
 	background-color: #90986B;
-	margin-right: .3125em;
+	/*margin-right: .3125em;*/
 }
 
 .secondButtons p:nth-child(3){
 	background-color: #89A8E0;
-	margin-right: .3125em;
+	/*margin-right: .3125em;*/
 }
 
 .univHead{
