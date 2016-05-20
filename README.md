@@ -6,7 +6,9 @@ Drupal 8 theme
 * Library Header
 * Main Content
 * Library Buttons
-* Secondary Library Buttons
+  * Buttons require usage of a <table>
+* Secondary Library Buttons (3)
+  * Buttons require usage of <p> tags
 * Media
 * Footer
 
