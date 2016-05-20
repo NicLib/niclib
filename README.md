@@ -10,7 +10,7 @@ Drupal 8 theme
 * Secondary Library Buttons (3)
   * Buttons require usage of <p> tags
 * Media
-* Footer
+* Footers 1-4
 
 ####Extra info
 * "search.html" must be placed in the root folder of the Drupal site
