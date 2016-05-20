@@ -15,4 +15,7 @@ regions:
   libButtons: 'Buttons Next to Catalog'
   secondButtons: 'Buttons Under Catalog'
   media: 'Media placement'
-  footer: 'Footer'
+  footer: 'Footer Menu'
+  footer2: 'Footer Section 2'
+  footer3: 'Footer Section 3'
+  footer4: 'Contact & Connect Info'
