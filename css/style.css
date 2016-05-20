@@ -42,39 +42,40 @@ img{
 
 .image-block{
 	background-color: #000000;
+	border: .25em solid #FFFFFF;
 	height: 10.1875em;
-	/*margin-left: -.5625em;*/
 }
+
 .libButtons{
-	/*margin-left: .4273504273504274%; /* 5/1170 */
+	border-left: .5em solid #FFFFFF;
 	padding: 0;
 	font-size: 1.85em;
 	text-align: center;
 	box-sizing: border-box;
 }
 
-.libButtons ul{
-	list-style: none;
-	height: 9.5em;
+.libButtons table{
+	margin: 0;
+	width: 100%;
 }
 
-.libButtons ul li{
-	list-style: none;
+.libButtons tr td{
 	height: 4.5em;
 	vertical-align: middle;
+	border: .25em solid #FFFFFF;
 }
 
-.libButtons ul li:first-child{
+.libButtons tr:first-child{
 	background-color: #F2D653;
-	/*border: .625em groove #F8E498;*/
 	color: #000000;
 	margin-bottom: .5em;
+	width: 100%;
 }
 
-.libButtons ul li:nth-child(2){
+.libButtons tr:nth-child(2){
 	background-color: #BD4F19;
-	/*border: .625em groove #FFB652;*/
 	color: #FFFFFF;
+	width: 100%;
 }
 
 .libSearch{
@@ -104,7 +105,7 @@ img{
 }
  
 .NicLib-Head ul{
-	 margin-top: 15px;
+	 margin-top: 1em;
 	 display: inline;
 	 float: right;
 }
@@ -121,7 +122,7 @@ img{
 }
  
 .NicLib-Head ul li{
-	 margin: auto 15px;
+	 margin: auto 1em;
 	 display: inline;
 }
 
@@ -137,23 +138,21 @@ img{
 .secondButtons p{
 	display: table-cell;
 	vertical-align: middle;
+	border: .25em solid #FFFFFF;
 	width: 25%;
 	height: 10.1875em;
 }
 
 .secondButtons p:first-child{
 	background-color: #9B6E51;
-	/*margin-right: .3125em;*/
 }
 
 .secondButtons p:nth-child(2){
 	background-color: #90986B;
-	/*margin-right: .3125em;*/
 }
 
 .secondButtons p:nth-child(3){
 	background-color: #89A8E0;
-	/*margin-right: .3125em;*/
 }
 
 .univHead{
