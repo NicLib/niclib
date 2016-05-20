@@ -25,6 +25,15 @@ footer{
 	background-color: #F4F5F5;
 }
 
+footer a{
+	color: #000000;
+	transition: .5s all;
+}
+
+footer a:hover{
+	color: #F57920;
+}
+
 hr{
 	margin-bottom: 0;
 }
