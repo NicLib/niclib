@@ -170,6 +170,15 @@ img{
 	box-sizing: border-box;
 }
 
+.secondButtons a{
+	color: white;
+	text-decoration: none;
+}
+
+.secondButtons a: hover{
+	text-decoration: none;
+}
+
 .secondButtons p{
 	display: table-cell;
 	vertical-align: middle;
@@ -180,6 +189,7 @@ img{
 
 .secondButtons p:first-child{
 	background-color: #9B6E51;
+	cursor: pointer;
 }
 
 .secondButtons p:nth-child(2){
