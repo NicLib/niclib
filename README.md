@@ -15,3 +15,6 @@ Drupal 8 theme
 ####Extra info
 * "search.html" must be placed in the root folder of the Drupal site
   * This is a custom page designed to offer the functionality of catalog searching
+  * This file must be placed in the root folder
+* "NicDate.js" is a JavaScript file that displays the Library's hours
+  * This file must be placed in the root folder
