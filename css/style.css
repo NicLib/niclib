@@ -75,6 +75,37 @@ img{
 
 /* Classes */
 
+.aboutMenu ul li a{
+	color: #FFFFFF;
+	font-size: .75em;
+}
+
+.aboutMenu ul li a:hover{
+	color: #000000;
+}
+
+.collectionsMenu ul li a{
+	color: #FFFFFF;
+	font-size: .75em;
+}
+
+.collectionsMenu ul li a:hover{
+	color: #000000;
+}
+
+.helpMenu ul li a{
+	color: #FFFFFF;
+	font-size: .75em;
+}
+
+.helpMenu ul li a:hover{
+	color: #000000;
+}
+
+.hiddenMenu{
+	background-color: #F57920;
+}
+
 .image-block{
 	background-color: #000000;
 	border: .25em solid #FFFFFF;
@@ -197,9 +228,19 @@ img{
 	background-color: #89A8E0;
 }
 
+.servicesMenu ul li a{
+	color: #FFFFFF;
+	font-size: .75em;
+}
+
+.servicesMenu ul li a:hover{
+	color: #000000;
+}
+
 .univHead{
  	font-weight: bold;
  	color: #FFFFFF;
+	margin-bottom: .375em;
 }
  
 .univHead a{
@@ -239,6 +280,10 @@ img{
 
 #hours{
 	font-size: .5em;
+}
+
+#hours a{
+	color: #BD4F19;
 }
 
 /* Media Queries */

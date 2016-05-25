@@ -11,6 +11,10 @@ libraries:
 regions:
   univHead: 'University Links'
   libHead: 'Library Header'
+  hiddenMenu1: 'About Menu'
+  hiddenMenu2: 'Services Menu'
+  hiddenMenu3: 'Collections Menu'
+  hiddenMenu4: 'Help Menu'
   content: 'Main Content'
   libButtons: 'Buttons Next to Catalog'
   secondButtons: 'Buttons Under Catalog'
