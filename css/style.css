@@ -127,6 +127,7 @@ img{
  	text-align: right;
  	font-weight: bold;
  	font-size: 2em;
+	color: #000000;
 	clear: both;
 }
 
@@ -237,6 +238,12 @@ img{
 	list-style: none;
   	display: inline;
  }
+ 
+/* IDs */
+
+#hours{
+	font-size: .5em;
+}
 
 /* Media Queries */
 
