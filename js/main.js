@@ -1,6 +1,16 @@
 jQuery(document).ready(function($){
 	$('.NicLib-Head a').click(function(event){
 		event.preventDefault();
+		$(this).parents('.NicLib-Head').next().toggle();
+		/*if($(this).val() == 'About'){
+			$('.aboutMenu').toggle();
+		} else if ($(this).val() == 'Services'){
+			$('.servicesMenu').toggle();
+		} else if ($(this).val() == 'Collections'){
+			$('.collectionsMenu').toggle();
+		} else if ($(this).val() == 'Help') {
+			$('.helpMenu').toggle();
+		};*/
 	});
 	$('.secondButtons p:first-child').append('<br/><i class="glyphicon glyphicon-question-sign"></i>').click(function(){
 		//Custom script for opening a window for Library H3lp

@@ -75,9 +75,9 @@ img{
 
 /* Classes */
 
-.active{
-	display: initial;
-}
+/*.aboutMenu{
+	display: none;
+}*/
 
 .aboutMenu ul li a{
 	color: #FFFFFF;
@@ -88,6 +88,10 @@ img{
 	color: #000000;
 }
 
+/*.collectionsMenu{
+	display: none;
+}*/
+
 .collectionsMenu ul li a{
 	color: #FFFFFF;
 	font-size: .75em;
@@ -96,6 +100,10 @@ img{
 .collectionsMenu ul li a:hover{
 	color: #000000;
 }
+
+/*.helpMenu{
+	display: none;
+}*/
 
 .helpMenu ul li a{
 	color: #FFFFFF;
@@ -233,6 +241,10 @@ img{
 .secondButtons p:nth-child(3){
 	background-color: #89A8E0;
 }
+
+/*.servicesMenu{
+	display: none;
+}*/
 
 .servicesMenu ul li a{
 	color: #FFFFFF;
