@@ -75,6 +75,10 @@ img{
 
 /* Classes */
 
+.active{
+	display: initial;
+}
+
 .aboutMenu ul li a{
 	color: #FFFFFF;
 	font-size: .75em;
@@ -104,6 +108,7 @@ img{
 
 .hiddenMenu{
 	background-color: #F57920;
+	display: none;
 }
 
 .image-block{
@@ -217,6 +222,7 @@ img{
 
 .secondButtons p:first-child{
 	background-color: #9B6E51;
+	border-left: 0;
 	cursor: pointer;
 }
 
