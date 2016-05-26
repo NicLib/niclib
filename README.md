@@ -6,12 +6,11 @@ Drupal 8 theme
 * Library Header
 * Main Content
 * Library Buttons
-  * Buttons require usage of a <table>
+  * Buttons require usage of a table
 * Secondary Library Buttons (3)
-  * Buttons require usage of <p> tags
+  * Buttons require usage of "p" tags
 * Media
 * Footers 1-4
-
 
 ####Extra info
 * "search.html" must be placed in the root folder of the Drupal site
