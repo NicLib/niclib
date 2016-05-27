@@ -12,15 +12,6 @@ jQuery(document).ready(function($){
 			//code to keep 'Hidden Menu' open but open newly clicked on menu
 			console.log('already open');
 		}
-		/*if($(this).val() == 'About'){
-			$('.aboutMenu').toggle();
-		} else if ($(this).val() == 'Services'){
-			$('.servicesMenu').toggle();
-		} else if ($(this).val() == 'Collections'){
-			$('.collectionsMenu').toggle();
-		} else if ($(this).val() == 'Help') {
-			$('.helpMenu').toggle();
-		};*/
 	});
 	//Causes 'Hidden Menu' to close
 	$('.hiddenMenu i').click(function(){
