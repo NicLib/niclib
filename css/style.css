@@ -77,6 +77,7 @@ img{
 
 .aboutMenu{
 	text-align: center;
+	display: none;
 }
 
 .aboutMenu ul li a{
@@ -92,6 +93,7 @@ img{
 
 .collectionsMenu{
 	text-align: center;
+	display: none;
 }
 
 .collectionsMenu ul li a{
@@ -107,6 +109,7 @@ img{
 
 .helpMenu{
 	text-align: center;
+	display: none;
 }
 
 .helpMenu ul li a{
@@ -123,6 +126,7 @@ img{
 .hiddenMenu{
 	background-color: #F57920;
 	margin: .5em auto;
+	padding: .25em;
 	height: 13.25em; /* 185.5/14 */
 	display: none;
 }
@@ -259,6 +263,7 @@ img{
 
 .servicesMenu{
 	text-align: center;
+	display: none;
 }
 
 .servicesMenu ul li a{

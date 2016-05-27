@@ -1,7 +1,17 @@
 jQuery(document).ready(function($){
 	$('.NicLib-Head a').click(function(event){
 		event.preventDefault();
-		$(this).parents('.NicLib-Head').next().toggle();
+		var str = String($(this).val());
+		var menu = str.toLowerCase();
+		//Creates 'Hidden Menu' to open
+		if($(this).parents('.NicLib-Head').next().css('display') == 'none'){
+			$(this).parents('.NicLib-Head').next().slideDown();
+			//Code to cause clicked on menu to open
+			$(this).parents('.NicLib-Head').next().find('.' + menu + 'Menu').toggle();
+		} else {
+			//code to keep 'Hidden Menu' open but open newly clicked on menu
+			console.log('already open');
+		}
 		/*if($(this).val() == 'About'){
 			$('.aboutMenu').toggle();
 		} else if ($(this).val() == 'Services'){
@@ -11,6 +21,10 @@ jQuery(document).ready(function($){
 		} else if ($(this).val() == 'Help') {
 			$('.helpMenu').toggle();
 		};*/
+	});
+	//Causes 'Hidden Menu' to close
+	$('.hiddenMenu i').click(function(){
+		$(this).parents('.hiddenMenu').slideUp();
 	});
 	$('.secondButtons p:first-child').append('<br/><i class="glyphicon glyphicon-question-sign"></i>').click(function(){
 		//Custom script for opening a window for Library H3lp
