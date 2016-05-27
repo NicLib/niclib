@@ -7,6 +7,7 @@ jQuery(document).ready(function($){
 		if($(this).parents('.NicLib-Head').next().css('display') == 'none'){
 			$(this).parents('.NicLib-Head').next().slideDown();
 			//Code to cause clicked on menu to open
+			//Does this need to belong outside of the if/else statement?
 			$(this).parents('.NicLib-Head').next().find('.' + menu + 'Menu').toggle();
 		} else {
 			//code to keep 'Hidden Menu' open but open newly clicked on menu
