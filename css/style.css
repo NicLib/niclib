@@ -75,48 +75,63 @@ img{
 
 /* Classes */
 
-/*.aboutMenu{
-	display: none;
-}*/
+.aboutMenu{
+	text-align: center;
+}
 
 .aboutMenu ul li a{
 	color: #FFFFFF;
-	font-size: .75em;
+	font-size: 1.5em;
+	transition: .5s all;
 }
 
 .aboutMenu ul li a:hover{
 	color: #000000;
+	text-decoration: none;
 }
 
-/*.collectionsMenu{
-	display: none;
-}*/
+.collectionsMenu{
+	text-align: center;
+}
 
 .collectionsMenu ul li a{
 	color: #FFFFFF;
-	font-size: .75em;
+	font-size: 1.5em;
+	transition: .5s all;
 }
 
 .collectionsMenu ul li a:hover{
 	color: #000000;
+	text-decoration: none;
 }
 
-/*.helpMenu{
-	display: none;
-}*/
+.helpMenu{
+	text-align: center;
+}
 
 .helpMenu ul li a{
 	color: #FFFFFF;
-	font-size: .75em;
+	font-size: 1.5em;
+	transition: .5s all;
 }
 
 .helpMenu ul li a:hover{
 	color: #000000;
+	text-decoration: none;
 }
 
 .hiddenMenu{
 	background-color: #F57920;
+	margin: .5em auto;
+	height: 13.25em; /* 185.5/14 */
 	display: none;
+}
+
+.hiddenMenu ul li{
+	list-style: none;
+	margin: 1em;
+	text-align: center;
+	display: inline;
 }
 
 .image-block{
@@ -242,17 +257,19 @@ img{
 	background-color: #89A8E0;
 }
 
-/*.servicesMenu{
-	display: none;
-}*/
+.servicesMenu{
+	text-align: center;
+}
 
 .servicesMenu ul li a{
 	color: #FFFFFF;
-	font-size: .75em;
+	font-size: 1.5em;
+	transition: .25s all;
 }
 
 .servicesMenu ul li a:hover{
 	color: #000000;
+	text-decoration: none;
 }
 
 .univHead{
