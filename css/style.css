@@ -76,7 +76,9 @@ img{
 /* Classes */
 
 .aboutMenu{
+	margin-top: 85.75em;
 	text-align: center;
+	width: 100%;
 	display: none;
 }
 
@@ -92,7 +94,9 @@ img{
 }
 
 .collectionsMenu{
+	margin-top: 85.75em;
 	text-align: center;
+	width: 100%;
 	display: none;
 }
 
@@ -108,7 +112,9 @@ img{
 }
 
 .helpMenu{
+	margin-top: 85.75em;
 	text-align: center;
+	width: 100%;
 	display: none;
 }
 
@@ -262,7 +268,9 @@ img{
 }
 
 .servicesMenu{
+	margin-top: 85.75em;
 	text-align: center;
+	width: 100%;
 	display: none;
 }
 

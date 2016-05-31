@@ -1,18 +1,15 @@
 jQuery(document).ready(function($){
 	$('.NicLib-Head a').click(function(event){
 		event.preventDefault();
-		var str = String($(this).val());
+		var str = $(this).text();
 		var menu = str.toLowerCase();
 		//Creates 'Hidden Menu' to open
 		if($(this).parents('.NicLib-Head').next().css('display') == 'none'){
 			$(this).parents('.NicLib-Head').next().slideDown();
-			//Code to cause clicked on menu to open
-			//Does this need to belong outside of the if/else statement?
-			$(this).parents('.NicLib-Head').next().find('.' + menu + 'Menu').toggle();
-		} else {
-			//code to keep 'Hidden Menu' open but open newly clicked on menu
-			console.log('already open');
 		}
+		//Causes 'Menu Links' to appear
+			//If/else needs to be added to make sure that only one menu shown at a time
+		$('.' + menu + 'Menu').css('display','initial');
 	});
 	//Causes 'Hidden Menu' to close
 	$('.hiddenMenu i').click(function(){
