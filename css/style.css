@@ -65,6 +65,7 @@ hr{
 }
 
 iframe{
+	margin-top: 10px;
 	 height: 19.64285714285714em; /* 275/14 */
 	 width: 100%;
 }
@@ -183,7 +184,7 @@ img{
 }
 
 .libSearch{
-	border: 1px solid #000000;
+	/*border: 1px solid #000000;*/
 	clear:both;
 }
 
