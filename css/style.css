@@ -249,6 +249,10 @@ img{
 	text-decoration: none;
 }
 
+.secondButtons i{
+	font-weight: bold;
+}
+
 .secondButtons p{
 	display: table-cell;
 	vertical-align: middle;
