@@ -3,13 +3,15 @@ jQuery(document).ready(function($){
 		event.preventDefault();
 		var menus = ['.servicesMenu', '.collectionsMenu', '.aboutMenu', '.helpMenu'];
 		var menuSelected = $(this).text().toLowerCase();
+		
 		//Creates 'Hidden Menu' to open
 		if($(this).parents('.NicLib-Head').next().css('display') == 'none'){
 			$(this).parents('.NicLib-Head').next().slideDown();
 		}
+		
 		//Causes 'Menu Links' to appear one at a time
-		for(var i=0; i<menus.length; i++){
-			$(menus[i]).css('display', 'none');
+		for(var menu in menus){
+			$(menus[menu]).css('display', 'none');
 		}
 		$('.' + menuSelected + 'Menu').css('display','initial');
 	});
