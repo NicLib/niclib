@@ -1,15 +1,19 @@
 jQuery(document).ready(function($){
 	$('.NicLib-Head a').click(function(event){
 		event.preventDefault();
-		var str = $(this).text();
-		var menu = str.toLowerCase();
+		var menus = ['.servicesMenu', '.collectionsMenu', '.aboutMenu', '.helpMenu'];
+		var menuSelected = $(this).text().toLowerCase();
 		//Creates 'Hidden Menu' to open
 		if($(this).parents('.NicLib-Head').next().css('display') == 'none'){
 			$(this).parents('.NicLib-Head').next().slideDown();
 		}
 		//Causes 'Menu Links' to appear
 			//If/else needs to be added to make sure that only one menu shown at a time
-		$('.' + menu + 'Menu').css('display','initial');
+		for(var i=0; i<menus.length; i++){
+			$(menus[i]).css('display', 'none');
+		}
+		$('.' + menuSelected + 'Menu').css('display','initial');
+		console.log(menus);
 	});
 	//Causes 'Hidden Menu' to close
 	$('.hiddenMenu i').click(function(){
