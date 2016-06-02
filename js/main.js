@@ -7,13 +7,11 @@ jQuery(document).ready(function($){
 		if($(this).parents('.NicLib-Head').next().css('display') == 'none'){
 			$(this).parents('.NicLib-Head').next().slideDown();
 		}
-		//Causes 'Menu Links' to appear
-			//If/else needs to be added to make sure that only one menu shown at a time
+		//Causes 'Menu Links' to appear one at a time
 		for(var i=0; i<menus.length; i++){
 			$(menus[i]).css('display', 'none');
 		}
 		$('.' + menuSelected + 'Menu').css('display','initial');
-		console.log(menus);
 	});
 	//Causes 'Hidden Menu' to close
 	$('.hiddenMenu i').click(function(){
