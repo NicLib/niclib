@@ -147,12 +147,13 @@ img{
 
 .image-block{
 	background-color: #000000;
-	border: .25em solid #FFFFFF;
+	border: .3571428571428571em /* 5/14 */ solid #FFFFFF;
+	border-right: none;
 	height: 10.1875em;
 }
 
 .libButtons{
-	border-left: .5em solid #FFFFFF;
+	border-left: .3571428571428571em /* 5/14 */ solid #FFFFFF;
 	padding: 0;
 	font-size: 1.85em;
 	text-align: center;
@@ -160,6 +161,7 @@ img{
 }
 
 .libButtons table{
+	border: none;
 	margin: 0;
 	width: 100%;
 }
@@ -167,7 +169,7 @@ img{
 .libButtons tr td{
 	height: 5.357142857142857em; /* 75/14 */
 	vertical-align: middle;
-	border: .25em solid #FFFFFF;
+	border-top: .25em solid #FFFFFF;
 }
 
 .libButtons tr:first-child{
@@ -229,6 +231,7 @@ img{
 }
 
 .secondButtons{
+	margin-top: .7142857142857143em;
 	padding: 0;
 	font-size: 1.85em;
 	color: #FFFFFF;
@@ -249,7 +252,7 @@ img{
 .secondButtons p{
 	display: table-cell;
 	vertical-align: middle;
-	border: .25em solid #FFFFFF;
+	border: .3571428571428571em /* 5/14 */ solid #FFFFFF;
 	width: 25%;
 	height: 10.1875em;
 }
