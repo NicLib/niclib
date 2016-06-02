@@ -2,7 +2,7 @@ html{
  	margin: 0;
  	padding: 0;
  	background-color: #FFFFFF;
- 	font-size: 16pt;
+ 	font-size: 14pt;
  	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
  	color: #000000;
 }
@@ -15,7 +15,7 @@ body{
 }
  
 header{
-	border-top: .25em /* 4/16 */ solid #FFB652;
+	border-top: .2857142857142857em /* 4/14 */ solid #FFB652;
 	background-color: #F57920;
 	margin-top: 0;
  	width: 100%;
@@ -65,7 +65,7 @@ hr{
 }
 
 iframe{
-	 height: 17.1875em; /* 275/16 */
+	 height: 19.64285714285714em; /* 275/14 */
 	 width: 100%;
 }
  
@@ -133,7 +133,7 @@ img{
 	background-color: #F57920;
 	margin: .5em auto;
 	padding: .25em;
-	height: 13.25em; /* 185.5/14 */
+	height: 13.28571428571429em; /* 186/14 */
 	display: none;
 }
 
@@ -192,7 +192,7 @@ img{
 }
 
 .NicLib-Head{ 
- 	margin: .25em auto; /* 4 / 16 */
+ 	margin: .2857142857142857em auto; /* 4 / 14 */
  	text-align: right;
  	font-weight: bold;
  	font-size: 2em;
@@ -307,7 +307,7 @@ img{
 }
   
 .univHead nav{
-	margin-top: .9375em; /* 15/16 */
+	margin-top: 1.071428571428571em; /* 15/14 */
 	width: 44.64285714285714%; /* 450 / 1008 */
 	float: right;
 }
