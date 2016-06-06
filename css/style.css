@@ -140,6 +140,7 @@ img{
 	padding: .25em;
 	height: 13.28571428571429em; /* 186/14 */
 	display: none;
+	z-index: 2;
 }
 
 .hiddenMenu ul li{
@@ -228,7 +229,7 @@ img{
 	background-color: #F57920;
 	display: inline;
 	width: 100%;
-	box-shadow: 0 10px 15px #888888;
+	box-shadow: 0 5px 5px #888888;
 }
  
 .NicLib-Head ul a{
