@@ -13,6 +13,10 @@
 			</nav>
 		</div>
   </header>
+  
+  <section class="libBackground">
+ 
+  </section>
 
 
   <main role="main">
@@ -23,10 +27,10 @@
 			<div class="NicLib-Head">
 				<div class="container">
 					{{ page.libHead }}
-					<div id="hours"> Today's Hours: <a href="/hours" title="Click for more information about hours and holidays">
+					<!--<div id="hours"> Today's Hours: <a href="/hours" title="Click for more information about hours and holidays">
 						<script src="../../NicDate.js"></script>
 						<script type="text/javascript">document.write(NicDate(0));</script> </a>
-					</div>
+					</div>-->
 				</div>
 			</div>
 			<div class="hiddenMenu">
@@ -47,53 +51,53 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="mainContent">
+		
+		<!-- Main Content on page -->
+		<div class="container">
+			<section class="site-content">
+				<div class="row">
 				<div class="container">
-					<div class="libSearch col-lg-9 col-md-9 col-sm-12 col-xs-12">
-						<iframe class="embed-responsive-item" src="/search.html" scrolling="no" frameborder="0"></iframe>
-					</div>
-					<div class="libButtons col-lg-3 col-md-3 col-sm-12 col-xs-12">
-						{{ page.libButtons}}
+					<div class="mainContent">
+						<div class="libSearch col-lg-9 col-md-9 col-sm-12 col-xs-12">
+							<iframe class="embed-responsive-item" src="/search.html" scrolling="no" frameborder="0"></iframe>
+						</div>
+						<div class="libButtons col-lg-3 col-md-3 col-sm-12 col-xs-12">
+							{{ page.libButtons}}
+						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="secondaryContent">
-				<!-- Additional Buttons -->
-				<div class="container">
-					<div class="secondButtons col-lg-9">
-						{{ page.secondButtons}}
-					</div>
-					<div class="secondButtons image-block col-lg-3">
-						{{ page.media }}
+				</div>
+				<div class="row">
+					<div class="secondaryContent">
+						<!-- Additional Buttons -->
+						<div class="secondButtons col-lg-9">
+							{{ page.secondButtons}}
+						</div>
+						<div class="secondButtons image-block col-lg-3">
+							{{ page.media }}
+						</div>
 					</div>
 				</div>
-			</div>
+				<hr/>
+				<footer role="contentinfo">
+					<div class="col-lg-3" style="text-align: left;">
+						{{ page.footer }}
+					</div>
+					<div class="col-lg-3">
+						{{ page.footer2 }}
+					</div>
+					<div class="col-lg-3">
+						{{ page.footer3 }}
+					</div>
+					<div class="col-lg-3" style="text-align: right;">
+						{{ page.footer4 }}
+					</div>
+				</footer>
+			</section>
 		</div>
     </div>{# /.layout-content #}
 	
   </main>
 
-  {% if page.footer %}
-  <hr/>
-    <footer role="contentinfo">
-		<div class="container">
-			<div class="col-lg-3" style="text-align: left;">
-				{{ page.footer }}
-			</div>
-			<div class="col-lg-3">
-				{{ page.footer2 }}
-			</div>
-			<div class="col-lg-3">
-				{{ page.footer3 }}
-			</div>
-			<div class="col-lg-3" style="text-align: right;">
-				{{ page.footer4 }}
-			</div>
-		</div>
-    </footer>
-  {% endif %}
 
 {# /.layout-container #}
