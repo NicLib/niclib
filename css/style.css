@@ -34,10 +34,10 @@ img{
 /* Classes */
 
 .aboutMenu{
-	margin-top: 85.75em;
 	text-align: center;
 	width: 100%;
 	display: none;
+	vertical-align:middle;
 }
 
 .aboutMenu ul li a{
@@ -52,10 +52,10 @@ img{
 }
 
 .collectionsMenu{
-	margin-top: 85.75em;
 	text-align: center;
 	width: 100%;
 	display: none;
+	vertical-align:middle;
 }
 
 .collectionsMenu ul li a{
@@ -112,10 +112,10 @@ img{
 }
 
 .helpMenu{
-	margin-top: 85.75em;
 	text-align: center;
 	width: 100%;
 	display: none;
+	vertical-align:middle;
 }
 
 .helpMenu ul li a{
@@ -207,7 +207,6 @@ img{
 
 .NicLib-Head{ 
  	margin: .2857142857142857em auto; /* 4 / 14 */
- 	text-align: right;
  	font-weight: bold;
  	font-size: 2em;
 	color: #000000;
@@ -299,10 +298,10 @@ img{
 }
 
 .servicesMenu{
-	margin-top: 85.75em;
 	text-align: center;
 	width: 100%;
 	display: none;
+	vertical-align: middle;
 }
 
 .servicesMenu ul li a{
