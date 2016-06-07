@@ -1,19 +1,32 @@
+var activeMenu = [];
+
 jQuery(document).ready(function($){
 	$('.NicLib-Head a').click(function(event){
 		event.preventDefault();
 		var menus = ['.servicesMenu', '.collectionsMenu', '.aboutMenu', '.helpMenu'];
-		var menuSelected = $(this).text().toLowerCase();
+		var menuSelected = '.' + $(this).text().toLowerCase() + 'Menu';
+		var activateMenu = function(selection){
+			activeMenu = [];
+			activeMenu.push(selection);
+		};
 		
 		//Creates 'Hidden Menu' to open
 		if($(this).parents('.NicLib-Head').next().css('display') == 'none'){
 			$(this).parents('.NicLib-Head').next().slideDown();
-		}
+		};
 		
 		//Causes 'Menu Links' to appear one at a time
 		for(var menu in menus){
 			$(menus[menu]).css('display', 'none');
+		};
+		
+		$(menuSelected).css('display','initial');
+		
+		if($('activeMenu[0]').attr('height') != $(menuSelected).attr('height')){
+			$('.hiddenMenu').animate('height');
 		}
-		$('.' + menuSelected + 'Menu').css('display','initial');
+		
+		activateMenu(menuSelected);
 	});
 	//Causes 'Hidden Menu' to close
 	$('.hiddenMenu i').click(function(){

@@ -131,9 +131,9 @@ img{
 
 .hiddenMenu{
 	background-color: #F57920;
-	margin: 1.5em auto;
-	padding: .25em;
-	height: 13.28571428571429em; /* 186/14 */
+	margin: 2.5em auto;
+	padding-top: .5em;
+	/*height: 13.28571428571429em;*/ /* 186/14 */
 	display: none;
 	z-index: 2;
 }
