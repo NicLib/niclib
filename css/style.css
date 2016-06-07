@@ -21,52 +21,6 @@ header{
  	width: 100%;
 }
 
-.footer{
-	margin: 0;
-	padding: 0;
-	padding-top: 1.071428571428571em; 
-	background-color: #F4F5F5;
-	position: relative;
-	bottom: 0;
-	width: 100%;
-}
-
-.footer a{
-	color: #000000;
-	text-decoration: none;
-	transition: .5s all;
-}
-
-.footer a:hover{
-	color: #F57920;
-	text-decoration: none;
-}
-
-.footer a:active{
-	color: #000000;
-}
-
-.footer a:focus{
-	color: #F57920;
-}
-
-.footer a:visted{
-	color: #000000;
-}
-
-.footer ul{
-	list-style: none;
-	padding: 0;
-}
-
-.footer ul li{
-	list-style: none;
-}
-
-hr{
-	margin-bottom: 0;
-}
-
 iframe{
 	margin-top: 10px;
 	height: 19.64285714285714em; /* 275/14 */
@@ -113,6 +67,48 @@ img{
 .collectionsMenu ul li a:hover{
 	color: #000000;
 	text-decoration: none;
+}
+
+.footer{
+	margin: 0;
+	padding: 0;
+	padding-top: 1.071428571428571em; 
+	background-color: #F4F5F5;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+}
+
+.footer a{
+	color: #000000;
+	text-decoration: none;
+	transition: .5s all;
+}
+
+.footer a:hover{
+	color: #F57920;
+	text-decoration: none;
+}
+
+.footer a:active{
+	color: #000000;
+}
+
+.footer a:focus{
+	color: #F57920;
+}
+
+.footer a:visted{
+	color: #000000;
+}
+
+.footer ul{
+	list-style: none;
+	padding: 0;
+}
+
+.footer ul li{
+	list-style: none;
 }
 
 .helpMenu{
