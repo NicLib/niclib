@@ -23,6 +23,8 @@ header{
 
 .footer{
 	margin: 0;
+	padding: 0;
+	padding-top: 1.071428571428571em; 
 	background-color: #F4F5F5;
 	position: relative;
 	bottom: 0;

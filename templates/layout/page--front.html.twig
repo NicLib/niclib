@@ -1,28 +1,28 @@
-  <header class="univHead col-lg-12 col-md-12 col-sm-12 col-xs-12">
-		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-11">
-			<div class="navbar-header navbar-left col-lg-3 col-md-3 col-sm-11 col-xs-11">
-				<a class="navbar-brand" href="http://www.anderson.edu" target="_blank">
-					<img src="/themes/Custom/niclib/images/anderson.png" alt="Anderson University">
-				</a>
-			</div>
-			<nav class="navbar-right col-lg-9 col-md-9 col-sm-1 col-xs-1">
-				<div class="mobile-menu col-sm-1 col-xs-1">
-					<button class="glyphicon glyphicon-menu-hamburger"></button>
-				</div>
-				{{ page.univHead}}
-			</nav>
+<header class="univHead col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-11">
+		<div class="navbar-header navbar-left col-lg-3 col-md-3 col-sm-11 col-xs-11">
+			<a class="navbar-brand" href="http://www.anderson.edu" target="_blank">
+				<img src="/themes/Custom/niclib/images/anderson.png" alt="Anderson University">
+			</a>
 		</div>
-  </header>
+		<nav class="navbar-right col-lg-9 col-md-9 col-sm-1 col-xs-1">
+			<div class="mobile-menu col-sm-1 col-xs-1">
+				<button class="glyphicon glyphicon-menu-hamburger"></button>
+			</div>
+			{{ page.univHead}}
+		</nav>
+	</div>
+</header>
   
-  <section class="libBackground">
- 
-  </section>
+<!-- Picture background on site -->
+<section class="libBackground">
+</section>
 
 
-  <main role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+<main role="main">
+	<a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-    <div class="layout-content">
+	<div class="layout-content">
 		<div class="row">
 			<div class="NicLib-Head">
 				<div class="container">
@@ -51,21 +51,21 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<!-- Main Content on page -->
 		<div class="container">
-			<section class="site-content">
+			<div class="site-content">
 				<div class="row">
-				<div class="container">
-					<div class="mainContent">
-						<div class="libSearch col-lg-9 col-md-9 col-sm-12 col-xs-12">
-							<iframe class="embed-responsive-item" src="/search.html" scrolling="no" frameborder="0"></iframe>
-						</div>
-						<div class="libButtons col-lg-3 col-md-3 col-sm-12 col-xs-12">
-							{{ page.libButtons}}
+					<div class="container">
+						<div class="mainContent">
+							<div class="libSearch col-lg-9 col-md-9 col-sm-12 col-xs-12">
+								<iframe class="embed-responsive-item" src="/search.html" scrolling="no" frameborder="0"></iframe>
+							</div>
+							<div class="libButtons col-lg-3 col-md-3 col-sm-12 col-xs-12">
+								{{ page.libButtons}}
+							</div>
 						</div>
 					</div>
-				</div>
 				</div>
 				<div class="row">
 					<div class="secondaryContent">
@@ -78,8 +78,7 @@
 						</div>
 					</div>
 				</div>
-				<hr/>
-				<footer role="contentinfo">
+				<div class="row footer" role="contentinfo">
 					<div class="col-lg-3" style="text-align: left;">
 						{{ page.footer }}
 					</div>
@@ -92,12 +91,12 @@
 					<div class="col-lg-3" style="text-align: right;">
 						{{ page.footer4 }}
 					</div>
-				</footer>
-			</section>
+				</div>
+			</div>
 		</div>
-    </div>{# /.layout-content #}
+	</div>{# /.layout-content #}
 	
-  </main>
+</main>
 
 
 {# /.layout-container #}
