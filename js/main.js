@@ -46,5 +46,6 @@ jQuery(document).ready(function($){
 	//Causes 'hiddenMenu' to close
 	$('.hiddenMenu i').click(function(){
 		$(this).parents('.hiddenMenu').slideUp();
+		activeMenu = [];
 	});
 });	
