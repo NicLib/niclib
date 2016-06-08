@@ -1,4 +1,10 @@
 var activeMenu = [];
+var allMenus = ['.servicesMenu', '.collectionsMenu', '.aboutMenu', '.helpMenu'];
+
+function activateMenu(selection){
+	activeMenu = [];
+	activeMenu.push(selection);
+};
 
 jQuery(document).ready(function($){
 	//Adds Glyphicons to 'secondButtons'
@@ -12,35 +18,29 @@ jQuery(document).ready(function($){
 	//Navigation actions
 	$('.NicLib-Head a').click(function(event){
 		event.preventDefault();
-		var hiddenMenu = $(this).parents('.NicLib-Head').next();
-		var allMenus = ['.servicesMenu', '.collectionsMenu', '.aboutMenu', '.helpMenu'];
-		var menuSelected = '.' + $(this).text().toLowerCase() + 'Menu';
-		var activateMenu = function(selection){
-			activeMenu = [];
-			activeMenu.push(selection);
+		var menu = $(this);
+		var hiddenMenu = menu.parents('.NicLib-Head').next();
+		var menuSelected = '.' + menu.text().toLowerCase() + 'Menu';
+		function dynamicHeight(){
+			var heightnow = $(hiddenMenu).height();
+			var heightfull = $(hiddenMenu).css({height: 'auto'}).height();
+			$(hiddenMenu).css({height:heightnow}).animate({height: heightfull}, 500);
 		};
 		
 		//Causes dynamic menu sizes to change smoothly
-		if(activeMenu.length == 0){
+		if($(hiddenMenu).css('display')=='none'){
 			$(hiddenMenu).slideDown();
-		} else if ($(activeMenu[0]).attr('height') != $(menuSelected).attr('height')){
-			//This isn't working the way I want
-				//Different jQuery function?
-				//Something in the wrong order?
-				//Not reading the DOM as anticipated?
-			$(hiddenMenu).animate({'height':'100%'}, 'slow');
 		};
 		
 		//Causes 'Menu Links' to appear one at a time
-		for(var menu in allMenus){
-			$(allMenus[menu]).css('display', 'none');
+		for(var i in allMenus){
+			$(allMenus[i]).css('display', 'none');
 		};
 		$(menuSelected).css('display','initial');
 		
-		//Bug Testing
-		console.log(activeMenu);
-		activateMenu($(menuSelected));
-		console.log(activeMenu);
+		//Function found from StackOverflow user Popnoodles
+		//link "http://jsfiddle.net/zbB3Q/"
+		dynamicHeight();
 	});
 	
 	//Causes 'hiddenMenu' to close

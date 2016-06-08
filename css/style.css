@@ -133,6 +133,7 @@ img{
 	background-color: #F57920;
 	margin: 2.5em auto;
 	padding-top: .5em;
+	height: 100%;
 	/*height: 13.28571428571429em;*/ /* 186/14 */
 	display: none;
 	z-index: 2;
