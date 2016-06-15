@@ -446,6 +446,28 @@ img{
 	}
 }
 
+@media screen and (max-width: 991px){
+	.libButtons table{
+		width: 98.61111111111111%; /* 710/720 */
+	}
+	
+	.libButtons tr td{
+		border-left: none;
+	}
+	
+	.libSearch{
+		width: 98.61111111111111%; /* 710/720 */
+	}
+	
+	.secondButtons{
+		margin-top: .2142857142857143; /* 3/14 */
+	}
+	
+	.secondButtons p{
+		border: .1428571428571429em /* 2/14 */ solid #FFFFFF;
+	}
+}
+
 @media screen and (max-width: 768px){
 	.mobile-menu{
 		display: initial;
@@ -453,5 +475,13 @@ img{
 	
 	.univHead ul{
 		display: none;
+	}
+}
+
+@media screen and (max-width: 612px){
+	.secondButtons p{
+		display: block;
+		width: 100%;
+		height: 8.214285714285714em;
 	}
 }
