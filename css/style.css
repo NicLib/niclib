@@ -221,7 +221,8 @@ img{
  
 .NicLib-Head ul{
 	margin-top: 1em;
-	padding-left: 16%;
+	/* Padding when FYE QR Code is inactive */
+	padding-left: 15.97005614472863%; /* 256/1603 */
 	background-color: #F57920;
 	display: inline;
 	width: 100%;
@@ -346,7 +347,7 @@ img{
   
 .univHead nav{
 	margin-top: 1.071428571428571em; /* 15/14 */
-	width: 44.64285714285714%; /* 450 / 1008 */
+	width: 44.6662507797879%; /* 716/1603 */
 	float: right;
 }
 
@@ -360,6 +361,7 @@ img{
   	margin: auto 1.111111111111111%; /*5/450*/
 	list-style: none;
   	display: inline;
+	white-space: nowrap;
  }
  
 /* IDs */
@@ -374,6 +376,75 @@ img{
 }
 
 /* Media Queries */
+
+@media screen and (max-width: 1454px){
+	.NicLib-Head img{
+		width: 21.11416781292985%; /* 307/1454 */
+	}
+	
+	.univHead nav{
+		width: 49.24346629986245%; /* 716/1454 */
+	}
+}
+
+@media screen and (max-width: 1325px){
+	.NicLib-Head img{
+		width: 23.16981132075472%; /* 307/1325 */
+	}
+	
+	.univHead nav{
+		width: 54.0377358490566%; /* 716/1325 */
+	}
+}
+
+@media screen and (max-width: 1214px){
+	.NicLib-Head img{
+		width: 18.5337726523888%; /* 225/1214 */
+	}
+	
+	.univHead nav{
+		width: 58.97858319604613%; /* 716/1214 */
+	}
+}
+
+@media screen and (max-width: 1199px){
+	.image-block{
+		border-left: none;
+	}
+	
+	.NicLib-Head ul{
+		/* Padding when FYE QR Code is inactive */
+		padding-left: 8.34028356964137%; /* 100/1199 */
+	}
+	
+	.secondButtons{
+		display: block;
+	}
+	
+	.secondButtons p:nth-child(3){
+		border-right: none;
+	}
+}
+
+@media screen and (max-width: 1119px){
+	.NicLib-Head img{
+		width: 20.10723860589812%; /* 225/1119 */
+	}
+	
+	.univHead nav{
+		width: 63.98570151921358%; /* 716/1119 */
+	}
+}
+
+@media screen and (max-width: 1037px){
+	.NicLib-Head img{
+		width: 21.69720347155256%; /* 225/1037 */
+	}
+	
+	.univHead nav{
+		width: 69.04532304725169%; /* 716/1037 */
+	}
+}
 
 @media screen and (max-width: 768px){
 	.mobile-menu{
