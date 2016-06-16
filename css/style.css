@@ -260,7 +260,7 @@ img{
 	font-size: 1.85em;
 	color: #FFFFFF;
 	text-align: center;
-	display: inline-table;
+	display: inline-block;
 	box-sizing: border-box;
 }
 
@@ -280,14 +280,20 @@ img{
 .secondButtons p{
 	display: table-cell;
 	vertical-align: middle;
-	border: .3571428571428571em /* 5/14 */ solid #FFFFFF;
+	border-radius: 71.42857142857143em;
+	border: .3571428571428571em /* 5/14 */ solid #585858;
+	padding: 3px;
 	width: 25%;
 	height: 10.1875em;
+	transition: all .5s;
+}
+
+.secondButtons p:hover{
+	border-color: #F57920;
 }
 
 .secondButtons p:first-child{
 	background-color: #9B6E51;
-	border-left: 0;
 	cursor: pointer;
 }
 
