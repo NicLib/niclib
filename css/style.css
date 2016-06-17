@@ -16,7 +16,7 @@ body{
  
 header{
 	border-top: .2857142857142857em /* 4/14 */ solid #FFB652;
-	background-color: #A5ACAF;
+	background-color: #F57920;
 	margin-top: 0;
  	width: 100%;
 }
@@ -131,7 +131,7 @@ img{
 
 .hiddenMenu{
 	background-color: #F57920;
-	margin: 2.5em auto;
+	margin: auto;
 	padding-top: .5em;
 	height: 100%;
 	/*height: 13.28571428571429em;*/ /* 186/14 */
@@ -160,7 +160,7 @@ img{
 }
 
 .libBackground{
-	background-image: url('/themes/Custom/niclib/images/bg-placeholder.png');
+	background-color: #DEDEDE;
 	height: 32.14285714285714em;
 	z-index: -1;
 }
@@ -223,7 +223,7 @@ img{
 	margin-top: 1em;
 	/* Padding when FYE QR Code is inactive */
 	padding-left: 15.97005614472863%; /* 256/1603 */
-	background-color: #F57920;
+	background-color: #565656;
 	display: inline;
 	width: 100%;
 	box-shadow: 0 5px 5px #888888;
@@ -236,7 +236,7 @@ img{
 }
  
 .NicLib-Head ul a:hover{
-	color: #000000;
+	color: #F57920;
 	background: none;
 }
 
@@ -324,7 +324,7 @@ img{
 }
 
 .site-content{
-	margin-top: 5.357142857142857em;
+	margin-top: 1.785714285714286em;
 	padding: .3571428571428571em;
 	background-color: #FFFFFF;
 	box-shadow: 0 10px 15px #888888;
