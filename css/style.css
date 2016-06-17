@@ -51,6 +51,10 @@ img{
 	text-decoration: none;
 }
 
+.circleButtons{
+	background-color: #E6E6E6;
+}
+
 .collectionsMenu{
 	text-align: center;
 	width: 100%;
@@ -148,8 +152,7 @@ img{
 
 .image-block{
 	background-color: #000000;
-	border: .3571428571428571em /* 5/14 */ solid #FFFFFF;
-	border-right: none;
+	border-left: .3571428571428571em /* 5/14*/  solid #FFFFFF;
 	height: 14.375em;
 }
 
@@ -249,8 +252,8 @@ img{
 }
 
 .secondaryContent{
-	width: 96%;
-	margin-left: 1.79533213644524%;
+	width: 97.5%;
+	margin-left: 1.071428571428571em;
 }
 
 .secondButtons{
