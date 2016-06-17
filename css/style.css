@@ -384,9 +384,7 @@ img{
 /* Media Queries */
 
 @media screen and (max-width: 1454px){
-	.NicLib-Head img{
-		width: 21.11416781292985%; /* 307/1454 */
-	}
+
 	
 	.univHead nav{
 		width: 49.24346629986245%; /* 716/1454 */
@@ -394,9 +392,7 @@ img{
 }
 
 @media screen and (max-width: 1325px){
-	.NicLib-Head img{
-		width: 23.16981132075472%; /* 307/1325 */
-	}
+
 	
 	.univHead nav{
 		width: 54.0377358490566%; /* 716/1325 */
@@ -404,9 +400,7 @@ img{
 }
 
 @media screen and (max-width: 1214px){
-	.NicLib-Head img{
-		width: 18.5337726523888%; /* 225/1214 */
-	}
+
 	
 	.univHead nav{
 		width: 58.97858319604613%; /* 716/1214 */
@@ -433,9 +427,7 @@ img{
 }
 
 @media screen and (max-width: 1119px){
-	.NicLib-Head img{
-		width: 20.10723860589812%; /* 225/1119 */
-	}
+
 	
 	.univHead nav{
 		width: 63.98570151921358%; /* 716/1119 */
@@ -443,16 +435,13 @@ img{
 }
 
 @media screen and (max-width: 1037px){
-	.NicLib-Head img{
-		width: 21.69720347155256%; /* 225/1037 */
-	}
 	
 	.univHead nav{
 		width: 69.04532304725169%; /* 716/1037 */
 	}
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 991px){ /* Maybe this is where the "button" needs to show up */
 	.libButtons table{
 		width: 98.61111111111111%; /* 710/720 */
 	}
@@ -463,6 +452,10 @@ img{
 	
 	.libSearch{
 		width: 98.61111111111111%; /* 710/720 */
+	}
+	
+	.NicLib-Head ul{
+		padding: 3px;
 	}
 	
 	.secondButtons{
