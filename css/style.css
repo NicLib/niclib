@@ -52,7 +52,9 @@ img{
 }
 
 .circleButtons{
-	background-color: #E6E6E6;
+	background-image: url('../images/quick-facts-bg-one.jpg');
+	background-position: right center;
+	/*background-color: #E6E6E6;*/
 }
 
 .collectionsMenu{
