@@ -1,10 +1,4 @@
-var activeMenu = [];
 var allMenus = ['.servicesMenu', '.collectionsMenu', '.aboutMenu', '.helpMenu'];
-
-function activateMenu(selection){
-	activeMenu = [];
-	activeMenu.push(selection);
-};
 
 jQuery(document).ready(function($){
 	//Adds Glyphicons to 'secondButtons'
