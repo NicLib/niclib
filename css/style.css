@@ -386,8 +386,8 @@ img{
 /* IDs */
 
 #hours{
-	font-size: .5em;
-	float: right;
+	font-size: 1em;
+	float: left;
 }
 
 #hours a{
