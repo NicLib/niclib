@@ -155,7 +155,7 @@ img{
 .image-block{
 	background-color: #000000;
 	border-left: .3571428571428571em /* 5/14*/  solid #FFFFFF;
-	height: 14.375em;
+	height: 14.5em;
 }
 
 .layout-content{
@@ -179,14 +179,14 @@ img{
 .libButtons table{
 	border: none;
 	margin: 0;
-	width: 96%;
+	width: 99.75%;
 }
 
 .libButtons tr td{
-	border-left: .3571428571428571em /* 5/14 */ solid #FFFFFF;
+	border-left: .2em /* 5/14 */ solid #FFFFFF;
 	height: 5.357142857142857em; /* 75/14 */
 	vertical-align: middle;
-	border-top: .25em solid #FFFFFF;
+	border-top: .5em solid #FFFFFF;
 }
 
 .libButtons tr:first-child{
@@ -203,6 +203,7 @@ img{
 .libSearch{
 	border: 1px solid #000000;
 	background-color: #FFFFFF;
+	width: 74.35%;
 	clear:both;
 }
 
