@@ -202,7 +202,8 @@ img{
 
 .libSearch{
 	border: 1px solid #000000;
-	background-color: #FFFFFF;
+	/*background-color: #FFFFFF;*/
+	background-color: #683818;
 	width: 74.35%;
 	clear:both;
 }
