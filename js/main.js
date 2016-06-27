@@ -35,11 +35,35 @@ jQuery(document).ready(function($){
 		//Function found from StackOverflow user Popnoodles
 		//link "http://jsfiddle.net/zbB3Q/"
 		dynamicHeight();
+	}).mouseenter(function(){
+		//Below code is the same as the 'click' function
+		//Need to refactor this into a function, but not sure how
+		var menu = $(this);
+		var hiddenMenu = menu.parents('.NicLib-Head').next();
+		var menuSelected = '.' + menu.text().toLowerCase() + 'Menu';
+		function dynamicHeight(){
+			var heightnow = $(hiddenMenu).height();
+			var heightfull = $(hiddenMenu).css({height: 'auto'}).height();
+			$(hiddenMenu).css({height:heightnow}).animate({height: heightfull}, 500);
+		};
+		if($(hiddenMenu).css('display')=='none'){
+			$(hiddenMenu).slideDown();
+		};
+		for(var i in allMenus){
+			$(allMenus[i]).css('display', 'none');
+		};
+		$(menuSelected).css('display','initial');
+		dynamicHeight();
 	});
 	
 	//Causes 'hiddenMenu' to close
 	$('.hiddenMenu i').click(function(){
 		$(this).parents('.hiddenMenu').slideUp();
-		activeMenu = [];
 	});
+	//Makes 'hiddenMenu' closes when the mouse exits no matter what
+	//My preference is to only have this happen when clicking the 'x'
+	//Commenting out until told different
+	/*$('.hiddenMenu').mouseleave(function(){
+		$(this).slideUp();
+	})*/
 });	
