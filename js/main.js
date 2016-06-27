@@ -60,10 +60,4 @@ jQuery(document).ready(function($){
 	$('.hiddenMenu i').click(function(){
 		$(this).parents('.hiddenMenu').slideUp();
 	});
-	//Makes 'hiddenMenu' closes when the mouse exits no matter what
-	//My preference is to only have this happen when clicking the 'x'
-	//Commenting out until told different
-	/*$('.hiddenMenu').mouseleave(function(){
-		$(this).slideUp();
-	})*/
 });	
