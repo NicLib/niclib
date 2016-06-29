@@ -1,0 +1,506 @@
+<!-- Change log
+	12/4/15 -- Add journals to "Book" search
+-->
+<html>
+<head>
+	<style>
+
+/*----- Tabs -----*/
+		#search-wrapper {
+			text-align:center;
+			position:relative;
+			max-width:100%;
+			margin:auto;
+			width:875px;
+			font-family: "Source Sans Pro","Myriad Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+			letter-spacing: 0.02rem;
+		}
+
+		.tabs {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			display: inline-block;
+			width: 100%;
+			margin: 0px auto 0;
+			padding: 0px auto;
+			text-align: center;
+			height: 92px;
+			top: 0;
+			vertical-align: middle;
+		}
+ 
+/*----- Tab Links -----*/
+/* Clearfix */
+		.tab-links:after {
+			display:block;
+			clear:both;
+			content:'';
+		}
+ 
+		.tab-links h2 {
+			margin:0px 5px;
+			list-style:none;
+			display:inline-block;
+			text-decoration:none;
+			color:000000;
+		}
+ 
+        .tab-links a {
+            padding:9px 15px;
+            display:inline-block;
+            border-radius:3px 3px 0px 0px;
+            font-size:16px;
+            font-weight:600;
+            transition:all linear 0.15s;
+            text-decoration:none;
+			color: rgb(0, 0, 0);
+		}
+	
+		.tab-links a.selected h2 {
+		   color: #F57920; /*same as the buttons*/
+		}
+		
+        .tab-links h2 {
+			font-size:2.4em;
+		}
+
+        .tab-label {
+			font-size: 16px;
+			text-decoration: none;
+			margin: 5px 0;
+			font-family: "Source Sans Pro","Myriad Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+			color: #000000;
+		}
+ 
+/*----- Content of Tabs -----*/
+		.tab-content {
+			border-radius:3px;
+			text-align:center;
+			margin-top: 25px;
+		}
+ 
+        .tab {
+            display:none;
+		}
+ 
+        .tab.active {
+            display:block;
+		}
+        
+/*----- Search Boxes -----*/
+		.searchTerm {
+			position: relative;
+		}
+	
+		#search h3 {
+			font-size: 13pt;
+			width: 95%;
+			margin: 5px auto;
+			text-align: left;
+			font-family: sans-serif;
+		}
+
+		input.searchbox {
+			display: inline;
+			-webkit-appearance: none;
+			vertical-align: middle;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			height: 40px;
+			width: 70%;
+			padding-left: .6rem;
+			padding-right: 8px;
+			font-size: 16px;
+			font-size: 1.6rem;
+			margin: 10px auto;
+			border: 0;
+			outline: 2px solid #F57920;
+			float:left;
+		}
+    
+		input.headersubmit {
+			display: inline;
+			-webkit-appearance: none;
+			vertical-align: middle;
+			height: 40px;
+			width: 44px;
+			margin-top: 10px;
+			border: 0;
+			background-color: #F57920;
+			color: #ffffff;
+			font-size: 2.2rem;
+			font-family: 'FontAwesome', sans-serif;
+			cursor: pointer;
+			-webkit-border-radius: 0;
+			-moz-border-radius: 0;
+			border-radius: 0;
+		}
+		
+		select.dropdown-menu {
+        display: inline;
+        -webkit-appearance: none;
+        vertical-align: middle;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 20%;
+        float:left;
+        background: transparent;
+        padding: 5px;
+        font-size: 14px;
+        border: 2px solid #F57920;
+        border-radius: 0;
+        height: 40px;
+		margin: 10px;
+		cursor: pointer;
+        font-family: "Source Sans Pro","Myriad Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+		}
+
+		a#advanced-search {
+			float:right;
+			line-height: 0;
+			color: #000000;
+			text-decoration: underline;
+			font-weight: bold;
+			font-size: 11pt;
+			text-align: right;
+			font-family: sans-serif;
+		}
+
+/*AU styling additions*/
+
+		#realquery{
+			font-size: 12pt;
+		}
+
+		.windowForm{
+			margin-bottom: 0;
+		}
+
+
+	</style>
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script>
+		jQuery(document).ready(function() {
+			jQuery('.tabs .tab-links a').on('click', function(e)  {
+				var currentAttrValue = jQuery(this).attr('href');
+ 
+				// Show/Hide Tabs
+				jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
+ 
+				// Change/remove current tab to active
+				//jQuery(this).closest('h2').addClass('active').siblings().removeClass('active');
+				$('.tabs .tab-links a.selected').removeClass('selected');
+				$(this).addClass('selected');
+ 
+				e.preventDefault();
+			});
+		});
+	</script>
+	<script>
+		$('.windowForm').submit(function(e){
+			// specify a unique target name
+			var target = 'windowFormTarget';
+			// open a new window and name it
+			window.open('', target, 'width=500,height=300');
+			// set the target of the form to be
+			// the window name
+			this.setAttribute('target', target);
+			// allow the form to be submitted normally
+		});
+	</script>
+</head>
+
+<body>
+	<div id="search-wrapper">
+		<div class="tabs">
+			<div class="tab-links">
+				<a href="#tab1" class="selected"><h2 class="fa fa-book"><br /><span class="tab-label">Books</span></h2></a>
+				<a href="#tab2"><h2 class="fa fa-list-alt"><span class="tab-label"><br />Articles</span></h2></a>
+				<a href="#tab3"><h2 class="fa fa-video-camera"><span class="tab-label"><br />Media</span></h2></a>
+				<a href="#tab4"><h2 class="fa fa-university"><span class="tab-label"><br />Everything</span></h2></a>
+			</div>
+
+<!-- Begin Books tab 
+	-- includes jrnl format, for periodical titles, yearbooks, etc.
+	
+1708=Academic Search Complete; 
+1920=Cambridge Campanions Online; 
+2513=Ebrary
+197=Electronic Books; 
+2482=Literature Resource Center; 
+2175=Oxford Reference Online; 
+1978=Oxford Scholarship Online; 
+1736=Small Business Resource Center; 
+638=Worldcat.org
+283=Worldcat -->
+
+			<div class="tab-content">
+				<div id="tab1" class="tab active">            
+					<form action="http://anderson.on.worldcat.org/search" class="windowForm" target="_blank" method="get">
+						<div id="search">
+							<!--<p style="color:#FF0000;margin-top: -30px;margin-bottom: -5px;">System maintenance - Library catalog & all OCLC services unavailable 9:00 pm Saturday, 6/4, until noon Sunday, 6/5.</p>-->
+							<div class="search-title">
+								<h3>Find <span id="search-name">Books and eBooks</span></h3>
+							</div>             
+							<div class="searchTerm">
+								<input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
+								<input type="hidden" name="databaseList" value="1708,1920,2513,197,2482,2175,1978,1736,638,283">						
+								<input id="realquery" placeholder="Type Title or Author or Subject words..." autofocus="autofocus" id="query" class="searchbox" name="queryString">
+								<input type="hidden" name="format" value="Book">
+								<input type="hidden" name="subformat" value="Book::book_printbook">
+								<input type="hidden" name="subformat" value="Book::book_digital">
+								<input type="hidden" name="subformat" value="Book::book_thsis">
+								<input type="hidden" name="subformat" value="Book::book_mic">
+								<input type="hidden" name="subformat" value="Book::book_largeprint">
+								<input type="hidden" name="subformat" value="Book::book_braille">
+								<input type="hidden" name="format" value="jrnl">
+<!--							<input type="hidden" name="subformat" value="jrnl::jrnl_digital"> -->
+								<input type="hidden" name="format" value="msscr">
+								<input type="hidden" name="subformat" value="msscr::msscr_digital">
+<!--                    		<input type="hidden" name="subformat" value="Book::book_continuing">
+								<input type="hidden" name="database" value="all"> -->
+								<input type="hidden" name="author" value="all">
+								<input type="hidden" name="year" value="all">
+								<input type="hidden" name="yearFrom" value="">
+								<input type="hidden" name="yearTo" value="">
+								<input type="hidden" name="language" value="all">
+								<select name="subscope" class="dropdown-menu">
+									<option value="" selected>Nicholson Library</option>
+									<option value="wz:1274::zs:35416">Archives</option>
+									<option value="wz:1274::zs:35418">Special Collections</option>
+								</select>
+								<input type="submit" class="headersubmit" value="&#xf002;" title="Search">
+							</div>
+						</div>
+					</form>			
+					
+					<table style="width: 100%; margin-top: 0;">
+						<tr>
+							<td style="width: 33%;">
+								<div style="font-size: 11pt; float: left; text-alignment: left; margin-left: 5px;"><!--(Basic Search in Worldcat and Academic Search Premier)<br>--><a onclick="window.open('https://www.youtube.com/watch?v=5uarSb8dIbM', 'tutorial1', 'width=425, height=349, left=300, top=80, menubar=0, toolbar=0, scrollbars=1, location=0, directories=0, resizable=1, status=0');return false" href="#" style="font-size: 14px; font-family: sans-serif; color: #000000; text-decoration: none;"><img align="top" src="http://uzebox.org/wiki/images/7/78/Icon_new.png"> <span style="text-decoration: underline;"><strong>Search Tutorial</strong></span> <img border="0" align="top" src="http://png-5.findicons.com/files/icons/1689/splashy/16/media_controls_dark_play.png"></a></div>
+							</td>
+							<td style="width: 33%; text-align:center;">
+								<a href="http://anderson.worldcat.org/wcpa/courseReserves?action=courseReserveManager" title="Search for materials on eReserve" style="color:#000000;font-weight:bold;font-size:11pt;">Course Reserves</a>
+							</td>
+							<td style="width: 33%;">
+								<a id="advanced-search" title="Perform an advanced search" href="http://anderson.on.worldcat.org/advancedsearch?databaseList=1708,1920,2513,197,2482,2175,1978,1736,638" target="_blank">Advanced Search</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+
+<!-- Begin Articles tab
+
+1708=Academic Search Complete;
+1271=Business Source Complete;
+2229: Gale;
+1697=IEEE;
+2237=JSTOR Arts & Sciences I Collection;
+2259=JSTOR Arts & Sciences II Collection;
+2260=JSTOR Arts & Sciences III Collection;
+2261=JSTOR Arts & Sciences IV Collection;
+2264=JSTOR Arts & Sciences VII Collection;
+2482=Literature Resource Center;
+1721=MAS Complete;
+1723=MasterFILE Complete;
+1941=MEDLINE;
+1978=Oxford Scholarship Online;
+2375=ScienceDirect;
+1736=Small Business Reference Center;
+2484=Small Business Resource Center;
+3313=Springerlink;
+2879=The Wall Street Journal;
+638=WorldCat.org;
+2479=Informe -->
+
+				<div id="tab2" class="tab">	 
+					<form action="http://anderson.on.worldcat.org/search" target="_blank" method="get" class="windowForm">
+                        <div id="search">
+                           <div class="search-title">
+							<!--<p style="color:#FF0000;margin-top: -30px;margin-bottom: -5px;">System maintenance - Library catalog & all OCLC services unavailable 9:00 pm Saturday, 6/4, until noon Sunday, 6/5.</p>-->
+                              <h3>Find <span id="search-name">Articles</span></h3>        
+                           </div>             
+                           <div class="searchTerm">
+							  <input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
+							  <input type="hidden" name="databaseList" value="1708,1271,2237,2259,2260,2261,2264,2482,1721,1723,1941,1978,2375,1736,2484,2879,638,2479,1697,3313">
+							  <input id="realquery" placeholder="Type Title or Author or Subject words..." autofocus="autofocus" id="query" class="searchbox" name="queryString">
+							  <input type="hidden" name="format" value="Artchap">
+                              <input type="hidden" name="subformat" value="Artchap::artchap_artcl">
+							  <input type="hidden" name="format" value="Encyc">
+							  <select name="subscope" class="dropdown-menu">
+									<option value="" selected>Nicholson Library</option>
+									<option value="wz:1274::zs:35416">Archives</option>
+									<option value="wz:1274::zs:35418">Special Collections</option>
+								</select>
+							<input type="submit" class="headersubmit" value="&#xf002;" title="Search">
+                           </div>
+                        </div>
+					</form>
+					
+					<table style="width: 100%; margin-top: 0;">
+						<tr>
+							<td style="width: 33%;">
+								<div style="font-size: 11pt; float: left; text-alignment: left; margin-left: 5px;"><!--(Basic Search in Worldcat and Academic Search Premier)<br>--><a onclick="window.open('https://www.youtube.com/watch?v=5uarSb8dIbM', 'tutorial1', 'width=425, height=349, left=300, top=80, menubar=0, toolbar=0, scrollbars=1, location=0, directories=0, resizable=1, status=0');return false" href="#" style="font-size: 14px; font-family: sans-serif; color: #000000; text-decoration: none;"><img align="top" src="http://uzebox.org/wiki/images/7/78/Icon_new.png"> <span style="text-decoration: underline;"><strong>Search Tutorial</strong></span> <img border="0" align="top" src="http://png-5.findicons.com/files/icons/1689/splashy/16/media_controls_dark_play.png"></a></div>
+							</td>
+							<td style="width: 33%; text-align:center;">
+								<a href="http://anderson.worldcat.org/wcpa/courseReserves?action=courseReserveManager" title="Search for materials on eReserve" style="color:#000000;font-weight:bold;font-size:11pt;">Course Reserves</a>
+							</td>
+							<td style="width: 33%;">
+								<a id="advanced-search" title="Perform an advanced search" href="http://anderson.on.worldcat.org/advancedsearch?databaseList=1708,1920,2513,197,2482,2175,1978,1736,638" target="_blank">Advanced Search</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+
+<!-- Begin Video tab
+
+3369=Naxos Music Library
+239=Oaister;
+638=Worldcat.org -->
+ 
+				<div id="tab3" class="tab">		 
+					<form action="http://anderson.on.worldcat.org/search" target="_blank" method="get" class="windowForm">
+                        <div id="search">
+							<div class="search-title">
+							  <!--<p style="color:#FF0000;margin-top: -30px;margin-bottom: -5px;">System maintenance - Library catalog & all OCLC services unavailable 9:00 pm Saturday, 6/4, until noon Sunday, 6/5.</p>-->
+                              <h3>Find <span id="search-name">DVDs, eVideos, Sound, etc.</span></h3>        
+                           </div>             
+                           <div class="searchTerm">
+						      <input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
+							  <input type="hidden" name="databaseList" value="3369,239,638">
+                              <input id="realquery" placeholder="Type Title or Name or Subject words...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
+                              <input type="hidden" name="format" value="Music">
+                              <input type="hidden" name="subformat" value="Music::music_cd">
+                              <input type="hidden" name="subformat" value="Music::music_lp">
+                              <input type="hidden" name="subformat" value="Music::music_cassette">
+                              <input type="hidden" name="subformat" value="Music::music_digital">
+							  <input type="hidden" name="format" value="Video">
+                              <input type="hidden" name="subformat" value="Video::video_dvd">
+                              <input type="hidden" name="subformat" value="Video::video_vhs">
+                              <input type="hidden" name="subformat" value="Video::video_film">
+                              <input type="hidden" name="subformat" value="Video::video_digital">
+                              <input type="hidden" name="subformat" value="Video::video_bluray">
+                              <input type="hidden" name="format" value="Snd">
+                              <input type="hidden" name="format" value="Image">
+							  <input type="hidden" name="subformat" value="Image::image">
+							  <input type="hidden" name="format" value="Compfile">
+							  <input type="hidden" name="subformat" value="Compfile::compfile_digital">
+							  <input type="hidden" name="format" value="Msscr">
+							  <input type="hidden" name="subformat" value="Msscr::msscr_digital">
+							  <input type="hidden" name="format" value="Vis">
+							  <input type="hidden" name="subformat" value="Vis::vis_digital">
+							  <input type="hidden" name="format" value="Audiobook">
+                              <input type="hidden" name="subformat" value="Audiobook::audiobook_cassette">
+                              <input type="hidden" name="subformat" value="Audiobook::audiobook_cd">
+                              <input type="hidden" name="subformat" value="Audiobook::audiobook_digital">
+                              <input type="hidden" name="subformat" value="Audiobook::audiobook_lp">
+							  <input type="hidden" name="format" value="Web">
+                              <input type="hidden" name="subformat" value="Web::web_dwn2d">
+                              <input type="hidden" name="subformat" value="Web::web_digital">
+							  <input type="hidden" name="format" value="Game">
+							  <input type="hidden" name="format" value="Intmm">
+                              <input type="hidden" name="subformat" value="Intmm::intmm_digital">
+							  <select name="subscope" class="dropdown-menu">
+									<option value="" selected>Nicholson Library</option>
+									<option value="wz:1274::zs:35416">Archives</option>
+									<option value="wz:1274::zs:35418">Special Collections</option>
+								</select>
+							  <input type="submit" class="headersubmit" value="&#xf002;" title="Search">
+                           </div>
+                        </div>
+					</form>		 
+					
+					<table style="width: 100%; margin-top: 0;">
+						<tr>
+							<td style="width: 33%;">
+								<div style="font-size: 11pt; float: left; text-alignment: left; margin-left: 5px;"><!--(Basic Search in Worldcat and Academic Search Premier)<br>--><a onclick="window.open('https://www.youtube.com/watch?v=5uarSb8dIbM', 'tutorial1', 'width=425, height=349, left=300, top=80, menubar=0, toolbar=0, scrollbars=1, location=0, directories=0, resizable=1, status=0');return false" href="#" style="font-size: 14px; font-family: sans-serif; color: #000000; text-decoration: none;"><img align="top" src="http://uzebox.org/wiki/images/7/78/Icon_new.png"> <span style="text-decoration: underline;"><strong>Search Tutorial</strong></span> <img border="0" align="top" src="http://png-5.findicons.com/files/icons/1689/splashy/16/media_controls_dark_play.png"></a></div>
+							</td>
+							<td style="width: 33%; text-align:center;">
+								<a href="http://anderson.worldcat.org/wcpa/courseReserves?action=courseReserveManager" title="Search for materials on eReserve" style="color:#000000;font-weight:bold;font-size:11pt;">Course Reserves</a>
+							</td>
+							<td style="width: 33%;">
+								<a id="advanced-search" title="Perform an advanced search" href="http://anderson.on.worldcat.org/advancedsearch?databaseList=1708,1920,2513,197,2482,2175,1978,1736,638" target="_blank">Advanced Search</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+
+ 
+<!-- Begin Everything Tab
+
+1708=Academic Search Complete;
+1271=Business Source Complete;
+1920=Cambridge Campanions Online; 
+3004=CQ Researcher;
+2513=Ebrary;
+197=Electronic Books; 
+2229=Gale Virtual Reference Library;
+2479=Informe;
+2237=JSTOR Arts & Sciences I Collection;
+2259=JSTOR Arts & Sciences II Collection;
+2260=JSTOR Arts & Sciences III Collection;
+2261=JSTOR Arts & Sciences IV Collection;
+2264=JSTOR Arts & Sciences VII Collection;
+2482=Literature Resource Center;
+2482=Literature Resource Center; 
+1721=MAS Complete;
+1723=MasterFILE Complete;
+1941=MEDLINE;
+3369=Naxos Music Library;
+239=Oaister;
+2007=Oxford Art Online;
+2006=Oxford Music Online;
+2175=Oxford Reference Online; 
+1978=Oxford Scholarship Online;
+2375=ScienceDirect;
+1736=Small Business Reference Center;
+2484=Small Business Resource Center;
+1736=Small Business Resource Center; 
+2879=The Wall Street Journal;
+283=WorldCat;
+638=Worldcat.org -->
+ 
+				<div id="tab4" class="tab">					 
+					<form action="http://anderson.on.worldcat.org/search" target="_blank" method="get" class="windowForm">
+						<div id="search">
+							<!--<p style="color:#FF0000;margin-top: -30px;margin-bottom: -5px;">System maintenance - Library catalog & all OCLC services unavailable 9:00 pm Saturday, 6/4, until noon Sunday, 6/5.</p>-->
+							<div class="search-title">
+                              <h3>Find <span id="search-name">Books, Articles, Media, and more.</span></h3>        
+							</div>             
+                            <div class="searchTerm">
+								<input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
+								<input type="hidden" name="databaseList" value="1708,1271,1920,3004,2513,197,2229,2479,2237,2259,2260,2261,2264,2482,2482,1721,1723,1941,3369,239,2007,2006,2175,1978,2375,1736,2484,1736,2879,283,638">
+								<input id="realquery" placeholder="Type Title or Name or Subject words...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
+								<select name="subscope" class="dropdown-menu">
+									<option value="" selected>Nicholson Library</option>
+									<option value="wz:1274::zs:35416">Archives</option>
+									<option value="wz:1274::zs:35418">Special Collections</option>
+								</select>
+								<input type="submit" class="headersubmit" value="&#xf002;" title="Search">
+							</div>
+                        </div>
+					</form>
+			
+					<table style="width: 100%; margin-top: 0;">
+						<tr>
+							<td style="width: 33%;">
+								<div style="font-size: 11pt; float: left; text-alignment: left; margin-left: 5px;"><!--(Basic Search in Worldcat and Academic Search Premier)<br>--><a onclick="window.open('https://www.youtube.com/watch?v=5uarSb8dIbM', 'tutorial1', 'width=425, height=349, left=300, top=80, menubar=0, toolbar=0, scrollbars=1, location=0, directories=0, resizable=1, status=0');return false" href="#" style="font-size: 14px; font-family: sans-serif; color: #000000; text-decoration: none;"><img align="top" src="http://uzebox.org/wiki/images/7/78/Icon_new.png"> <span style="text-decoration: underline;"><strong>Search Tutorial</strong></span> <img border="0" align="top" src="http://png-5.findicons.com/files/icons/1689/splashy/16/media_controls_dark_play.png"></a></div>
+							</td>
+							<td style="width: 33%; text-align:center;">
+								<a href="http://anderson.worldcat.org/wcpa/courseReserves?action=courseReserveManager" title="Search for materials on eReserve" style="color:#000000;font-weight:bold;font-size:11pt;">Course Reserves</a>
+							</td>
+							<td style="width: 33%;">
+								<a id="advanced-search" title="Perform an advanced search" href="http://anderson.on.worldcat.org/advancedsearch?databaseList=1708,1920,2513,197,2482,2175,1978,1736,638" target="_blank">Advanced Search</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
