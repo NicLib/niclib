@@ -7,6 +7,3 @@ global-js:
     js/main.js: {}
   dependencies:
     - core/jquery
-jssor-slider-js:
-  js:
-    vendor/jssor-slider/js/jssor.slider.min: {}

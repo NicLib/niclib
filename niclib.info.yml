@@ -7,7 +7,6 @@ screenshot: logo.png
 libraries:
   - niclib/global-css
   - niclib/global-js
-  - niclib/jssor-slider-js
   
 regions:
   univHead: 'University Links'
@@ -19,7 +18,7 @@ regions:
   content: 'Main Content'
   libButtons: 'Buttons Next to Catalog'
   secondButtons: 'Buttons Under Catalog'
-  media: 'Media placement'
+  media: 'Media Placement'
   footer: 'Footer Menu'
   footer2: 'Footer Section 2'
   footer3: 'Footer Section 3'
