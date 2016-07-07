@@ -35,7 +35,7 @@ jQuery(document).ready(function($){
 		//Function found from StackOverflow user Popnoodles
 		//link "http://jsfiddle.net/zbB3Q/"
 		dynamicHeight();
-	}).mouseenter(function(){
+	})/*.mouseenter(function(){
 		//Below code is the same as the 'click' function
 		//Need to refactor this into a function, but not sure how
 		var menu = $(this);
@@ -54,7 +54,7 @@ jQuery(document).ready(function($){
 		};
 		$(menuSelected).css('display','initial');
 		dynamicHeight();
-	});
+	})*/;
 	
 	//Causes 'hiddenMenu' to close
 	$('.hiddenMenu i').click(function(){
