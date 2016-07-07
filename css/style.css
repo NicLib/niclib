@@ -154,7 +154,7 @@ img{
 }
 
 .image-block{
-	background-color: #000000;
+	/*background-color: #000000;*/
 	border-left: .3571428571428571em /* 5/14*/  solid #FFFFFF;
 	height: 14.5em;
 }
