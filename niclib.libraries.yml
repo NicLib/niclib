@@ -7,16 +7,3 @@ global-js:
     js/main.js: {}
   dependencies:
     - core/jquery
-slick-css:
-  css:
-    slick/slick/slick.css: {}
-    slick/slick/slick-theme.css: {}
-slick-js:
-  js:
-    slick/slick/slick.min.js: {}
-blazy-js:
-  js:
-    js/blazy/blazy.min.js: {}
-easing-js:
-  js:
-    js/jquery.easing.min.js: {}

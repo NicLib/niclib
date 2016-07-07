@@ -18,7 +18,3 @@ Drupal 8 theme
   * Code originally created by @lpmagnuson
 * "assets/NicDate.js" is a JavaScript file that displays the Library's hours
   * This file must be placed in the root folder
-* Utilizes Slick, Blazy, and Jqeasing for image slider
-  * Slick found at <https://github.com/kenwheeler/slick/>
-  * Blazy found at <https://github.com/dinbror/blazy> and includes a module from <https://www.drupal.org/project/blazy>
-  * Jqeasing found at <https://github.com/gdsmith/jquery.easing>

@@ -7,10 +7,6 @@ screenshot: logo.png
 libraries:
   - niclib/global-css
   - niclib/global-js
-  - niclib/slick-css
-  - niclib/slick-js
-  - niclib/blazy-js
-  - niclib/easing-js
   
 regions:
   univHead: 'University Links'
