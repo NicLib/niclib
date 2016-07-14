@@ -18,3 +18,4 @@ Drupal 8 theme
   * Code originally created by @lpmagnuson
 * "assets/NicDate.js" is a JavaScript file that displays the Library's hours
   * This file must be placed in the root folder
+* "assets/theme.css" is a modified core file. It belongs in /core/assets/vendor/jquery.ui/themes/base

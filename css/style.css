@@ -214,6 +214,15 @@ img{
 	height: 100%;
 }
 
+.mainContent article{
+	width: 93%;
+	margin: .7142857142857143em /* 10/14 */ auto;
+}
+
+.mainContent .faqfield{
+	background-color: #000000;
+}
+
 .mainContent h1{
 	text-align: center;
 	font-weight: bold;
