@@ -9,6 +9,7 @@ libraries:
   - niclib/global-js
   
 regions:
+  univBrand: 'University Branding'
   univHead: 'University Links'
   libHead: 'Library Header'
   hiddenMenu1: 'About Menu'

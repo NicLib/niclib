@@ -2,6 +2,7 @@
 Drupal 8 theme
 
 ##Sections
+* University Branding
 * University Links
 * Library Header
 * Main Content
