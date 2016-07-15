@@ -13,7 +13,16 @@ body{
 	background-color: #F5F5F5;
  	max-width: 100%;
 }
- 
+
+a {
+	color: #000000;
+	transition: all .5s;
+}
+
+a:hover{
+	color: #F57920;
+}
+
 header{
 	border-top: .2857142857142857em /* 4/14 */ solid #FFB652;
 	background-color: #F57920;
