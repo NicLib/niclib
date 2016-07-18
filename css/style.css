@@ -23,6 +23,10 @@ a:hover{
 	color: #F57920;
 }
 
+article table td {
+	padding: .357142857142571em;
+}
+
 header{
 	border-top: .2857142857142857em /* 4/14 */ solid #FFB652;
 	background-color: #F57920;
@@ -239,6 +243,12 @@ img{
 
 .mobile-menu{
 	display: none;
+}
+
+.mobile-menu button{
+	margin-bottom: .5714285714285714em;
+	background-color: #000000;
+	width: 40px;
 }
 
 .NicLib-Head{ 
@@ -480,8 +490,14 @@ img{
 
 @media screen and (max-width: 1037px){
 	
-	.univHead nav{
-		width: 69.04532304725169%; /* 716/1037 */
+	.mobile-menu{
+		display: initial;
+		position: static;
+		float: right;
+	}
+	
+	.univHead ul{
+		display: none;
 	}
 }
 
@@ -511,15 +527,6 @@ img{
 	}
 }
 
-@media screen and (max-width: 768px){
-	.mobile-menu{
-		display: initial;
-	}
-	
-	.univHead ul{
-		display: none;
-	}
-}
 
 @media screen and (max-width: 612px){
 	.secondButtons p{
