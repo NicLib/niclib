@@ -179,13 +179,13 @@ img{
 }
 
 .layout-content{
-	margin-top: -28.57142857142857em; 
+	margin-top: -35.71428571428571em; /* 500/14 */
 	z-index: 1;
 }
 
 .libBackground{
 	background-color: #DEDEDE;
-	height: 32.14285714285714em;
+	height: 39.28571428571429em; /* 550/14 */
 	z-index: -1;
 }
 
