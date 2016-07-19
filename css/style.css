@@ -196,6 +196,23 @@ img{
 	box-sizing: border-box;
 }
 
+.libButtons div{
+	height:5.571428571428571em;
+	width:97.5%;
+	margin-right:2px;
+	float:right;
+}
+
+.libButtons .button1{
+	background-color:#CC9063;
+	margin-bottom:2px;
+}
+
+.libButtons .button2{
+	background-color:#64BE9F;
+	margin-top:2px;
+}
+
 .libButtons table{
 	border: none;
 	margin: 0;
@@ -531,12 +548,32 @@ img{
 		float: right;
 	}
 	
+	.univHead nav{
+		width: 3.8572806171649%; /* 40/1037 */
+	}
+	
 	.univHead ul{
 		display: none;
 	}
 }
 
 @media screen and (max-width: 991px){ /* Maybe this is where the "button" needs to show up */
+	.image-block{
+		width: 98.6%;
+	}
+	
+	.libButtons{
+		margin-top: .28557142857142857em; /* 4/14 */
+	}
+	.libButtons div{
+		width: 98.6%;
+		float: none;
+	}
+	
+	.libButtons .button1{
+		margin-bottom: .28557142857142857em;
+	}
+	
 	.libButtons table{
 		width: 98.61111111111111%; /* 710/720 */
 	}
@@ -553,20 +590,57 @@ img{
 		padding: 3px;
 	}
 	
-	.secondButtons{
-		margin-top: .2142857142857143; /* 3/14 */
+	.NicLib-Head ul li {
+		margin: auto 20px;
 	}
 	
-	.secondButtons p{
-		border: .1428571428571429em /* 2/14 */ solid #FFFFFF;
+	.secondButtons{
+		margin-top: .2142857142857143; /* 3/14 */
+		width: 98.6%;
+	}
+
+	.univHead nave{
+		width: 15%;
+		margin-right: 1em;
 	}
 }
 
-
-@media screen and (max-width: 612px){
-	.secondButtons p{
-		display: block;
+@media screen and (max-width: 767px){
+	.libButtons div{
 		width: 100%;
+	}
+	
+	.libSearch{
+		width: 100%;
+	}
+	
+	.mobile-menu{
+		margin-left: 2.142857142857143em; /* 30/14 */
+		float:none;
+	}
+	
+	.NicLib-Head{
+		display:none;
+	}
+	
+	.small-NicLib-Head{
+		font-size: 1.714285714285714em;
+		display: initial;
+	}
+	.small-univHead{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 717px){
+	.secondButtons p{
+		padding: 2.142857142857143em;
+		display: block;
+		width: 90%;
 		height: 8.214285714285714em;
+	}
+	
+	.secondButtons p:nth-child(2){
+		padding-top: 1.428571428571429em;
 	}
 }
