@@ -1,16 +1,20 @@
 <header class="univHead col-lg-12 col-md-12 col-sm-12 col-xs-12">
 	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-11">
-		<div class="navbar-header navbar-left col-lg-3 col-md-3 col-sm-11 col-xs-11" style="margin-top:.5em;white-space: nowrap;">
+		<div class="brand-nav navbar-header navbar-left col-lg-3 col-md-3 col-sm-11 col-xs-11">
 			{{ page.univBrand }}
 		</div>
 		<nav class="navbar-right col-lg-9 col-md-9 col-sm-1 col-xs-1">
 			<div class="mobile-menu col-sm-1 col-xs-1">
-				<button class="glyphicon glyphicon-menu-hamburger"></button>
+				<button onclick="revealNav()" class="glyphicon glyphicon-menu-hamburger"></button>
 			</div>
 			{{ page.univHead}}
 		</nav>
 	</div>
 </header>
+
+<div id="mobile-nav">
+	{{ page.univHead }}
+</div>
   
 <!-- Picture background on site -->
 <section class="libBackground">

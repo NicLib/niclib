@@ -1,4 +1,12 @@
 var allMenus = ['.servicesMenu', '.collectionsMenu', '.aboutMenu', '.helpMenu'];
+function revealNav(){
+	var el = document.getElementById('mobile-nav');
+	if(el.style.display != 'block'){
+		el.style.display = 'block';
+	} else {
+		el.style.display = 'none';
+	}
+};
 
 jQuery(document).ready(function($){
 	//Adds Glyphicons to 'secondButtons'
@@ -8,6 +16,9 @@ jQuery(document).ready(function($){
 	});
 	$('.secondButtons p:nth-child(2)').append('<br/><i class="glyphicon glyphicon-book"></i>');
 	$('.secondButtons p:nth-child(3)').append('<br/><i class="glyphicon glyphicon-education"></i>');
+	function revealNav(){
+		console.log($(this));
+	}
 	
 	//Navigation actions
 	$('.NicLib-Head a').click(function(event){

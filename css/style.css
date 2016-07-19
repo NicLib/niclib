@@ -64,6 +64,11 @@ img{
 	text-decoration: none;
 }
 
+.brand-nav{
+	margin-top:.5em;
+	white-space: nowrap;
+}
+
 .circleButtons{
 	background-image: url('../images/quick-facts-bg-one.jpg');
 	background-position: right center;
@@ -432,6 +437,36 @@ img{
 
 #hours a{
 	color: #BD4F19;
+}
+
+#mobile-nav{
+	background-color: #F57920;
+	color: #FFFFFF;
+	display: none;
+}
+
+#mobile-nav a{
+	color: #FFFFFF;
+	text-decoration: none;
+	transition: all .5s
+}
+
+#mobile-nav a:hover{
+	color: #000000;
+}
+
+#mobile-nav ul{
+	margin: auto;
+	text-align: center;
+	list-style: none;
+}
+
+#mobile-nav ul li{
+	margin: auto 15px;
+	text-align: center;
+	list-style: none;
+	display: inline;
+	white-space: nowrap;
 }
 
 /* Media Queries */
