@@ -73,6 +73,7 @@ img{
 	background-image: url('../images/quick-facts-bg-one.jpg');
 	background-position: right center;
 	/*background-color: #E6E6E6;*/
+	background-repeat: no-repeat;
 }
 
 .collectionsMenu{
@@ -637,6 +638,11 @@ img{
 }
 
 @media screen and (max-width: 717px){
+	
+	.circleButtons{
+		background-size: cover;
+	}
+	
 	.secondButtons p{
 		padding: 2.142857142857143em;
 		display: block;
