@@ -16,6 +16,7 @@ body{
 
 a {
 	color: #000000;
+	-webkit-transition: all .5s;
 	transition: all .5s;
 }
 
@@ -56,6 +57,7 @@ img{
 .aboutMenu ul li a{
 	color: #FFFFFF;
 	font-size: 1.5em;
+	-webkit-transition: .5s all;
 	transition: .5s all;
 }
 
@@ -64,7 +66,7 @@ img{
 	text-decoration: none;
 }
 
-.brand-nav{
+ .brand-nav{
 	margin-top:.5em;
 	white-space: nowrap;
 }
@@ -86,6 +88,7 @@ img{
 .collectionsMenu ul li a{
 	color: #FFFFFF;
 	font-size: 1.5em;
+	-webkit-transition: .5s all;
 	transition: .5s all;
 }
 
@@ -107,6 +110,7 @@ img{
 .footer a{
 	color: #000000;
 	text-decoration: none;
+	-webkit-transition: .5s all;
 	transition: .5s all;
 }
 
@@ -146,6 +150,7 @@ img{
 .helpMenu ul li a{
 	color: #FFFFFF;
 	font-size: 1.5em;
+	-webkit-transition: .5s all;
 	transition: .5s all;
 }
 
@@ -177,6 +182,10 @@ img{
 	border-left: .3571428571428571em /* 5/14*/  solid #FFFFFF;
 	height: 14.5em;
 	text-align: center;
+}
+
+.image-block img{
+	width: 100%;
 }
 
 .layout-content{
@@ -300,6 +309,7 @@ img{
 .NicLib-Head ul a{
 	 color: #FFFFFF;
 	 text-decoration: none;
+	 -webkit-transition: all .5s;
 	 transition: all .5s;
 }
  
@@ -355,6 +365,7 @@ img{
 	padding: 3.214285714285714em /* 45/14 */ 3px;
 	width: 20%;
 	height: 10.1875em;
+	-webkit-transition: all .25s;
 	transition: all .25s;
 	background-color: #FFFFFF;
 }
@@ -391,6 +402,7 @@ img{
 .servicesMenu ul li a{
 	color: #FFFFFF;
 	font-size: 1.5em;
+	-webkit-transition: .25s all;
 	transition: .25s all;
 }
 
@@ -419,6 +431,7 @@ img{
 .univHead a{
  	color: #FFFFFF;
  	text-decoration: none;
+ 	-webkit-transition: all .5s;
  	transition: all .5s;
 }
  
@@ -470,6 +483,7 @@ img{
 #mobile-nav a{
 	color: #FFFFFF;
 	text-decoration: none;
+	-webkit-transition: all .5s;
 	transition: all .5s
 }
 
@@ -494,24 +508,18 @@ img{
 /* Media Queries */
 
 @media screen and (max-width: 1454px){
-
-	
 	.univHead nav{
 		width: 49.24346629986245%; /* 716/1454 */
 	}
 }
 
 @media screen and (max-width: 1325px){
-
-	
 	.univHead nav{
 		width: 54.0377358490566%; /* 716/1325 */
 	}
 }
 
 @media screen and (max-width: 1214px){
-
-	
 	.univHead nav{
 		width: 58.97858319604613%; /* 716/1214 */
 	}
@@ -533,20 +541,16 @@ img{
 	
 	.secondButtons{
 		display: block;
-	}
-	
+	}	
 }
 
 @media screen and (max-width: 1119px){
-
-	
 	.univHead nav{
 		width: 63.98570151921358%; /* 716/1119 */
 	}
 }
 
 @media screen and (max-width: 1037px){
-	
 	.mobile-menu{
 		display: initial;
 		position: static;
@@ -562,7 +566,7 @@ img{
 	}
 }
 
-@media screen and (max-width: 991px){ /* Maybe this is where the "button" needs to show up */
+@media screen and (max-width: 991px){
 	.image-block{
 		width: 98.6%;
 	}
@@ -637,7 +641,6 @@ img{
 }
 
 @media screen and (max-width: 717px){
-	
 	.circleButtons{
 		background-size: cover;
 	}
@@ -758,11 +761,7 @@ img{
 	}
 }
 
-@media screen and (max-width: 310px){
-	.image-block img{
-		max-width: 100%;
-	}
-	
+@media screen and (max-width: 310px){	
 	.secondButtons{
 		width: 92%;
 	}
