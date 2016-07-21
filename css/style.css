@@ -140,6 +140,22 @@ img{
 	list-style: none;
 }
 
+.footer1{
+	text-align: left;
+}
+
+.footer2{
+	
+}
+
+.footer3{
+	
+}
+
+.footer4{
+	text-align: right;
+}
+
 .helpMenu{
 	text-align: center;
 	width: 100%;
@@ -185,7 +201,7 @@ img{
 }
 
 .image-block img{
-	width: 100%;
+	max-width: 100%;
 }
 
 .layout-content{
@@ -530,6 +546,7 @@ img{
 		border-left: none;
 	}
 	
+	
 	.NicLib-Head ul{
 		/* Padding when FYE QR Code is inactive */
 		padding-left: 8.34028356964137%; /* 100/1199 */
@@ -542,6 +559,10 @@ img{
 	.secondButtons{
 		display: block;
 	}	
+	
+	.views_slideshow_cycle_teaser_section{
+		left: 34%;
+	}
 }
 
 @media screen and (max-width: 1119px){
@@ -611,6 +632,10 @@ img{
 		width: 15%;
 		margin-right: 1em;
 	}
+	
+	.views_slideshow_cycle_teaser_section{
+		left: 29%;
+	}
 }
 
 @media screen and (max-width: 767px){
@@ -661,6 +686,10 @@ img{
 	.secondButtons{
 		width: 98%;
 	}
+	
+	.views_slideshow_cycle_teaser_section{
+		left: 27%;
+	}
 }
 
 @media screen and (max-width: 608px){
@@ -670,6 +699,10 @@ img{
 	
 	.secondButtons p{
 		margin: 1.428571428571429em;
+	}
+	
+	.views_slideshow_cycle_teaser_section{
+		left: 24%;
 	}
 }
 
@@ -691,11 +724,19 @@ img{
 	.univHead img{
 		width: 50%;
 	}
+	
+	.views_slideshow_cycle_teaser_section{
+		left: 21%;
+	}
 }
 
 @media screen and (max-width: 488px){
 	.secondButtons{
 		width: 96%;
+	}
+	
+	.views_slideshow_cycle_teaser_section{
+		left: 16%;
 	}
 }
 
@@ -717,17 +758,59 @@ img{
 	.secondButtons{
 		width: 95.6%;
 	}
+	
+	.views_slideshow_cycle_teaser_section{
+		left: 15%;
+	}
+}
+
+@media screen and (max-width: 420px){
+	.views_slideshow_cycle_teaser_section{
+		left: 12%;
+	}
 }
 
 @media screen and (max-width: 416px){
 	.secondButtons{
 		width: 95%;
 	}
+	
+	.views_slideshow_cycle_teaser_section{
+		left: 10%;
+	}
 }
 
 @media screen and (max-width: 385px){
+	.footer1{
+		margin-bottom: 1.428571428571429em;
+		text-align: center;
+		display: block;
+		width: 100%;
+	}
+
+	.footer2{
+		display: none;
+	}
+
+	.footer3{
+		display: none;
+	}
+
+	.footer4{
+		text-align: center;
+		display: block;
+	}
+	
+	#hours{
+		float: none;
+	}
+	
 	.secondButtons{
 		width: 94.6%;
+	}
+	
+	.views_slideshow_cycle_teaser_section{
+		left: 8%;
 	}
 }
 
@@ -743,11 +826,25 @@ img{
 	.univHead span{
 		display: none;
 	}
+	
+	.views_slideshow_cycle_teaser_section{
+		left: 5%;
+	}
+}
+
+@media screen and (max-width: 357px){
+	.views_slideshow_cycle_teaser_section{
+		left: 3.5%;
+	}
 }
 
 @media screen and (max-width: 347px){
 	.secondButtons{
 		width: 93.6%;
+	}
+	
+	.views_slideshow_cycle_teaser_section{
+		left: 1.75%;
 	}
 }
 
@@ -758,6 +855,9 @@ img{
 	
 	.secondButtons{
 		width: 93%;
+	}
+	.views_slideshow_cycle_teaser_section{
+		left: 0;
 	}
 }
 
