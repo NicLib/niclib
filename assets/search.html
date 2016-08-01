@@ -198,6 +198,20 @@
  
 				e.preventDefault();
 			});
+			
+			//retain search term input when switching tabs
+			$('#query1').change(function(){
+				$('.searchbox').val($('#query1').val());
+			});
+			$('#query2').change(function(){
+				$('.searchbox').val($('#query2').val());
+			});
+			$('#query3').change(function(){
+				$('.searchbox').val($('#query3').val());
+			});
+			$('#query4').change(function(){
+				$('.searchbox').val($('#query4').val());
+			});
 		});
 	</script>
 	<script>
@@ -249,7 +263,7 @@
 							<div class="searchTerm">
 								<input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
 								<input type="hidden" name="databaseList" value="1708,1920,2513,197,2482,2175,1978,1736,638,283">						
-								<input id="realquery" placeholder="Type Title or Author or Subject words..." autofocus="autofocus" id="query" class="searchbox" name="queryString">
+								<input id="query1" placeholder="Type Title or Author or Subject words..." autofocus="autofocus" id="query" class="searchbox" name="queryString">
 								<input type="hidden" name="format" value="Book">
 								<input type="hidden" name="subformat" value="Book::book_printbook">
 								<input type="hidden" name="subformat" value="Book::book_digital">
@@ -327,7 +341,7 @@
                            <div class="searchTerm">
 							  <input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
 							  <input type="hidden" name="databaseList" value="1708,1271,2237,2259,2260,2261,2264,2482,1721,1723,1941,1978,2375,1736,2484,2879,638,2479,1697,3313">
-							  <input id="realquery" placeholder="Type Title or Author or Subject words..." autofocus="autofocus" id="query" class="searchbox" name="queryString">
+							  <input id="query2" placeholder="Type Title or Author or Subject words..." autofocus="autofocus" id="query" class="searchbox" name="queryString">
 							  <input type="hidden" name="format" value="Artchap">
                               <input type="hidden" name="subformat" value="Artchap::artchap_artcl">
 							  <input type="hidden" name="format" value="Encyc">
@@ -372,7 +386,7 @@
                            <div class="searchTerm">
 						      <input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
 							  <input type="hidden" name="databaseList" value="3369,239,638">
-                              <input id="realquery" placeholder="Type Title or Name or Subject words...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
+                              <input id="query3" placeholder="Type Title or Name or Subject words...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
                               <input type="hidden" name="format" value="Music">
                               <input type="hidden" name="subformat" value="Music::music_cd">
                               <input type="hidden" name="subformat" value="Music::music_lp">
@@ -474,7 +488,7 @@
                             <div class="searchTerm">
 								<input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
 								<input type="hidden" name="databaseList" value="1708,1271,1920,3004,2513,197,2229,2479,2237,2259,2260,2261,2264,2482,2482,1721,1723,1941,3369,239,2007,2006,2175,1978,2375,1736,2484,1736,2879,283,638">
-								<input id="realquery" placeholder="Type Title or Name or Subject words...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
+								<input id="query4" placeholder="Type Title or Name or Subject words...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
 								<select name="subscope" class="dropdown-menu">
 									<option value="" selected>Nicholson Library</option>
 									<option value="wz:1274::zs:35416">Archives</option>
