@@ -6,6 +6,8 @@ function revealNav(){
 	} else {
 		el.style.display = 'none';
 	}
+	
+	console.log(el.style.display);
 };
 
 jQuery(document).ready(function($){

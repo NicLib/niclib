@@ -663,6 +663,10 @@ img{
 	.small-univHead{
 		display: none;
 	}
+	
+	.univHead span{
+		display: none;
+	}
 }
 
 @media screen and (max-width: 717px){
@@ -821,10 +825,6 @@ img{
 	
 	.secondButtons p{
 		margin: 1em; 
-	}
-	
-	.univHead span{
-		display: none;
 	}
 	
 	.views_slideshow_cycle_teaser_section{
