@@ -265,8 +265,10 @@ img{
 
 .libSearch{
 	border: 1px solid #000000;
-	/*background-color: #FFFFFF;*/
-	background-color: #683818;
+	/*background-color: #683818;*/
+	background-image: url('../assets/lib_windows.jpg');
+	background-size: cover;
+	background-position: center center;
 	width: 74.47%;
 	clear:both;
 }
