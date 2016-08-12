@@ -218,8 +218,21 @@ img{
 .libButtons{
 	padding: 0;
 	font-size: 1.85em;
-	text-align: center;
+	text-align: left;
 	box-sizing: border-box;
+	color: #FFFFFF;
+}
+
+.libButtons a{
+	color: white;
+}
+
+.libButtons a:hover{
+	color: white;
+}
+
+.libButtons a:visited{
+	color: white;
 }
 
 .libButtons div{
@@ -229,13 +242,22 @@ img{
 	float:right;
 }
 
+.libButtons h2{
+	padding-left: .25em;
+	text-shadow: 2px 2px #000000;
+}
+
 .libButtons .button1{
-	background-color:#CC9063;
+	/*background-color:#CC9063;*/
+	background-image: url('../assets/Books.jpg');
+	background-size: 100%;
 	margin-bottom:2px;
 }
 
 .libButtons .button2{
-	background-color:#64BE9F;
+	/*background-color:#64BE9F;*/
+	background-image: url('../assets/helios-morning-fog.jpg');
+	background-size: 100%;
 	margin-top:2px;
 }
 

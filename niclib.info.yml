@@ -17,7 +17,6 @@ regions:
   hiddenMenu3: 'Collections Menu'
   hiddenMenu4: 'Help Menu'
   content: 'Main Content'
-  libButtons: 'Buttons Next to Catalog'
   secondButtons: 'Buttons Under Catalog'
   media: 'Media Placement'
   footer: 'Footer Menu'
