@@ -21,3 +21,4 @@ Drupal 8 theme
   * This file must be placed in the root folder
 * "assets/theme.css" is a modified core file. It belongs in /core/assets/vendor/jquery.ui/themes/base
   * This must be done after every update to Drupal core
+* When you are ready to make you site live, be sure to copy "niclib.libraries.yml-PROCDUCTION" over "niclib.libraries.yml"

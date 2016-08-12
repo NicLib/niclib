@@ -1,0 +1,9 @@
+global-css:
+  css:
+    theme:
+      css/style-min.css: {}
+global-js:
+  js:
+    js/main-min.js: {}
+  dependencies:
+    - core/jquery
