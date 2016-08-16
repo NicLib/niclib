@@ -17,7 +17,9 @@ jQuery(document).ready(function($){
 		window.open('https://libraryh3lp.com/chat/nicref@chat.libraryh3lp.com?skin=26324', 'AskUs', 'resizable=1,width=500,height=500')
 	});
 	$('.secondButtons p:nth-child(2)').append('<br/><i class="glyphicon glyphicon-book"></i>');
-	$('.secondButtons p:nth-child(3)').append('<br/><i class="glyphicon glyphicon-education"></i>');
+	$('.secondButtons p:nth-child(3)').append('<br/><i class="glyphicon glyphicon-education"></i>').click(function(){
+		window.open('/faculty', '_self');
+	});
 	function revealNav(){
 		console.log($(this));
 	}

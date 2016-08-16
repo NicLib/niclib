@@ -408,6 +408,7 @@ img{
 	-webkit-transition: all .25s;
 	transition: all .25s;
 	background-color: #FFFFFF;
+	cursor: pointer;
 }
 
 .secondButtons p:hover{
