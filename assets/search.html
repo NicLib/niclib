@@ -182,12 +182,75 @@
 		}
 
 /* Media Queries */
-/* iframe width on large screen is approx 817px
+/* iframe width on large screen is approx 817px */
 
-@media screen and (max-width: ){
-
+@media screen and (max-width: 652px){
+	input.searchbox{
+		width: 69%;
+	}
 }
 
+@media screen and (max-width: 596px){
+	input.searchbox{
+		width: 90%;
+	}
+	select.dropdown-menu{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 530px){
+	table{
+		display: none;
+	}
+	
+	.tab-content{
+		margin-top: 52px;
+	}
+}
+
+@media screen and (max-width: 457px){
+	input.searchbox{
+		width: 85%;
+	}
+}
+
+@media screen and (max-width: 414px){
+	.tab-content{
+		margin-top: 13px;
+	}
+}
+
+@media screen and (max-width: 311px){
+	input.searchbox{
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 236px){
+	input.searchbox{
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 230px){
+	body{
+		margin-top: -17px;
+	}
+	.tab-links{
+		display: table;
+	}
+	
+	.tab-links h2{
+		display: table-cell;
+	}
+}
+
+@media screen and (max-width: 200px){
+	body{
+		margin-top: -58px;
+	}
+}
 	</style>
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -221,6 +284,15 @@
 				$('.searchbox').val($('#query4').val());
 			});
 		});
+	</script>
+	<script>
+		//Found at https://www.sitepoint.com/community/t/adding-removing-classes-on-resize-jquery/191805
+		$(window).on("load", function(){
+			var viewportWidth = $(window).width();
+			if(viewportWidth < 200){
+				$('.tab-links h2').removeClass();
+			};
+		})
 	</script>
 	<script>
 		$('.windowForm').submit(function(e){
