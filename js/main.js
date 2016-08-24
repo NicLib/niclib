@@ -17,7 +17,7 @@ jQuery(document).ready(function($){
 		window.open('https://libraryh3lp.com/chat/nicref@chat.libraryh3lp.com?skin=26324', 'AskUs', 'resizable=1,width=500,height=500')
 	});
 	$('.secondButtons p:nth-child(2)')/*.append('<br/><i class="glyphicon glyphicon-book"></i>')*/.click(function(){
-		window.open('http://libguides.anderson.edu/c.php?g=500884', '_blank');
+		window.open('http://libguides.anderson.edu/c.php?g=500884', '_self');
 	});
 	$('.secondButtons p:nth-child(3)')/*.append('<br/><i class="glyphicon glyphicon-education"></i>')*/.click(function(){
 		window.open('/faculty', '_self');
