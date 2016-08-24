@@ -12,12 +12,14 @@ function revealNav(){
 
 jQuery(document).ready(function($){
 	//Adds Glyphicons to 'secondButtons'
-	$('.secondButtons p:first-child').append('<br/><i class="glyphicon glyphicon-question-sign"></i>').click(function(){
+	$('.secondButtons p:first-child')/*.append('<br/><i class="glyphicon glyphicon-question-sign"></i>')*/.click(function(){
 		//Custom script for opening a window for Library H3lp
 		window.open('https://libraryh3lp.com/chat/nicref@chat.libraryh3lp.com?skin=26324', 'AskUs', 'resizable=1,width=500,height=500')
 	});
-	$('.secondButtons p:nth-child(2)').append('<br/><i class="glyphicon glyphicon-book"></i>');
-	$('.secondButtons p:nth-child(3)').append('<br/><i class="glyphicon glyphicon-education"></i>').click(function(){
+	$('.secondButtons p:nth-child(2)')/*.append('<br/><i class="glyphicon glyphicon-book"></i>')*/.click(function(){
+		window.open('http://libguides.anderson.edu/c.php?g=500884', '_blank');
+	});
+	$('.secondButtons p:nth-child(3)')/*.append('<br/><i class="glyphicon glyphicon-education"></i>')*/.click(function(){
 		window.open('/faculty', '_self');
 	});
 	function revealNav(){

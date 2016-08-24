@@ -72,7 +72,8 @@ img{
 }
 
 .circleButtons{
-	background-image: url('../images/quick-facts-bg-one.jpg');
+	background-image: url('../images/circle_background.png');
+	background-size: cover;
 	background-position: right center;
 	/*background-color: #E6E6E6;*/
 	background-repeat: no-repeat;
@@ -402,7 +403,7 @@ img{
 	border-radius: 71.42857142857143em;
 	border: .3571428571428571em /* 5/14 */ solid #585858;
 	margin: 2.142857142857143em; /* 30/14 */
-	padding: 3.214285714285714em /* 45/14 */ 3px;
+	/*padding: 3.214285714285714em /* 45/14 */ /*3px;*/
 	width: 20%;
 	height: 10.1875em;
 	-webkit-transition: all .25s;
@@ -424,9 +425,10 @@ img{
 	cursor: pointer;
 }
 
-.secondButtons p:nth-child(2){
+.secondButtons p:nth-child(2) img{
 	/*background-color: #90986B;*/
-	padding-top: 2.1875em; /* 35/16 */
+	/*padding-top: 2.1875em; /* 35/16 */
+	margin-top: -.2857142857142857em;
 }
 
 /*.secondButtons p:nth-child(3){
