@@ -77,8 +77,8 @@ img{
 	background-image: url('../images/circle_background.png');
 	background-size: cover;
 	background-position: right center;
-	/*background-color: #E6E6E6;*/
 	background-repeat: no-repeat;
+	height: 14.5em;
 }
 
 .collectionsMenu{
@@ -407,9 +407,7 @@ img{
 	border-radius: 71.42857142857143em;
 	border: .3571428571428571em /* 5/14 */ solid #585858;
 	margin: 2.142857142857143em; /* 30/14 */
-	/*padding: 3.214285714285714em /* 45/14 */ /*3px;*/
 	width: 20%;
-	height: 10.1875em;
 	-webkit-transition: all .25s;
 	transition: all .25s;
 	background-color: #FFFFFF;
@@ -631,14 +629,29 @@ img{
 	
 	.libButtons{
 		margin-top: .28557142857142857em; /* 4/14 */
+		margin-left: -1.1%;
 	}
 	.libButtons div{
 		width: 98.6%;
 		float: none;
 	}
 	
+	.libButtons .shadow{
+		width: 100%;
+	}
+	
+	.libButtons .button{
+		width:98.6%;
+		height: 7.5em;
+	}
+	
 	.libButtons .button1{
 		margin-bottom: .28557142857142857em;
+		background-position: 0% 20%;
+	}
+	
+	.libButtons .button2{
+		background-position: 0% 75%;
 	}
 	
 	.libButtons table{
@@ -664,6 +677,7 @@ img{
 	.secondButtons{
 		width: 98.6%;
 	}
+	
 
 	.univHead nave{
 		width: 15%;
@@ -676,7 +690,15 @@ img{
 }
 
 @media screen and (max-width: 767px){
+	.libButtons{
+		margin-left: .3%;
+	}
+	
 	.libButtons div{
+		width: 100%;
+	}
+	
+	.libButtons .button{
 		width: 100%;
 	}
 	
@@ -709,13 +731,14 @@ img{
 @media screen and (max-width: 717px){
 	.circleButtons{
 		background-size: cover;
+		background-position: 50% 0%;
+		height: 100%;
 	}
 	
 	.secondButtons p{
 		padding: 2.142857142857143em;
-		display: block;
-		width: 90%;
-		height: 8.214285714285714em;
+		width: 40%;
+		margin: 1.428571428571429em;
 	}
 	
 	.secondButtons p:nth-child(2){
@@ -738,10 +761,6 @@ img{
 		width: 97.6%;
 	}
 	
-	.secondButtons p{
-		margin: 1.428571428571429em;
-	}
-	
 	.views_slideshow_cycle_teaser_section{
 		left: 24%;
 	}
@@ -750,6 +769,18 @@ img{
 @media screen and (max-width: 566px){
 	.secondButtons{
 		width: 97%
+	}
+}
+
+@media screen and (max-width: 556px){
+	.libButtons{
+		margin-left: .4%;
+	}
+}
+
+@media screen and (max-width: 534px){
+	.secondButtons p{
+		width: 60%;
 	}
 }
 
@@ -805,6 +836,12 @@ img{
 	}
 }
 
+@media screen and (max-width: 431px){
+	.libButtons{
+		margin-left: .5%;
+	}
+}
+
 @media screen and (max-width: 420px){
 	.views_slideshow_cycle_teaser_section{
 		left: 12%;
@@ -850,12 +887,20 @@ img{
 		width: 94.6%;
 	}
 	
+	.secondButtons p{
+		width: 75%;
+	}
+	
 	.views_slideshow_cycle_teaser_section{
 		left: 8%;
 	}
 }
 
 @media screen and (max-width: 370px){
+	.libButtons .button{
+		height: 6em;
+	}
+	
 	.secondButtons{
 		width: 94%;
 	}
@@ -872,6 +917,12 @@ img{
 @media screen and (max-width: 357px){
 	.views_slideshow_cycle_teaser_section{
 		left: 3.5%;
+	}
+}
+
+@media screen and (max-width: 356px){
+	.libButtons{
+		margin-left: .6%;
 	}
 }
 
