@@ -292,10 +292,10 @@ img{
 
 .libSearch{
 	border: 1px solid #000000;
-	/*background-color: #683818;*/
-	background-image: url('../assets/lib_windows.jpg');
+	background-image: url('../assets/niclib_doors.jpg');
 	background-size: cover;
 	background-position: center center;
+	background-repeat:none;
 	width: 74.47%;
 	clear:both;
 }
