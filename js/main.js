@@ -1,4 +1,5 @@
 var allMenus = ['.servicesMenu', '.collectionsMenu', '.aboutMenu', '.helpMenu'];
+
 function revealNav(){
 	var el = document.getElementById('mobile-nav');
 	if(el.style.display != 'block'){
@@ -11,13 +12,17 @@ function revealNav(){
 };
 
 jQuery(document).ready(function($){
+	//Make external links open in a new tab
+	$("a[href^='http://']").attr('target', '_blank');
+	$("a[href^='https://']").attr('target','_blank');
+	
 	//Adds links to 'secondButtons'
 	$('.secondButtons p:first-child').click(function(){
 		//Custom script for opening a window for Library H3lp
 		window.open('https://libraryh3lp.com/chat/nicref@chat.libraryh3lp.com?skin=26324', 'AskUs', 'resizable=1,width=500,height=500')
 	});
 	$('.secondButtons p:nth-child(2)').click(function(){
-		window.open('http://libguides.anderson.edu/c.php?g=500884', '_self');
+		window.open('http://libguides.anderson.edu/c.php?g=500884', '_blank');
 	});
 	$('.secondButtons p:nth-child(3)').click(function(){
 		window.open('/faculty', '_self');
