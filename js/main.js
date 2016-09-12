@@ -40,7 +40,7 @@ jQuery(document).ready(function($){
 		function dynamicHeight(){
 			var heightnow = $(hiddenMenu).height();
 			var heightfull = $(hiddenMenu).css({height: 'auto'}).height();
-			$(hiddenMenu).css({height:heightnow}).animate({height: heightfull}, 500);
+			$(hiddenMenu).css({height:heightnow}).animate({height: heightfull}, 400);
 		};
 		
 		//Causes dynamic menu sizes to change smoothly
@@ -57,26 +57,33 @@ jQuery(document).ready(function($){
 		//Function found from StackOverflow user Popnoodles
 		//link "http://jsfiddle.net/zbB3Q/"
 		dynamicHeight();
-	})/*.mouseenter(function(){
+	}).mouseenter(function(){
 		//Below code is the same as the 'click' function
-		//Need to refactor this into a function, but not sure how
 		var menu = $(this);
 		var hiddenMenu = menu.parents('.NicLib-Head').next();
 		var menuSelected = '.' + menu.text().toLowerCase() + 'Menu';
 		function dynamicHeight(){
 			var heightnow = $(hiddenMenu).height();
 			var heightfull = $(hiddenMenu).css({height: 'auto'}).height();
-			$(hiddenMenu).css({height:heightnow}).animate({height: heightfull}, 500);
+			$(hiddenMenu).css({height:heightnow}).animate({height: heightfull}, 400);
 		};
 		if($(hiddenMenu).css('display')=='none'){
 			$(hiddenMenu).slideDown();
-		};
+		} 
 		for(var i in allMenus){
 			$(allMenus[i]).css('display', 'none');
 		};
 		$(menuSelected).css('display','initial');
 		dynamicHeight();
-	})*/;
+	});
+	
+	//Causes 'hiddenMenu' to close on mouse out
+	$('.NicLib-Head').parents('.row').mouseleave(function(){
+		//console.log('did this work');
+		if($(this).find('.hiddenMenu').css('display')=='block'){
+			$('.hiddenMenu').slideUp();
+		}
+	});
 	
 	//Causes 'hiddenMenu' to close
 	$('.hiddenMenu i').click(function(){
