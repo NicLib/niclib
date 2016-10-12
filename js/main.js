@@ -52,7 +52,7 @@ jQuery(document).ready(function($){
 		for(var i in allMenus){
 			$(allMenus[i]).css('display', 'none');
 		};
-		$(menuSelected).css('display','initial');
+		$(menuSelected).css('display','block');
 		
 		//Function found from StackOverflow user Popnoodles
 		//link "http://jsfiddle.net/zbB3Q/"
@@ -73,7 +73,7 @@ jQuery(document).ready(function($){
 		for(var i in allMenus){
 			$(allMenus[i]).css('display', 'none');
 		};
-		$(menuSelected).css('display','initial');
+		$(menuSelected).css('display','block');
 		dynamicHeight();
 	});
 	
