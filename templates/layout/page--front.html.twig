@@ -62,8 +62,264 @@
 					<div class="container">
 						<div class="mainContent">
 							<div class="libSearch col-lg-9 col-md-9 col-sm-12 col-xs-12">
-								<!--'search.html' is code found from Lauren Magnuson. Customizations made for Nicholson Library.  Code can be found at https://github.com/lpmagnuson/discovery-tabbed-search -->
-								<iframe class="embed-responsive-item" src="/search.html" scrolling="no" frameborder="0"></iframe>
+								<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+								<div id="search-wrapper">
+									<div class="tabs">
+										<div class="tab-links">
+											<a href="#tab1" class="selected"><h2 class="fa fa-book"><br /><span class="tab-label">Books</span></h2></a>
+											<a href="#tab2"><h2 class="fa fa-list-alt"><span class="tab-label"><br />Articles</span></h2></a>
+											<a href="#tab3"><h2 class="fa fa-video-camera"><span class="tab-label"><br />Media</span></h2></a>
+											<a href="#tab4"><h2 class="fa fa-university"><span class="tab-label"><br />Everything</span></h2></a>
+										</div>
+
+										<!-- Begin Books tab 
+											-- includes jrnl format, for periodical titles, yearbooks, etc.
+	
+											1708=Academic Search Complete; 
+											1920=Cambridge Campanions Online; 
+											2513=Ebrary
+											197=Electronic Books; 
+											2482=Literature Resource Center; 
+											2175=Oxford Reference Online; 
+											1978=Oxford Scholarship Online; 
+											1736=Small Business Resource Center; 
+											638=Worldcat.org
+											283=Worldcat
+											1279=History Reference Center
+											1719=Literary Reference Center Plus 
+										-->
+
+										<div class="tab-content">
+											<div id="tab1" class="tab active">            
+												<form action="http://anderson.on.worldcat.org/search" class="windowForm" target="_blank" method="get">
+													<div id="search">
+														{{ page.warning }}
+														<div class="search-title">
+														<h3>Find <span id="search-name">Books and eBooks</span></h3>
+														</div>             
+														<div class="searchTerm">
+															<input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
+															<input type="hidden" name="databaseList" value="1708,1920,2513,197,2482,2175,1978,1736,638,283,1279,1719">						
+															<input id="query1" placeholder="Type Title or Author or Subject words..." autofocus="autofocus" id="query" class="searchbox" name="queryString">
+															<input type="hidden" name="format" value="Book">
+															<input type="hidden" name="subformat" value="Book::book_printbook">
+															<input type="hidden" name="subformat" value="Book::book_digital">
+															<input type="hidden" name="subformat" value="Book::book_thsis">
+															<input type="hidden" name="subformat" value="Book::book_mic">
+															<input type="hidden" name="subformat" value="Book::book_largeprint">
+															<input type="hidden" name="subformat" value="Book::book_braille">
+															<input type="hidden" name="format" value="jrnl">
+															<input type="hidden" name="format" value="msscr">
+															<input type="hidden" name="subformat" value="msscr::msscr_digital">
+															<input type="hidden" name="author" value="all">
+															<input type="hidden" name="year" value="all">
+															<input type="hidden" name="yearFrom" value="">
+															<input type="hidden" name="yearTo" value="">
+															<input type="hidden" name="language" value="all">
+															<select name="scope" class="dropdown-menu">
+																<option value="" selected>Libraries Worldwide</option>
+																<!--<option value="sz:31296">Indiana Partner Libraries</option>-->
+																<option value="wz:1274">Nicholson Library</option>
+															</select>
+															<button type="submit" class="headersubmit" title="Search">&#xf002;</button>
+														</div>
+													</div>
+												</form>
+												
+												{{ page.searchHelp }}
+
+											</div>
+
+											<!-- Begin Articles tab
+												1708=Academic Search Complete;
+												1271=Business Source Complete;
+												2229: Gale;
+												1697=IEEE;
+												2237=JSTOR Arts & Sciences I Collection;
+												2259=JSTOR Arts & Sciences II Collection;
+												2260=JSTOR Arts & Sciences III Collection;
+												2261=JSTOR Arts & Sciences IV Collection;
+												2264=JSTOR Arts & Sciences VII Collection;
+												2482=Literature Resource Center;
+												1721=MAS Complete;
+												1723=MasterFILE Complete;
+												1941=MEDLINE;
+												1978=Oxford Scholarship Online;
+												2375=ScienceDirect;
+												1736=Small Business Reference Center;
+												2484=Small Business Resource Center;
+												3313=Springerlink;
+												2879=The Wall Street Journal;
+												638=WorldCat.org;
+												2479=Informe 
+												1275=Consumer Health Complete
+												1488=Essay and General Literature Index H.W. Wilson
+												1279=History Reference Center
+												1719=Literary Reference Center Plus
+												1734=Science Reference Center
+												1736=Small Business Reference Center 
+											-->
+
+											<div id="tab2" class="tab">	 
+												<form action="http://anderson.on.worldcat.org/search" target="_blank" method="get" class="windowForm">
+													<div id="search">
+														{{ page.warning }}
+														<div class="search-title">
+															<h3>Find <span id="search-name">Articles</span></h3>        
+														</div>             
+														<div class="searchTerm">
+															  <input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
+															  <input type="hidden" name="databaseList" value="1708,1271,2237,2259,2260,2261,2264,2482,1721,1723,1941,1978,2375,1736,2484,2879,638,2479,1697,3313,2879,638,2479,1275,1488,1279,1719,1734,1736">
+															  <input id="query2" placeholder="Type Title or Author or Subject words..." autofocus="autofocus" id="query" class="searchbox" name="queryString">
+															  <input type="hidden" name="format" value="Artchap">
+															  <input type="hidden" name="subformat" value="Artchap::artchap_artcl">
+															  <input type="hidden" name="format" value="Encyc">
+															  <!--<select name="subscope" class="dropdown-menu">
+																	<option value="" selected>Nicholson Library</option>
+																	<option value="wz:1274::zs:35416">Archives</option>
+																	<option value="wz:1274::zs:35418">Special Collections</option>
+																</select>-->
+																<select name="scope" class="dropdown-menu">
+																	<option value="" selected>Libraries Worldwide</option>
+																	<!--<option value="sz:31296">Indiana Partner Libraries</option>-->
+																	<option value="wz:1274">Nicholson Library</option>
+																</select>
+															<button type="submit" class="headersubmit" title="Search">&#xf002;</button>
+														</div>
+													</div>
+												</form>
+					
+												{{ page.searchHelp }}
+											</div>
+
+											<!-- Begin Video tab
+
+												3369=Naxos Music Library
+												239=Oaister;
+												638=Worldcat.org
+												1736=Small Business Reference Center 
+											-->
+ 
+											<div id="tab3" class="tab">		 
+												<form action="http://anderson.on.worldcat.org/search" target="_blank" method="get" class="windowForm">
+													<div id="search">
+														{{ page.warning }}
+														<div class="search-title">
+															<h3>Find <span id="search-name">DVDs, eVideos, Sound, etc.</span></h3>        
+														</div>             
+														<div class="searchTerm">
+															<input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
+															<input type="hidden" name="databaseList" value="3369,239,638,1736">
+															<input id="query3" placeholder="Type Title or Name or Subject words...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
+															<input type="hidden" name="format" value="Music">
+															<input type="hidden" name="subformat" value="Music::music_cd">
+															<input type="hidden" name="subformat" value="Music::music_lp">
+															<input type="hidden" name="subformat" value="Music::music_cassette">
+															<input type="hidden" name="subformat" value="Music::music_digital">
+															<input type="hidden" name="format" value="Video">
+															<input type="hidden" name="subformat" value="Video::video_dvd">
+															<input type="hidden" name="subformat" value="Video::video_vhs">
+															<input type="hidden" name="subformat" value="Video::video_film">
+															<input type="hidden" name="subformat" value="Video::video_digital">
+															<input type="hidden" name="subformat" value="Video::video_bluray">
+															<input type="hidden" name="format" value="Snd">
+															<input type="hidden" name="format" value="Image">
+															<input type="hidden" name="subformat" value="Image::image">
+															<input type="hidden" name="format" value="Compfile">
+															<input type="hidden" name="subformat" value="Compfile::compfile_digital">
+															<input type="hidden" name="format" value="Msscr">
+															<input type="hidden" name="subformat" value="Msscr::msscr_digital">
+															<input type="hidden" name="format" value="Vis">
+															<input type="hidden" name="subformat" value="Vis::vis_digital">
+															<input type="hidden" name="format" value="Audiobook">
+															<input type="hidden" name="subformat" value="Audiobook::audiobook_cassette">
+															<input type="hidden" name="subformat" value="Audiobook::audiobook_cd">
+															<input type="hidden" name="subformat" value="Audiobook::audiobook_digital">
+															<input type="hidden" name="subformat" value="Audiobook::audiobook_lp">
+															<input type="hidden" name="format" value="Web">
+															<input type="hidden" name="subformat" value="Web::web_dwn2d">
+															<input type="hidden" name="subformat" value="Web::web_digital">
+															<input type="hidden" name="format" value="Game">
+															<input type="hidden" name="format" value="Intmm">
+															<input type="hidden" name="subformat" value="Intmm::intmm_digital">
+															<select name="scope" class="dropdown-menu">
+																<option value="" selected>Libraries Worldwide</option>
+																<!--<option value="sz:31296">Indiana Partner Libraries</option>-->
+																<option value="wz:1274">Nicholson Library</option>
+															</select>
+															<button type="submit" class="headersubmit" title="Search">&#xf002;</button>
+														</div>
+													</div>
+												</form>		 
+					
+												{{ page.searchHelp }}
+											</div>
+ 
+											<!-- Begin Everything Tab
+												1708=Academic Search Complete;
+												1271=Business Source Complete;
+												1920=Cambridge Campanions Online; 
+												3004=CQ Researcher;
+												2513=Ebrary;
+												197=Electronic Books; 
+												2229=Gale Virtual Reference Library;
+												2479=Informe;
+												2237=JSTOR Arts & Sciences I Collection;
+												2259=JSTOR Arts & Sciences II Collection;
+												2260=JSTOR Arts & Sciences III Collection;
+												2261=JSTOR Arts & Sciences IV Collection;
+												2264=JSTOR Arts & Sciences VII Collection;
+												2482=Literature Resource Center; 
+												1721=MAS Complete;
+												1723=MasterFILE Complete;
+												1941=MEDLINE;
+												3369=Naxos Music Library;
+												239=Oaister;
+												2007=Oxford Art Online;
+												2006=Oxford Music Online;
+												2175=Oxford Reference Online; 
+												1978=Oxford Scholarship Online;
+												2375=ScienceDirect;
+												1736=Small Business Reference Center;
+												2484=Small Business Resource Center;
+												1736=Small Business Resource Center; 
+												2879=The Wall Street Journal;
+												283=WorldCat;
+												638=Worldcat.org
+												1275=Consumer Health Complete
+												1488=Essay and General Literature Index H.W. Wilson
+												1279=History Reference Center
+												1719=Literary Reference Center Plus
+												1734=Science Reference Center
+												1736=Small Business Reference Center 
+											-->
+ 
+											<div id="tab4" class="tab">					 
+												<form action="http://anderson.on.worldcat.org/search" target="_blank" method="get" class="windowForm">
+													<div id="search">
+														{{ page.warning }}
+														<div class="search-title">
+															<h3>Find <span id="search-name">Books, Articles, Media, and more.</span></h3>        
+														</div>             
+														<div class="searchTerm">
+															<input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
+															<input type="hidden" name="databaseList" value="1708,1271,1920,3004,2513,197,2229,2479,2237,2259,2260,2261,2264,2482,2482,1721,1723,1941,3369,239,2007,2006,2175,1978,2375,1736,2484,1736,2879,283,638,1275,1488,1279,1719,1734,1736">
+															<input id="query4" placeholder="Type Title or Name or Subject words...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
+															<select name="scope" class="dropdown-menu">
+																<option value="" selected>Libraries Worldwide</option>
+																<!--<option value="sz:31296">Indiana Partner Libraries</option>-->
+																<option value="wz:1274">Nicholson Library</option>
+															</select>
+															<button type="submit" class="headersubmit" title="Search">&#xf002;</button>
+														</div>
+													</div>
+												</form>
+			
+												{{ page.searchHelp }}
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 							<div class="libButtons col-lg-3 col-md-3 col-sm-12 col-xs-12">
 								<a href="http://libguides.anderson.edu/az.php" target="_blank"><div class="button button1"><div class="shadow"><h2>All Databases</h2></div></div></a>
@@ -76,9 +332,9 @@
 					<div class="secondaryContent">
 						<!-- Additional Buttons -->
 						<div class="secondButtons circleButtons col-lg-9 col-md-12 col-sm-12 col-xs-12">
-							<p><img src="themes/custom/niclib/assets/chat.png"></p>
-							<p><img src="themes/custom/niclib/assets/collections.png"></p>
-							<p><img src="themes/custom/niclib/assets/faculty.png"></p>
+							<p><img src="themes/custom/niclib/assets/chat.png" alt="Chat with a librarian"></p>
+							<p><img src="themes/custom/niclib/assets/collections.png" alt="Discover unique collections"></p>
+							<p><img src="themes/custom/niclib/assets/faculty.png" alt="Support for Faculty"></p>
 						</div>
 						<div class="secondButtons image-block col-lg-3 col-md-12 col-sm-12 col-xs-12">
 							{{ page.media }}

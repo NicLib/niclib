@@ -293,6 +293,7 @@ img{
 }
 
 .libSearch{
+	height: 293px;
 	border: 1px solid #000000;
 	background-image: url('../assets/niclib_doors.jpg');
 	background-size: cover;
@@ -300,6 +301,7 @@ img{
 	background-repeat:none;
 	width: 74.47%;
 	clear:both;
+	padding: 0;
 }
 
 .mainContent{

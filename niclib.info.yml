@@ -7,6 +7,7 @@ screenshot: logo.png
 libraries:
   - niclib/global-css
   - niclib/global-js
+  - niclib/search-css
   
 regions:
   univBrand: 'University Branding'
@@ -17,6 +18,8 @@ regions:
   hiddenMenu3: 'Collections Menu'
   hiddenMenu4: 'Help Menu'
   content: 'Main Content'
+  warning: 'Warning about Search'
+  searchHelp: 'Links Under Search Box'
   secondButtons: 'Buttons Under Catalog'
   media: 'Media Placement'
   footer: 'Footer Menu'
