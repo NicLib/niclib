@@ -194,12 +194,11 @@
 /* Media Queries */
 
 @media screen and (max-width: 1199px){
-	input.searchbox{
-		width: 64%;
-	}
-	
 	select.dropdown-menu{
-		margin-left: 448px;
+		margin-left: 640px;
+	}
+	input.searchbox{
+		width: 69%;
 	}
 }
 

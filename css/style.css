@@ -593,6 +593,35 @@ img{
 		border-left: none;
 	}
 	
+	.libSearch{
+		width: 97.5%;
+		margin: .3em;
+	}
+	
+	.libButtons{
+		margin-top: .5em;
+	}
+	
+	.libButtons .button{
+		width: 47.75%;
+		margin-left: .3em;
+		float:none;
+		display: inline-block;
+	}
+	
+	.libButtons .button1{
+		margin-bottom:0;
+	}
+	
+	.libButtons .button2{
+		margin-top: 0;
+	}
+	
+	.secondButtons{
+		margin-top:.3em;
+		margin: .3em .5em;
+		width: 98.25%;
+	}
 	
 	.NicLib-Head ul{
 		/* Padding when FYE QR Code is inactive */
@@ -610,13 +639,12 @@ img{
 	.views_slideshow_cycle_teaser_section{
 		left: 34%;
 	}
-}
-
-@media screen and (max-width: 1119px){
+	
 	.univHead nav{
 		width: 63.98570151921358%; /* 716/1119 */
 	}
 }
+
 
 @media screen and (max-width: 1037px){
 	.mobile-menu{
