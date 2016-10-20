@@ -119,22 +119,4 @@ jQuery(document).ready(function($){
 		$('.searchbox').val($('#query4').val());
 	});
 	
-	//Found at https://www.sitepoint.com/community/t/adding-removing-classes-on-resize-jquery/191805
-	$(window).on("load", function(){
-		var viewportWidth = $(window).width();
-		if(viewportWidth < 200){
-			$('.tab-links h2').removeClass();
-		};
-	});
-	
-	$('.windowForm').submit(function(e){
-		// specify a unique target name
-		var target = 'windowFormTarget';
-		// open a new window and name it
-		window.open('', target, 'width=500,height=300');
-		// set the target of the form to be
-		// the window name
-		this.setAttribute('target', target);
-		// allow the form to be submitted normally
-	});
 });	
