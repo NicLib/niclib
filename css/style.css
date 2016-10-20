@@ -79,7 +79,6 @@ img{
 	background-position: right center;
 	background-repeat: no-repeat;
 	height: 14.5em;
-	width: 72%;
 }
 
 .collectionsMenu{
@@ -204,7 +203,6 @@ img{
 	border-left: .3571428571428571em /* 5/14*/  solid #FFFFFF;
 	height: 14.5em;
 	text-align: center;
-	float: right;
 }
 
 .image-block img{
@@ -228,8 +226,6 @@ img{
 	text-align: left;
 	box-sizing: border-box;
 	color: #FFFFFF;
-	margin-right: 8px;
-	float:right;
 }
 
 .libButtons a{
@@ -262,14 +258,14 @@ img{
 	/*background-color:#CC9063;*/
 	background-image: url('../assets/Books.jpg');
 	background-size: 100%;
-	margin-bottom:2.142857142857143em /* 30/14 */;
+	margin-bottom:2px;
 }
 
 .libButtons .button2{
 	/*background-color:#64BE9F;*/
 	background-image: url('../assets/helios-morning-fog.jpg');
 	background-size: 100%;
-	margin-bottom:2.142857142857143em /* 30/14 */;
+	margin-top:2px;
 }
 
 .libButtons table{
@@ -297,13 +293,13 @@ img{
 }
 
 .libSearch{
-	height: 344px;
+	height: 293px;
 	border: 1px solid #000000;
 	background-image: url('../assets/niclib_doors.jpg');
 	background-size: cover;
 	background-position: center center;
 	background-repeat:none;
-	width: 71.47%;
+	width: 74.47%;
 	clear:both;
 	padding: 0;
 }
@@ -386,8 +382,7 @@ img{
 }
 
 .secondButtons{
-	/*margin-top: .3571428571428571em; /* 5/14 */
-	margin-bottom: 2.142857142857143em; /* 30/14 */
+	margin-top: .3571428571428571em; /* 5/14 */
 	padding: 0;
 	font-size: 1.142857142857143em; /* 16/14 */
 	color: /*#FFFFFF*/ #000000;
