@@ -580,6 +580,27 @@ img{
 	}
 }
 
+@media screen and (min-width: 1200px){
+	.circleButtons{
+		width: 70%;
+		margin: 1.25em;
+	}
+	
+	.image-block{
+		margin:1.25em .3571428571428571em;
+	}
+	
+	.libButtons .button{
+		margin: .55em auto;
+	}
+	
+	.libSearch{
+		height: 317px;
+		width: 69.5%;
+		margin: 1em 1.5em;
+	}
+}
+
 @media screen and (max-width: 1199px){
 	/* Styling based on nothing in footer2 */
 	.footer2{
@@ -593,6 +614,35 @@ img{
 		border-left: none;
 	}
 	
+	.libSearch{
+		width: 97.5%;
+		margin: .3em;
+	}
+	
+	.libButtons{
+		margin-top: .5em;
+	}
+	
+	.libButtons .button{
+		width: 47.75%;
+		margin-left: .3em;
+		float:none;
+		display: inline-block;
+	}
+	
+	.libButtons .button1{
+		margin-bottom:0;
+	}
+	
+	.libButtons .button2{
+		margin-top: 0;
+	}
+	
+	.secondButtons{
+		margin-top:.3em;
+		margin: .3em .5em;
+		width: 98.25%;
+	}
 	
 	.NicLib-Head ul{
 		/* Padding when FYE QR Code is inactive */
@@ -610,13 +660,12 @@ img{
 	.views_slideshow_cycle_teaser_section{
 		left: 34%;
 	}
-}
-
-@media screen and (max-width: 1119px){
+	
 	.univHead nav{
 		width: 63.98570151921358%; /* 716/1119 */
 	}
 }
+
 
 @media screen and (max-width: 1037px){
 	.mobile-menu{
@@ -641,7 +690,7 @@ img{
 	
 	.libButtons{
 		margin-top: .28557142857142857em; /* 4/14 */
-		margin-left: -1.1%;
+		margin-left: -.5%;
 	}
 	.libButtons div{
 		width: 98.6%;
@@ -653,7 +702,7 @@ img{
 	}
 	
 	.libButtons .button{
-		width:98.6%;
+		width:97%;
 		height: 7.5em;
 	}
 	
@@ -675,7 +724,7 @@ img{
 	}
 	
 	.libSearch{
-		width: 98.61111111111111%; /* 710/720 */
+		width: 97%; /* 710/720 */
 	}
 	
 	.NicLib-Head ul{
@@ -687,7 +736,8 @@ img{
 	}
 	
 	.secondButtons{
-		width: 98.6%;
+		width: 97.5%;
+		margin-left: .5%;
 	}
 	
 
@@ -731,11 +781,12 @@ img{
 	}
 	
 	.libButtons .button{
-		width: 100%;
+		width: 98.75%;
+		margin-left: .3%;
 	}
 	
 	.libSearch{
-		width: 100%;
+		width: 98.75%;
 	}
 	
 	.mobile-menu{
@@ -868,6 +919,12 @@ img{
 	}
 }
 
+@media screen and (max-width: 436px){
+	.libSearch{
+		width: 98%;
+	}
+}
+
 @media screen and (max-width: 431px){
 	.libButtons{
 		margin-left: .5%;
@@ -969,6 +1026,10 @@ img{
 }
 
 @media screen and (max-width: 310px){	
+	.libSearch{
+		height: 315px;
+	}
+	
 	.secondButtons{
 		width: 92%;
 	}
