@@ -149,7 +149,33 @@ if (month==5 && date>4) {mayhours();}
 if (month==5 && date==26) {hours="MEMORIAL DAY CLOSED";} 
 if (month==6 || month==7 || month==8) {junehours();} 
 }
-
+if (year==2016){
+if (month==1 && date<12) {junehours();} 
+if (month==1 && date==20) {hours="MLK DAY CLOSED";}
+if ((month==3 && date>18) && (month==3 && date<22))  {hours="By Appointment Only";} 
+if (month==3 && date==23) {hours="CLOSED";}
+if (month==4 && date==18) {hours="EASTER CLOSED";} 
+if (month==4 && date==19) {hours="EASTER CLOSED";} 
+if (month==4 && date==20) {hours="EASTER CLOSED";} 
+if (month==5 && date>4) {mayhours();} 
+if (month==5 && date==26) {hours="MEMORIAL DAY CLOSED";} 
+if (month==6 || month==7 || month==8) {junehours();} 
+if (month==5 && date>6) {mayhours();}
+if (month==5 && date==28) {hours="MEMORIAL DAY CLOSED";} 
+if (month==6 || month==7 || month==8) {junehours();}
+if (month==6 && date==18) {hours="9:00 AM to Noon, 1:00 PM to 3:00 PM";}
+if (month==6 && date==19) {hours="9:00 AM to Noon, 1:00 PM to 3:00 PM";}
+if (month==6 && date==20) {hours="9:00 AM to Noon, 1:00 PM to 3:00 PM";}
+if (month==9 && date>3) {termhours();} 
+if (month==9 && date==3) {hours="Labor Day CLOSED";} 
+if (month==10 && date==8 && hour>12 ) {hours="Homecoming CLOSED";}
+if (month==10 && date==14) {hours="Mid-Fall Break CLOSED";}   
+if (month==11 && date==24) {hours="Thanksgiving CLOSED";} 
+if (month==11 && date==25) {hours="Thanksgiving Weekend CLOSED";}  
+if (month==11 && date==26) {hours="Thanksgiving Weekend CLOSED";}  
+if (month==12 && date>21) {hours="Christmas Break CLOSED";}
+}
+
 var cleandate = month +"/"+day+"/"+year +"<br>";
 var today = Dday+"  "+hours;
 
