@@ -91,7 +91,7 @@
 
 										<div class="tab-content">
 											<div id="tab1" class="tab active">            
-												<form action="http://anderson.on.worldcat.org/search" class="windowForm" target="_blank" method="get">
+												<form action="http://anderson.on.worldcat.org/search" class="windowForm" target="_blank" method="get" onsubmit="ga('send', 'event', 'Catalog Search', 'Search', 'Use Book Search')">
 													<div id="search">
 														{{ page.warning }}
 														<div class="search-title">
@@ -161,7 +161,7 @@
 											-->
 
 											<div id="tab2" class="tab">	 
-												<form action="http://anderson.on.worldcat.org/search" target="_blank" method="get" class="windowForm">
+												<form action="http://anderson.on.worldcat.org/search" target="_blank" method="get" class="windowForm" onsubmit="ga('send', 'event', 'Catalog Search', 'Search', 'Use Article Search')">
 													<div id="search">
 														{{ page.warning }}
 														<div class="search-title">
@@ -201,7 +201,7 @@
 											-->
  
 											<div id="tab3" class="tab">		 
-												<form action="http://anderson.on.worldcat.org/search" target="_blank" method="get" class="windowForm">
+												<form action="http://anderson.on.worldcat.org/search" target="_blank" method="get" class="windowForm" onsubmit="ga('send', 'event', 'Catalog Search', 'Search', 'Use Media Search')">
 													<div id="search">
 														{{ page.warning }}
 														<div class="search-title">
@@ -295,7 +295,7 @@
 											-->
  
 											<div id="tab4" class="tab">					 
-												<form action="http://anderson.on.worldcat.org/search" target="_blank" method="get" class="windowForm">
+												<form action="http://anderson.on.worldcat.org/search" target="_blank" method="get" class="windowForm" onsubmit="ga('send', 'event', 'Catalog Search', 'Search', 'Use Everything Search')">
 													<div id="search">
 														{{ page.warning }}
 														<div class="search-title">
@@ -322,8 +322,8 @@
 								</div>
 							</div>
 							<div class="libButtons col-lg-3 col-md-12 col-sm-12 col-xs-12">
-								<a href="http://libguides.anderson.edu/az.php" target="_blank"><div class="button button1"><div class="shadow"><h2>All Databases</h2></div></div></a>
-								<a href="http://libguides.anderson.edu/" target="_blank"><div class="button button2"><div class="shadow"><h2>Subject Guides</h2></div></div></a>
+								<a href="http://libguides.anderson.edu/az.php" target="_blank" onClick="ga('send', 'event', 'Library Resources', 'Find Resource', 'Find a Database')"><div class="button button1"><div class="shadow"><h2>All Databases</h2></div></div></a>
+								<a href="http://libguides.anderson.edu/" target="_blank" onClick="ga('send', 'event', 'Library Resources', 'Find Resource', 'Find a LibGuide')"><div class="button button2"><div class="shadow"><h2>Subject Guides</h2></div></div></a>
 							</div>
 						</div>
 					</div>
@@ -332,9 +332,9 @@
 					<div class="secondaryContent">
 						<!-- Additional Buttons -->
 						<div class="secondButtons circleButtons col-lg-9 col-md-12 col-sm-12 col-xs-12">
-							<p><img src="themes/custom/niclib/assets/chat.png" alt="Chat with a librarian"></p>
-							<p><img src="themes/custom/niclib/assets/collections.png" alt="Discover unique collections"></p>
-							<p><img src="themes/custom/niclib/assets/faculty.png" alt="Support for Faculty"></p>
+							<p><img src="themes/custom/niclib/assets/chat.png" alt="Chat with a librarian" onClick="ga('send', 'event', 'Library Resources', 'Get Help', 'Chat with a Librarian')"></p>
+							<p><img src="themes/custom/niclib/assets/collections.png" alt="Discover unique collections" onClick="ga('send', 'event', 'Library Resources', 'Find Resource', 'Special Collections')"></p>
+							<p><img src="themes/custom/niclib/assets/faculty.png" alt="Support for Faculty" onClick="ga('send', 'event', 'Library Resources', 'Find Resource', 'Library Support for Faculty')"></p>
 						</div>
 						<div class="secondButtons image-block col-lg-3 col-md-12 col-sm-12 col-xs-12">
 							{{ page.media }}
