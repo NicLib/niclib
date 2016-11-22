@@ -322,6 +322,15 @@ img{
 	font-weight: bold;
 }
 
+.mainContent2{
+	width: 95%;
+	margin:auto;
+}
+
+.mainContent2 ol li h3 a{
+	text-decoration: underline;
+}
+
 .mobile-menu{
 	display: none;
 }

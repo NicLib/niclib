@@ -20,6 +20,7 @@ regions:
   content: 'Main Content'
   warning: 'Warning about Search'
   searchHelp: 'Links Under Search Box'
+  searchMod: 'Search Module'
   secondButtons: 'Buttons Under Catalog'
   media: 'Media Placement'
   footer: 'Footer Menu'
