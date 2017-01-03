@@ -27,6 +27,9 @@ jQuery(document).ready(function($){
 	$('.secondButtons p:nth-child(3)').click(function(){
 		window.open('/faculty', '_self');
 	});
+	//$('.footer3 input').css('width', '100%').attr('data-original-title', '');
+	//$('.mainContent form .form-search').css('width', '100%').attr('data-original-title', '');
+	
 	function revealNav(){
 		console.log($(this));
 	}
