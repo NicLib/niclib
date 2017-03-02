@@ -59,7 +59,7 @@
 		}
 	
 		.tab-links a.selected h2 {
-		   color: #F57920; /*same as the buttons*/
+		   color: #B44723; /*same as the buttons*/
 		}
 		
         .tab-links h2 {
@@ -122,7 +122,7 @@
 			font-size: 1.6rem;
 			margin: 10px auto;
 			border: 0;
-			outline: 2px solid #F57920;
+			outline: 2px solid #B44723;
 			float:left;
 		}
     
@@ -135,7 +135,7 @@
 			margin-top: 10px;
 			padding:0;
 			border: 0;
-			background-color: #F57920;
+			background-color: #B44723;
 			color: #ffffff;
 			font-size: 2.2em;
 			font-family: 'FontAwesome', sans-serif;
@@ -157,7 +157,7 @@
         background-color: #FFFFFF;
         padding: 5px;
         font-size: 14px;
-        border: 2px solid #F57920;
+        border: 2px solid #B44723;
         border-radius: 0;
         height: 40px;
 		margin: 10px;

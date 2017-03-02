@@ -21,7 +21,7 @@ a {
 }
 
 a:hover{
-	color: #F57920;
+	color: #B44723;
 }
 
 article table td {
@@ -29,8 +29,8 @@ article table td {
 }
 
 header{
-	border-top: .2857142857142857em /* 4/14 */ solid #FFB652;
-	background-color: #F57920;
+	border-top: .2857142857142857em /* 4/14 */ solid #595959;
+	background-color: #B44723;
 	margin-top: 0;
  	width: 100%;
 }
@@ -118,7 +118,7 @@ img{
 }
 
 .footer a:hover{
-	color: #F57920;
+	color: #B44723;
 	text-decoration: none;
 }
 
@@ -127,7 +127,7 @@ img{
 }
 
 .footer a:focus{
-	color: #F57920;
+	color: #B44723;
 }
 
 .footer a:visted{
@@ -181,7 +181,7 @@ img{
 }
 
 .hiddenMenu{
-	background-color: #F57920;
+	background-color: #B44723;
 	margin: auto;
 	margin-top: 1.428571428571429em; /* 20/14 */
 	padding-top: .5em;
@@ -358,7 +358,7 @@ img{
 	margin-top: 1em;
 	/* Padding when FYE QR Code is inactive */
 	padding-left: 15.97005614472863%; /* 256/1603 */
-	background-color: #565656;
+	background-color: #595959;
 	display: inline;
 	width: 100%;
 	box-shadow: 0 5px 5px #888888;
@@ -372,7 +372,7 @@ img{
 }
  
 .NicLib-Head ul a:hover{
-	color: #F57920;
+	color: #B44723;
 	background: none;
 }
 
@@ -418,7 +418,7 @@ img{
 	display: inline-block;
 	vertical-align: middle;
 	border-radius: 71.42857142857143em;
-	border: .3571428571428571em /* 5/14 */ solid #585858;
+	border: .3571428571428571em /* 5/14 */ solid #595959;
 	margin: 2.142857142857143em; /* 30/14 */
 	width: 20%;
 	-webkit-transition: all .25s;
@@ -428,11 +428,11 @@ img{
 }
 
 .secondButtons p:hover{
-	border-color: #F57920;
+	border-color: #B44723;
 }
 
 .secondButtons p strong{
-	color: #F57920;
+	color: #B44723;
 }
 
 .secondButtons p:first-child{
@@ -539,7 +539,7 @@ img{
 }
 
 #mobile-nav{
-	background-color: #F57920;
+	background-color: #B44723;
 	color: #FFFFFF;
 	display: none;
 }
