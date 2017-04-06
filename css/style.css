@@ -73,6 +73,16 @@ img{
 	white-space: nowrap;
 }
 
+.btn-warning{
+	background-color: #b44723;
+	border-color: #bd4f19;
+}
+
+.btn-warning:hover{
+	background-color: #6a2a15;
+	border-color: #bd4f19;
+}
+
 .circleButtons{
 	background-image: url('../images/circle_background.png');
 	background-size: cover;
@@ -118,7 +128,7 @@ img{
 }
 
 .footer a:hover{
-	color: #B44723;
+	color: #F57920;
 	text-decoration: none;
 }
 
@@ -127,7 +137,7 @@ img{
 }
 
 .footer a:focus{
-	color: #B44723;
+	color: #F59720;
 }
 
 .footer a:visted{
@@ -372,7 +382,7 @@ img{
 }
  
 .NicLib-Head ul a:hover{
-	color: #B44723;
+	color: #F59720;;
 	background: none;
 }
 
@@ -428,7 +438,7 @@ img{
 }
 
 .secondButtons p:hover{
-	border-color: #B44723;
+	border-color: #F59720;
 }
 
 .secondButtons p strong{
@@ -532,6 +542,7 @@ img{
 #hours{
 	font-size: 1em;
 	float: left;
+	margin-bottom: .75em;
 }
 
 #hours a{
