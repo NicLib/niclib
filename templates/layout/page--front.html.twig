@@ -20,7 +20,7 @@
 		{{ page.libHead }}
 	</section>
 </div>
-			
+
 <!-- Grayspace background on site -->
 <section class="libBackground">
 </section>
@@ -72,34 +72,34 @@
 											<a href="#tab4"><h2 class="fa fa-university"><span class="tab-label"><br />Everything</span></h2></a>
 										</div>
 
-										<!-- Begin Books tab 
+										<!-- Begin Books tab
 											-- includes jrnl format, for periodical titles, yearbooks, etc.
-	
-											1708=Academic Search Complete; 
-											1920=Cambridge Campanions Online; 
+
+											1708=Academic Search Complete;
+											1920=Cambridge Campanions Online;
 											2513=Ebrary
-											197=Electronic Books; 
-											2482=Literature Resource Center; 
-											2175=Oxford Reference Online; 
-											1978=Oxford Scholarship Online; 
-											1736=Small Business Resource Center; 
+											197=Electronic Books;
+											2482=Literature Resource Center;
+											2175=Oxford Reference Online;
+											1978=Oxford Scholarship Online;
+											1736=Small Business Resource Center;
 											638=Worldcat.org
 											283=Worldcat
 											1279=History Reference Center
-											1719=Literary Reference Center Plus 
+											1719=Literary Reference Center Plus
 										-->
 
 										<div class="tab-content">
-											<div id="tab1" class="tab active">            
+											<div id="tab1" class="tab active">
 												<form action="http://anderson.on.worldcat.org/search" class="windowForm" target="_blank" method="get" onsubmit="ga('send', 'event', 'Catalog Search', 'Search', 'Use Book Search')">
 													<div id="search">
 														{{ page.warning }}
 														<div class="search-title">
 														<h3>Find <span id="search-name">Books and eBooks</span></h3>
-														</div>             
+														</div>
 														<div class="searchTerm">
 															<input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
-															<input type="hidden" name="databaseList" value="1708,1920,2513,197,2482,2175,1978,1736,638,283,1279,1719">						
+															<input type="hidden" name="databaseList" value="1708,1920,2513,197,2482,2175,1978,1736,638,283,1279,1719">
 															<input id="query1" placeholder="Type Title or Author or Subject words..." autofocus="autofocus" id="query" class="searchbox" name="queryString">
 															<input type="hidden" name="format" value="Book">
 															<input type="hidden" name="subformat" value="Book::book_printbook">
@@ -125,7 +125,7 @@
 														</div>
 													</div>
 												</form>
-												
+
 												{{ page.searchHelp }}
 
 											</div>
@@ -151,22 +151,22 @@
 												3313=Springerlink;
 												2879=The Wall Street Journal;
 												638=WorldCat.org;
-												2479=Informe 
+												2479=Informe
 												1275=Consumer Health Complete
 												1488=Essay and General Literature Index H.W. Wilson
 												1279=History Reference Center
 												1719=Literary Reference Center Plus
 												1734=Science Reference Center
-												1736=Small Business Reference Center 
+												1736=Small Business Reference Center
 											-->
 
-											<div id="tab2" class="tab">	 
+											<div id="tab2" class="tab">
 												<form action="http://anderson.on.worldcat.org/search" target="_blank" method="get" class="windowForm" onsubmit="ga('send', 'event', 'Catalog Search', 'Search', 'Use Article Search')">
 													<div id="search">
 														{{ page.warning }}
 														<div class="search-title">
-															<h3>Find <span id="search-name">Articles</span></h3>        
-														</div>             
+															<h3>Find <span id="search-name">Articles</span></h3>
+														</div>
 														<div class="searchTerm">
 															  <input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
 															  <input type="hidden" name="databaseList" value="1708,1271,2237,2259,2260,2261,2264,2482,1721,1723,1941,1978,2375,1736,2484,2879,638,2479,1697,3313,2879,638,2479,1275,1488,1279,1719,1734,1736">
@@ -188,7 +188,7 @@
 														</div>
 													</div>
 												</form>
-					
+
 												{{ page.searchHelp }}
 											</div>
 
@@ -197,24 +197,24 @@
 												3369=Naxos Music Library
 												239=Oaister;
 												638=Worldcat.org
-												1736=Small Business Reference Center 
+												1736=Small Business Reference Center
 											-->
- 
-											<div id="tab3" class="tab">		 
+
+											<div id="tab3" class="tab">
 												<form action="http://anderson.on.worldcat.org/search" target="_blank" method="get" class="windowForm" onsubmit="ga('send', 'event', 'Catalog Search', 'Search', 'Use Media Search')">
 													<div id="search">
 														{{ page.warning }}
 														<div class="search-title">
-															<h3>Find <span id="search-name">DVDs, eVideos, Sound, etc.</span></h3>        
-														</div>             
+															<h3>Find <span id="search-name">DVDs, eVideos, Sound, etc.</span></h3>
+														</div>
 														<div class="searchTerm">
 															<input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
 															<input type="hidden" name="databaseList" value="3369,239,638,1736">
 															<input id="query3" placeholder="Type Title or Name or Subject words...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
-															
+
 															<!--Value pulled out of library.udel.edu search box-->
 															<input type="hidden" name="format" value="x0:music">
-															
+
 															<input type="hidden" name="subformat" value="Music::music_cd">
 															<input type="hidden" name="subformat" value="Music::music_lp">
 															<input type="hidden" name="subformat" value="Music::music_cassette">
@@ -253,18 +253,18 @@
 															<button type="submit" class="headersubmit" title="Search">&#xf002;</button>
 														</div>
 													</div>
-												</form>		 
-					
+												</form>
+
 												{{ page.searchHelp }}
 											</div>
- 
+
 											<!-- Begin Everything Tab
 												1708=Academic Search Complete;
 												1271=Business Source Complete;
-												1920=Cambridge Campanions Online; 
+												1920=Cambridge Campanions Online;
 												3004=CQ Researcher;
 												2513=Ebrary;
-												197=Electronic Books; 
+												197=Electronic Books;
 												2229=Gale Virtual Reference Library;
 												2479=Informe;
 												2237=JSTOR Arts & Sciences I Collection;
@@ -272,7 +272,7 @@
 												2260=JSTOR Arts & Sciences III Collection;
 												2261=JSTOR Arts & Sciences IV Collection;
 												2264=JSTOR Arts & Sciences VII Collection;
-												2482=Literature Resource Center; 
+												2482=Literature Resource Center;
 												1721=MAS Complete;
 												1723=MasterFILE Complete;
 												1941=MEDLINE;
@@ -280,12 +280,12 @@
 												239=Oaister;
 												2007=Oxford Art Online;
 												2006=Oxford Music Online;
-												2175=Oxford Reference Online; 
+												2175=Oxford Reference Online;
 												1978=Oxford Scholarship Online;
 												2375=ScienceDirect;
 												1736=Small Business Reference Center;
 												2484=Small Business Resource Center;
-												1736=Small Business Resource Center; 
+												1736=Small Business Resource Center;
 												2879=The Wall Street Journal;
 												283=WorldCat;
 												638=Worldcat.org
@@ -294,16 +294,16 @@
 												1279=History Reference Center
 												1719=Literary Reference Center Plus
 												1734=Science Reference Center
-												1736=Small Business Reference Center 
+												1736=Small Business Reference Center
 											-->
- 
-											<div id="tab4" class="tab">					 
+
+											<div id="tab4" class="tab">
 												<form action="http://anderson.on.worldcat.org/search" target="_blank" method="get" class="windowForm" onsubmit="ga('send', 'event', 'Catalog Search', 'Search', 'Use Everything Search')">
 													<div id="search">
 														{{ page.warning }}
 														<div class="search-title">
-															<h3>Find <span id="search-name">Books, Articles, Media, and more.</span></h3>        
-														</div>             
+															<h3>Find <span id="search-name">Books, Articles, Media, and more.</span></h3>
+														</div>
 														<div class="searchTerm">
 															<input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
 															<input type="hidden" name="databaseList" value="1708,1271,1920,3004,2513,197,2229,2479,2237,2259,2260,2261,2264,2482,2482,1721,1723,1941,3369,239,2007,2006,2175,1978,2375,1736,2484,1736,2879,283,638,1275,1488,1279,1719,1734,1736">
@@ -317,7 +317,7 @@
 														</div>
 													</div>
 												</form>
-			
+
 												{{ page.searchHelp }}
 											</div>
 										</div>
@@ -365,7 +365,7 @@
 			</div>
 		</div>
 	</div>{# /.layout-content #}
-	
+
 </main>
 
 

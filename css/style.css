@@ -6,7 +6,7 @@ html{
  	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
  	color: #000000;
 }
- 
+
 body{
  	margin: 0;
  	padding: 0;
@@ -30,7 +30,7 @@ article table td {
 
 header{
 	border-top: .2857142857142857em /* 4/14 */ solid #595959;
-	background-color: #B44723;
+	background-color: #000000;
 	margin-top: 0;
  	width: 100%;
 }
@@ -42,7 +42,7 @@ iframe{
 	min-width: 100%;
 	*width: 100%;
 }
- 
+
 img{
  	max-width: 100%;
 }
@@ -64,7 +64,7 @@ img{
 }
 
 .aboutMenu ul li a:hover{
-	color: #000000;
+	color: #F59720;
 	text-decoration: none;
 }
 
@@ -80,7 +80,6 @@ img{
 
 .btn-warning:hover{
 	background-color: #6a2a15;
-	border-color: #bd4f19;
 }
 
 .circleButtons{
@@ -106,14 +105,14 @@ img{
 }
 
 .collectionsMenu ul li a:hover{
-	color: #000000;
+	color: #F59720;
 	text-decoration: none;
 }
 
 .footer{
 	margin: 0;
 	padding: 0;
-	padding-top: 1.071428571428571em; 
+	padding-top: 1.071428571428571em;
 	background-color: #F4F5F5;
 	position: relative;
 	bottom: 0;
@@ -128,7 +127,7 @@ img{
 }
 
 .footer a:hover{
-	color: #F57920;
+	color: #B44723;
 	text-decoration: none;
 }
 
@@ -186,12 +185,12 @@ img{
 }
 
 .helpMenu ul li a:hover{
-	color: #000000;
+	color: #F59720;
 	text-decoration: none;
 }
 
 .hiddenMenu{
-	background-color: #B44723;
+	background-color: #595959;
 	margin: auto;
 	margin-top: 1.428571428571429em; /* 20/14 */
 	padding-top: .5em;
@@ -351,19 +350,19 @@ img{
 	width: 40px;
 }
 
-.NicLib-Head{ 
+.NicLib-Head{
  	margin: .2857142857142857em auto; /* 4 / 14 */
  	font-weight: bold;
  	font-size: 2em;
 	color: #000000;
 	clear: both;
 }
- 
+
 .NicLib-Head img{
  	max-width: 32.93650793650794%; /*((80*4) + (4*3)) / 1008 */
  	float: left;
 }
- 
+
 .NicLib-Head ul{
 	margin-top: 1em;
 	/* Padding when FYE QR Code is inactive */
@@ -373,14 +372,14 @@ img{
 	width: 100%;
 	box-shadow: 0 5px 5px #888888;
 }
- 
+
 .NicLib-Head ul a{
 	 color: #FFFFFF;
 	 text-decoration: none;
 	 -webkit-transition: all .5s;
 	 transition: all .5s;
 }
- 
+
 .NicLib-Head ul a:hover{
 	color: #F59720;;
 	background: none;
@@ -389,7 +388,7 @@ img{
 .NicLib-Head ul a:focus{
 	background: none;
 }
- 
+
 .NicLib-Head ul li{
 	 margin: auto 1em;
 	 display: inline;
@@ -475,14 +474,14 @@ img{
 }
 
 .servicesMenu ul li a:hover{
-	color: #000000;
+	color: #F59720;
 	text-decoration: none;
 }
 
 .shadow{
 	width: 100%;
 	height: 1.923076923076923em;
-	background-color: rgba(0,0,0,.25);	
+	background-color: rgba(0,0,0,.25);
 }
 
 .site-content{
@@ -501,23 +500,23 @@ img{
  	color: #FFFFFF;
 	margin-bottom: .375em;
 }
- 
+
 .univHead a{
  	color: #FFFFFF;
  	text-decoration: none;
  	-webkit-transition: all .5s;
  	transition: all .5s;
 }
- 
+
 .univHead a:hover{
-  	color: #000000;
+  	color: #F59720;
 }
 
 .univHead img{
 	margin-top: 0;
 	float: left;
 }
-  
+
 .univHead nav{
 	margin-top: .5em;
 	width: 44.6662507797879%; /* 716/1603 */
@@ -529,14 +528,14 @@ img{
 	list-style: none;
 	display: inline;
 }
-  
+
 .univHead nav ul li{
   	margin: auto 1.111111111111111%; /*5/450*/
 	list-style: none;
   	display: inline;
 	white-space: nowrap;
  }
- 
+
 /* IDs */
 
 #hours{
@@ -605,15 +604,15 @@ img{
 		width: 70%;
 		margin: 1.25em;
 	}
-	
+
 	.image-block{
 		margin:1.25em .3571428571428571em;
 	}
-	
+
 	.libButtons .button{
 		margin: .55em auto;
 	}
-	
+
 	.libSearch{
 		height: 317px;
 		width: 69.5%;
@@ -626,61 +625,61 @@ img{
 	.footer2{
 		display: none;
 	}
-	
+
 	.footer3{
 		width: 50%;
 	}
 	.image-block{
 		border-left: none;
 	}
-	
+
 	.libSearch{
 		width: 97.5%;
 		margin: .3em;
 	}
-	
+
 	.libButtons{
 		margin-top: .5em;
 	}
-	
+
 	.libButtons .button{
 		width: 47.75%;
 		margin-left: .3em;
 		float:none;
 		display: inline-block;
 	}
-	
+
 	.libButtons .button1{
 		margin-bottom:0;
 	}
-	
+
 	.libButtons .button2{
 		margin-top: 0;
 	}
-	
+
 	.secondButtons{
 		margin-top:.3em;
 		margin: .3em .5em;
 		width: 98.25%;
 	}
-	
+
 	.NicLib-Head ul{
 		/* Padding when FYE QR Code is inactive */
 		padding-left: 8.34028356964137%; /* 100/1199 */
 	}
-	
+
 	.secondaryContent{
 		width: 97.2%;
 	}
-	
+
 	.secondButtons{
 		display: block;
-	}	
-	
+	}
+
 	.views_slideshow_cycle_teaser_section{
 		left: 34%;
 	}
-	
+
 	.univHead nav{
 		width: 63.98570151921358%; /* 716/1119 */
 	}
@@ -693,11 +692,11 @@ img{
 		position: static;
 		float: right;
 	}
-	
+
 	.univHead nav{
 		width: 3.8572806171649%; /* 40/1037 */
 	}
-	
+
 	.univHead ul{
 		display: none;
 	}
@@ -707,7 +706,7 @@ img{
 	.image-block{
 		width: 98.6%;
 	}
-	
+
 	.libButtons{
 		margin-top: .28557142857142857em; /* 4/14 */
 		margin-left: -.5%;
@@ -716,56 +715,56 @@ img{
 		width: 98.6%;
 		float: none;
 	}
-	
+
 	.libButtons .shadow{
 		width: 100%;
 	}
-	
+
 	.libButtons .button{
 		width:97%;
 		height: 7.5em;
 	}
-	
+
 	.libButtons .button1{
 		margin-bottom: .28557142857142857em;
 		background-position: 0% 20%;
 	}
-	
+
 	.libButtons .button2{
 		background-position: 0% 75%;
 	}
-	
+
 	.libButtons table{
 		width: 98.61111111111111%; /* 710/720 */
 	}
-	
+
 	.libButtons tr td{
 		border-left: none;
 	}
-	
+
 	.libSearch{
 		width: 97%; /* 710/720 */
 	}
-	
+
 	.NicLib-Head ul{
 		padding: 3px;
 	}
-	
+
 	.NicLib-Head ul li {
 		margin: auto 20px;
 	}
-	
+
 	.secondButtons{
 		width: 97.5%;
 		margin-left: .5%;
 	}
-	
+
 
 	.univHead nave{
 		width: 15%;
 		margin-right: 1em;
 	}
-	
+
 	.views_slideshow_cycle_teaser_section{
 		left: 29%;
 	}
@@ -778,46 +777,46 @@ img{
 		text-align:center;
 		margin-bottom: 1em;
 	}
-	
+
 	.footer3{
 		width: 100%;
 		text-align: center;
 	}
-	
+
 	.footer4{
 		width: 100%;
 		text-align:center;
 	}
-	
+
 	#hours{
 		float: none;
 	}
 	.libButtons{
 		margin-left: .3%;
 	}
-	
+
 	.libButtons div{
 		width: 100%;
 	}
-	
+
 	.libButtons .button{
 		width: 98.75%;
 		margin-left: .3%;
 	}
-	
+
 	.libSearch{
 		width: 98.75%;
 	}
-	
+
 	.mobile-menu{
 		margin-left: 2.142857142857143em; /* 30/14 */
 		float:none;
 	}
-	
+
 	.NicLib-Head{
 		display:none;
 	}
-	
+
 	.small-NicLib-Head{
 		font-size: 1.714285714285714em;
 		display: initial;
@@ -825,7 +824,7 @@ img{
 	.small-univHead{
 		display: none;
 	}
-	
+
 	.univHead span{
 		display: none;
 	}
@@ -837,13 +836,13 @@ img{
 		background-position: 50% 0%;
 		height: 100%;
 	}
-	
+
 	.secondButtons p{
 		padding: 2.142857142857143em;
 		width: 40%;
 		margin: 1.428571428571429em;
 	}
-	
+
 	.secondButtons p:nth-child(2){
 		padding-top: 1.428571428571429em;
 	}
@@ -853,7 +852,7 @@ img{
 	.secondButtons{
 		width: 98%;
 	}
-	
+
 	.views_slideshow_cycle_teaser_section{
 		left: 27%;
 	}
@@ -863,7 +862,7 @@ img{
 	.secondButtons{
 		width: 97.6%;
 	}
-	
+
 	.views_slideshow_cycle_teaser_section{
 		left: 24%;
 	}
@@ -891,15 +890,15 @@ img{
 	.mobile-menu{
 		margin-left: 1em;
 	}
-	
+
 	.secondButtons{
 		width: 96.6%;
 	}
-	
+
 	.univHead img{
 		width: 50%;
 	}
-	
+
 	.views_slideshow_cycle_teaser_section{
 		left: 21%;
 	}
@@ -909,7 +908,7 @@ img{
 	.secondButtons{
 		width: 96%;
 	}
-	
+
 	.views_slideshow_cycle_teaser_section{
 		left: 16%;
 	}
@@ -920,7 +919,7 @@ img{
 		padding: 0;
 		float: left;
 	}
-	
+
 	.mobile-menu{
 		margin-top: -1.928571428571429em;
 		margin-right: -1.7142857142857143em;
@@ -933,7 +932,7 @@ img{
 	.secondButtons{
 		width: 95.6%;
 	}
-	
+
 	.views_slideshow_cycle_teaser_section{
 		left: 15%;
 	}
@@ -961,7 +960,7 @@ img{
 	.secondButtons{
 		width: 95%;
 	}
-	
+
 	.views_slideshow_cycle_teaser_section{
 		left: 10%;
 	}
@@ -978,15 +977,15 @@ img{
 		text-align: center;
 		display: block;
 	}
-	
+
 	.secondButtons{
 		width: 94.6%;
 	}
-	
+
 	.secondButtons p{
 		width: 75%;
 	}
-	
+
 	.views_slideshow_cycle_teaser_section{
 		left: 8%;
 	}
@@ -996,15 +995,15 @@ img{
 	.libButtons .button{
 		height: 6em;
 	}
-	
+
 	.secondButtons{
 		width: 94%;
 	}
-	
+
 	.secondButtons p{
-		margin: 1em; 
+		margin: 1em;
 	}
-	
+
 	.views_slideshow_cycle_teaser_section{
 		left: 5%;
 	}
@@ -1026,7 +1025,7 @@ img{
 	.secondButtons{
 		width: 93.6%;
 	}
-	
+
 	.views_slideshow_cycle_teaser_section{
 		left: 1.75%;
 	}
@@ -1036,7 +1035,7 @@ img{
 	.mobile-menu{
 		margin-right: -1em;
 	}
-	
+
 	.secondButtons{
 		width: 93%;
 	}
@@ -1045,15 +1044,15 @@ img{
 	}
 }
 
-@media screen and (max-width: 310px){	
+@media screen and (max-width: 310px){
 	.libSearch{
 		height: 315px;
 	}
-	
+
 	.secondButtons{
 		width: 92%;
 	}
-	
+
 	.secondButtons p{
 		margin: .7142857142857143em;
 	}
