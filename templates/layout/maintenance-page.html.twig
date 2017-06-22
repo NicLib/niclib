@@ -1,58 +1,89 @@
-{#
-/**
- * @file
- * Theme override to display a single Drupal page while offline.
- *
- * All available variables are mirrored in page.html.twig.
- * Some may be blank but they are provided for consistency.
- *
- * @see template_preprocess_maintenance_page()
- */
-#}
-<header role="banner">
-  {% if logo %}
-    <a href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home">
-      <img src="{{ logo }}" alt="{{ 'Home'|t }}"/>
-    </a>
-  {% endif %}
-
-  {% if site_name or site_slogan %}
-    {% if site_name %}
-      <h1>
-        <a href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home">{{ site_name }}</a>
-      </h1>
-    {% endif %}
-
-    {% if site_slogan %}
-      <div>{{ site_slogan }}</div>
-    {% endif %}
-  {% endif %}
+<header class="univHead col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-11">
+		<div class="brand-nav navbar-header navbar-left col-lg-3 col-md-3 col-sm-11 col-xs-11">
+			<p><span><a href="https://www.anderson.edu"><img alt="Anderson University" data-align="left" data-entity-type="file" data-entity-uuid="d3ff7b22-7be8-4b98-9c5d-167cd372f7fd" height="18" src="/sites/niclib.dd/files/inline-images/anderson.png" width="232" /></a>&nbsp;| </span><a href="/">Nicholson Library</a></p>
+		</div>
+		<nav class="navbar-right col-lg-9 col-md-9 col-sm-1 col-xs-1">
+			<div class="mobile-menu col-sm-1 col-xs-1">
+				<button onclick="revealNav()" class="glyphicon glyphicon-menu-hamburger"></button>
+			</div>
+            <ul>
+	            <li><a href="http://ravenmail.anderson.edu">RAVENMAIL</a></li>
+	            <li><a href="http://canvas.anderson.edu">CANVAS</a></li>
+	            <li><a href="https://papercut.anderson.edu:9192/user">PAPERCUT</a></li>
+	            <li><a href="http://accessau.anderson.edu/">ACCESS AU</a></li>
+	            <li><a href="http://www.anderson.edu/kissinger/">KISSINGER</a></li>
+	            <li><a href="http://www.anderson.edu/about/map">CAMPUS MAP</a></li>
+            </ul>
+		</nav>
+	</div>
 </header>
 
+<div id="mobile-nav">
+	<section class="small-univHead">
+        <ul>
+            <li><a href="http://ravenmail.anderson.edu">RAVENMAIL</a></li>
+            <li><a href="http://canvas.anderson.edu">CANVAS</a></li>
+            <li><a href="https://papercut.anderson.edu:9192/user">PAPERCUT</a></li>
+            <li><a href="http://accessau.anderson.edu/">ACCESS AU</a></li>
+            <li><a href="http://www.anderson.edu/kissinger/">KISSINGER</a></li>
+            <li><a href="http://www.anderson.edu/about/map">CAMPUS MAP</a></li>
+        </ul>
+	</section>
+</div>
+
+<!-- Grayspace background on site -->
+<section class="libBackground">
+</section>
+
 <main role="main">
-  {% if title %}
-    <h1>{{ title }}</h1>
-  {% endif %}
+    <div class="layout-content">
+        <div class="site-content container">
+            <div class="row container">
+                <section class="section text-center">
+                    <a id="main-content"></a>
+                    {% if title %}
+                        <h1 class="title" id="page-title">{{ title }}</h1>
+                    {% endif %}
+                    {{ page.content }}
+                    {{ page.highlighted }}
+                </section>
+            </div>
 
-  {{ page.highlighted }}
+            <div class="row container">
+                <table align="center" border="0" cellpadding="5" cellspacing="5" style="width: 500px;">
+                    <tbody>
+                        <tr style="text-align: center;">
+                            <td class="btn btn-warning text-align-center" style="margin: 1em; color: rgb(255, 255, 255); font-size: 1.75em; text-shadow: 1px 1px #000000;"><a href="https://anderson.on.worldcat.org/discovery" style="color: rgb(255, 255, 255); text-decoration: none;">Search Library Catalog</a></td>
+                        </tr>
+                        <tr style="text-align: center;">
+                            <td class="btn btn-warning text-align-center" style="margin: 1em; color: rgb(255, 255, 255); font-size: 1.75em; text-shadow: 1px 1px #000000;"><a href="http://libguides.anderson.edu/" style="color: rgb(255, 255, 255); text-decoration: none;" target="_blank">Find a Subject Guide</a></td>
+                        </tr>
+                        <tr style="text-align: center;">
+                            <td class="btn btn-warning text-align-center" style="margin: 1em; color: rgb(255, 255, 255); font-size: 1.75em; text-shadow: 1px 1px #000000;"><a href="http://libguides.anderson.edu/az.php" style="color: rgb(255, 255, 255); text-decoration: none;" target="_blank">Choose a Database</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-  {{ page.content }}
+            <!-- Footer row -->
+            <div class="row footer" role="contentinfo">
+                <div class="col-lg-3 col-sm-12 footer1">
+                    <div id="hours"> Today's Hours:<br/> <a href="/about/hours" title="Click for more information about hours and holidays">
+                        <script src="../../NicDate.js"></script>
+                        <script type="text/javascript">document.write(NicDate(0));</script> </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 footer2">
+
+                </div>
+                <div class="col-lg-3 col-sm-12 footer3">
+
+                </div>
+                <div class="col-lg-3 col-sm-12 footer4">
+
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
-
-{% if page.sidebar_first %}
-  <aside role="complementary">
-    {{ page.sidebar_first }}
-  </aside>
-{% endif %}
-
-{% if page.sidebar_second %}
-  <aside role="complementary">
-    {{ page.sidebar_second }}
-  </aside>
-{% endif %}
-
-{% if page.footer %}
-  <footer role="contentinfo">
-    {{ page.footer }}
-  </footer>
-{% endif %}
