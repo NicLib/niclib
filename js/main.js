@@ -7,7 +7,7 @@ function revealNav(){
 	} else {
 		el.style.display = 'none';
 	}
-	
+
 	console.log(el.style.display);
 };
 
@@ -15,7 +15,7 @@ jQuery(document).ready(function($){
 	//Make external links open in a new tab
 	$("a[href^='http://']").attr('target', '_blank');
 	$("a[href^='https://']").attr('target','_blank');
-	
+
 	//Adds links to 'secondButtons'
 	$('.secondButtons p:first-child').click(function(){
 		//Custom script for opening a window for Library H3lp
@@ -29,57 +29,53 @@ jQuery(document).ready(function($){
 	});
 	//$('.footer3 input').css('width', '100%').attr('data-original-title', '');
 	//$('.mainContent form .form-search').css('width', '100%').attr('data-original-title', '');
-	
+
 	function revealNav(){
 		console.log($(this));
 	}
-	
+
+	function dynamicHeight(menu){
+		var heightnow = menu.height();
+		var heightfull = menu.css({height: 'auto'}).height();
+		menu.css({height:heightnow}).animate({height: heightfull}, 400);
+	};
+
 	//Navigation actions
 	$('.NicLib-Head a').click(function(event){
 		event.preventDefault();
 		var menu = $(this);
 		var hiddenMenu = menu.parents('.NicLib-Head').next();
 		var menuSelected = '.' + menu.text().toLowerCase() + 'Menu';
-		function dynamicHeight(){
-			var heightnow = $(hiddenMenu).height();
-			var heightfull = $(hiddenMenu).css({height: 'auto'}).height();
-			$(hiddenMenu).css({height:heightnow}).animate({height: heightfull}, 400);
-		};
-		
+
 		//Causes dynamic menu sizes to change smoothly
 		if($(hiddenMenu).css('display')=='none'){
 			$(hiddenMenu).slideDown();
 		};
-		
+
 		//Causes 'Menu Links' to appear one at a time
 		for(var i in allMenus){
 			$(allMenus[i]).css('display', 'none');
 		};
 		$(menuSelected).css('display','block');
-		
+
 		//Function found from StackOverflow user Popnoodles
 		//link "http://jsfiddle.net/zbB3Q/"
-		dynamicHeight();
+		dynamicHeight(hiddenMenu);
 	})/*.mouseenter(function(){
 		//Below code is the same as the 'click' function
 		var menu = $(this);
 		var hiddenMenu = menu.parents('.NicLib-Head').next();
 		var menuSelected = '.' + menu.text().toLowerCase() + 'Menu';
-		function dynamicHeight(){
-			var heightnow = $(hiddenMenu).height();
-			var heightfull = $(hiddenMenu).css({height: 'auto'}).height();
-			$(hiddenMenu).css({height:heightnow}).animate({height: heightfull}, 400);
-		};
 		if($(hiddenMenu).css('display')=='none'){
 			$(hiddenMenu).slideDown();
-		} 
+		}
 		for(var i in allMenus){
 			$(allMenus[i]).css('display', 'none');
 		};
 		$(menuSelected).css('display','block');
-		dynamicHeight();
+		dynamicHeight(hiddenMenu);
 	})*/;
-	
+
 	//Causes 'hiddenMenu' to close on mouse out
 	$('.NicLib-Head').parents('.row').mouseleave(function(){
 		//console.log('did this work');
@@ -87,27 +83,27 @@ jQuery(document).ready(function($){
 			$('.hiddenMenu').slideUp();
 		}
 	});
-	
+
 	//Causes 'hiddenMenu' to close
 	$('.hiddenMenu i').click(function(){
 		$(this).parents('.hiddenMenu').slideUp();
 	});
-	
+
 	//Function for Tabs in Searchbox
 	$('.tabs .tab-links a').on('click', function(e)  {
 		var currentAttrValue = jQuery(this).attr('href');
- 
+
 		// Show/Hide Tabs
 		$('.tabs ' + currentAttrValue).show().siblings().hide();
- 
+
 		// Change/remove current tab to active
 		//jQuery(this).closest('h2').addClass('active').siblings().removeClass('active');
 		$('.tabs .tab-links a.selected').removeClass('selected');
 		$(this).addClass('selected');
- 
+
 		e.preventDefault();
 	});
-			
+
 	//retain search term input when switching tabs
 	$('#query1').change(function(){
 		$('.searchbox').val($('#query1').val());
@@ -121,5 +117,5 @@ jQuery(document).ready(function($){
 	$('#query4').change(function(){
 		$('.searchbox').val($('#query4').val());
 	});
-	
-});	
+
+});
