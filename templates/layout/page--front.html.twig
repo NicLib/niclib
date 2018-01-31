@@ -90,7 +90,7 @@
 
 										<div class="tab-content">
 											<div id="tab1" class="tab active">
-												<form action="https://anderson.on.worldcat.org/search" class="windowForm" target="_blank" method="get" onsubmit="ga('send', 'event', 'Catalog Search', 'Search', 'Use Book Search')">
+												<form action="https://anderson.on.worldcat.org/search" id="catSearch" class="windowForm" method="get" onsubmit="ga('send', 'event', 'Catalog Search', 'Search', 'Use Book Search')">
 													<div id="search">
 														{{ page.warning }}
 														<div class="search-title">
@@ -99,7 +99,7 @@
 														<div class="searchTerm">
 															<input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
 															<input type="hidden" name="databaseList" value="1708,1920,2513,197,2175,1978,1736,638,283,1279,1719">
-															<input id="query1" placeholder="Type Title or Author or Subject words..." autofocus="autofocus" id="query" class="searchbox" name="queryString">
+															<input id="query1" placeholder="Type Title or Author or Subject words..." autofocus="autofocus" class="searchbox" name="queryString">
 															<input type="hidden" name="format" value="Book">
 															<input type="hidden" name="format" value="Msscr">
 															<input type="hidden" name="format" value="Jrnl">
@@ -115,10 +115,11 @@
 															<input type="hidden" name="yearFrom" value="">
 															<input type="hidden" name="yearTo" value="">
 															<input type="hidden" name="language" value="all">
-															<select name="scope" class="dropdown-menu">
-																<option value="" selected>Libraries Worldwide</option>
-																<!--<option value="sz:31296">Indiana Partner Libraries</option>-->
-																<option value="wz:1274">Nicholson Library</option>
+															<label for="selectLibrary1" style="display:none;">Which Library to Search</label>
+															<select id="selectLibrary1" name="scope" class="dropdown-menu">
+																<option label="Libraries Worldwide" value="" selected>Libraries Worldwide</option>
+																<!--<option label="Indiana Partner Libraries" value="sz:31296">Indiana Partner Libraries</option>-->
+																<option label="Nicholson Library" value="wz:1274">Nicholson Library</option>
 															</select>
 															<button type="submit" class="headersubmit" title="Search">&#xf002;</button>
 														</div>
@@ -178,7 +179,7 @@
 											-->
 
 											<div id="tab2" class="tab">
-												<form action="https://anderson.on.worldcat.org/search" target="_blank" method="get" class="windowForm" onsubmit="ga('send', 'event', 'Catalog Search', 'Search', 'Use Article Search')">
+												<form action="https://anderson.on.worldcat.org/search" id="catSearch" method="get" class="windowForm" onsubmit="ga('send', 'event', 'Catalog Search', 'Search', 'Use Article Search')">
 													<div id="search">
 														{{ page.warning }}
 														<div class="search-title">
@@ -187,7 +188,7 @@
 														<div class="searchTerm">
 															  <input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
 															  <input type="hidden" name="databaseList" value="1708,1271,2237,2259,2260,2261,2264,1721,1723,1941,1978,2375,1736,2484,2879,638,2479,1697,3313,2879,638,2479,1275,1488,1279,1719,1734,1736,1834,3006,3863,1953,1488,2477,1279,1537,3879,1719,1540,1725,3866,2007,2006,1728,1492,3384,1734">
-															  <input id="query2" placeholder="Type Title or Author or Subject words..." autofocus="autofocus" id="query" class="searchbox" name="queryString">
+															  <input id="query2" placeholder="Type Title or Author or Subject words..." autofocus="autofocus" class="searchbox" name="queryString">
 															  <input type="hidden" name="format" value="Artchap">
 															  <input type="hidden" name="subformat" value="Artchap::artchap_artcl">
 															  <input type="hidden" name="format" value="Encyc">
@@ -196,10 +197,11 @@
 																	<option value="wz:1274::zs:35416">Archives</option>
 																	<option value="wz:1274::zs:35418">Special Collections</option>
 																</select>-->
-																<select name="scope" class="dropdown-menu">
-																	<option value="" selected>Libraries Worldwide</option>
-																	<!--<option value="sz:31296">Indiana Partner Libraries</option>-->
-																	<option value="wz:1274">Nicholson Library</option>
+																<label for="selectLibrary2" style="display:none;">Which Library to Search</label>
+																<select id="selectLibrary2" name="scope" class="dropdown-menu">
+																	<option label="Libraries Worldwide" value="" selected>Libraries Worldwide</option>
+																	<!--<option label="Indiana Partner Libraries" value="sz:31296">Indiana Partner Libraries</option>-->
+																	<option label="Nicholson Library" value="wz:1274">Nicholson Library</option>
 																</select>
 															<button type="submit" class="headersubmit" title="Search">&#xf002;</button>
 														</div>
@@ -218,7 +220,7 @@
 											-->
 
 											<div id="tab3" class="tab">
-												<form action="https://anderson.on.worldcat.org/search" target="_blank" method="get" class="windowForm" onsubmit="ga('send', 'event', 'Catalog Search', 'Search', 'Use Media Search')">
+												<form action="https://anderson.on.worldcat.org/search" id="catSearch" method="get" class="windowForm" onsubmit="ga('send', 'event', 'Catalog Search', 'Search', 'Use Media Search')">
 													<div id="search">
 														{{ page.warning }}
 														<div class="search-title">
@@ -227,7 +229,7 @@
 														<div class="searchTerm">
 															<input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
 															<input type="hidden" name="databaseList" value="3369,239,638,1736">
-															<input id="query3" placeholder="Type Title or Name or Subject words...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
+															<input id="query3" placeholder="Type Title or Name or Subject words...." autofocus="autofocus" class="searchbox" name="queryString">
 
 															<!--Value pulled out of library.udel.edu search box-->
 															<input type="hidden" name="format" value="x0:music">
@@ -262,10 +264,11 @@
 															<input type="hidden" name="format" value="Game">
 															<input type="hidden" name="format" value="Intmm">
 															<input type="hidden" name="subformat" value="Intmm::intmm_digital">
-															<select name="scope" class="dropdown-menu">
-																<option value="" selected>Libraries Worldwide</option>
-																<!--<option value="sz:31296">Indiana Partner Libraries</option>-->
-																<option value="wz:1274">Nicholson Library</option>
+															<label for="selectLibrary3" style="display:none;">Which Library to Search</label>
+															<select id="selectLibrary3" name="scope" class="dropdown-menu">
+																<option label="Libraries Worldwide" value="" selected>Libraries Worldwide</option>
+																<!--<option label="Indiana Partner Libraries" value="sz:31296">Indiana Partner Libraries</option>-->
+																<option label="Nicholson Library" value="wz:1274">Nicholson Library</option>
 															</select>
 															<button type="submit" class="headersubmit" title="Search">&#xf002;</button>
 														</div>
@@ -332,7 +335,7 @@
 											-->
 
 											<div id="tab4" class="tab">
-												<form action="https://anderson.on.worldcat.org/search" target="_blank" method="get" class="windowForm" onsubmit="ga('send', 'event', 'Catalog Search', 'Search', 'Use Everything Search')">
+												<form action="https://anderson.on.worldcat.org/search" id="catSearch" method="get" class="windowForm" onsubmit="ga('send', 'event', 'Catalog Search', 'Search', 'Use Everything Search')">
 													<div id="search">
 														{{ page.warning }}
 														<div class="search-title">
@@ -341,11 +344,12 @@
 														<div class="searchTerm">
 															<input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
 															<input type="hidden" name="databaseList" value="1708,1271,1920,3004,2513,197,2229,2479,2237,2259,2260,2261,2264,1721,1723,1941,3369,239,2007,2006,2175,1978,2375,1736,2484,1736,2879,283,638,1275,1488,1279,1719,1734,1736,1834,1275,3006,3863,1953,1488,2477,1279,1537,3879,1719,1540,1725,3866,1728,1492,3384,1734">
-															<input id="query4" placeholder="Type Title or Name or Subject words...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
-															<select name="scope" class="dropdown-menu">
-																<option value="" selected>Libraries Worldwide</option>
-																<!--<option value="sz:31296">Indiana Partner Libraries</option>-->
-																<option value="wz:1274">Nicholson Library</option>
+															<input id="query4" placeholder="Type Title or Name or Subject words...." autofocus="autofocus" class="searchbox" name="queryString">
+															<label for="selectLibrary4" style="display:none;">Which Library to Search</label>
+															<select id="selectLibrary4" name="scope" class="dropdown-menu">
+																<option label="Libraries Worldwide" value="" selected>Libraries Worldwide</option>
+																<!--<option label="Indiana Partner Libraries" value="sz:31296">Indiana Partner Libraries</option>-->
+																<option label="Nicholson Library" value="wz:1274">Nicholson Library</option>
 															</select>
 															<button type="submit" class="headersubmit" title="Search">&#xf002;</button>
 														</div>

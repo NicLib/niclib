@@ -390,7 +390,7 @@ img{
 }
 
 .NicLib-Head ul li{
-	 margin: auto 1em;
+	 /*margin: auto 1em; Removed for Bootstrap */
 	 display: inline;
 }
 

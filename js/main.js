@@ -15,6 +15,10 @@ jQuery(document).ready(function($){
 	//Make external links open in a new tab
 	$("a[href^='http://']").attr('target', '_blank');
 	$("a[href^='https://']").attr('target','_blank');
+	
+	//Add Bootstrap Classes to .NicLib-Head
+	$('.NicLib-Head ul').addClass('col-md-12');
+	$('.NicLib-Head li').addClass('col-md-3');
 
 	//Adds links to 'secondButtons'
 	$('.secondButtons p:first-child').click(function(){
@@ -117,5 +121,14 @@ jQuery(document).ready(function($){
 	$('#query4').change(function(){
 		$('.searchbox').val($('#query4').val());
 	});
-
+	
+	//Make WorldCat searches open in new tab on submit
+	$('#catSearch').submit(function(e){
+        e.preventDefault();
+        var query = $('input[name=queryString]').val();
+        $(e.target).attr('target', '_blank');
+        $(e.target).children('input[name=queryString]').attr('value', query);
+		console.log(e.target);
+        e.target.submit();
+    });
 });
